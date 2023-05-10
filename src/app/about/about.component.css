@@ -5,12 +5,27 @@
 p{
     font-size: 1vw;
 }
-table{
-    border-style: solid;
-    border-width: 2x 2px;
-    border-image-source: linear-gradient(to right, #ff00d0 0%, #00c8ff 100%);
-    border-image-slice: 20;
-    border-image-repeat: stretch;
+.divabout{
     width: 65vw;
-    border-radius: 500px;
+    height: 70vh;
+    margin: 0 auto;
+    border: solid 1px;
+    border-color: white;
+    border-radius: 15px;
+}
+.imga{
+    width:25vw;
+    height:65vh;
+}
+.imgabout{
+    text-align: center;
+    margin: 1vw 1vw 1vw 1vw;
+}
+.textabout{
+    margin: 2vw 2vw 2vw;
+}
+.blackbox{
+    background: linear-gradient(0deg, #262840, #262840),
+    linear-gradient(0deg, #060714, #060714),
+    linear-gradient(187.96deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0) 93.86%);
 }
