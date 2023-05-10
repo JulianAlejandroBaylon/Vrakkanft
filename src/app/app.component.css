@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Rubik";
+  src: url(../assets/Rubik-Regular.ttf);
+}
+
+/*NavBar */
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  color: white;
+  padding-left: 0;
+}
+
+/*Text format of the navigation bar*/
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+/*List order of navBar*/
+nav ul li {
+  list-style: none;
+  float: left;
+  margin: 0 20px 0 25px;
+}
+
+
+/*NavBar logo*/
+ .logo{
+  width: 13vw;
+  height: 8vh;
+ }
+ /*NavBar sections*/
+nav{
+  font-family: 'Rubik';
+  font-style: Regular;
+  font-weight: 500;
+  font-size: 1vw;
+  line-height: 150%;
+  background: linear-gradient(180deg, #8284FC 0%, rgba(141, 126, 180, 0.8) 100%);
+  border-radius: 10px;
+  height: 6vh;
+  width: 160vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 5%;
+}
+/*header padding*/
+header{
+  padding: 03%;
+  display: flex;
+}
+/*NavBar button wallet*/
+.buttons{
+  margin-left: 10%;
+  width:80vw;
+}
+/*Button Wallet format*/
+.NFT{
+  background: linear-gradient(91.06deg, #FF1CF7 39.26%, #00F0FF 100%);
+  border-radius: 25px;
+  font-size: 1vw;
+  width: 15vw;
+  height: 6vh;
+  color: white;
+  font-family: Rubik;
+}
+
+
+.slide {
+  width: 100vw;
+  height: 60vh;
+}
+
+
+.page-content {
+  width: 65vw;
+  height: 98vw;
+  transform: rotate(-90deg) translateX(-78vh) translateY(-10px);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-scrollbar-thumb: none;
+}
+
+/* wrapper containing our slides */
+.slides {
+  display: flex;
+  flex-direction: row;
+  transform: rotate(90deg) translateY(-80vh) translateX(0px);
+  transform-origin: top left;
+  overflow-y: hidden;
+  width: 400vw;
+  height: 100vh;
+
+}
+
+.slide {
+  font-size: 30px;
+  color: #000;
+  height: 100%;
+}

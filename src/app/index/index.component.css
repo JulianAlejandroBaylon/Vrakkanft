@@ -1,0 +1,77 @@
+*{
+    font-family: "Rubik";
+    color: aliceblue;
+}
+
+.index{
+  display: flex;
+}
+
+
+span{
+  background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.text{
+  font-family: rubik;
+  font-weight: 700;
+}
+
+.text p{
+  margin-left: 20%;
+}
+
+.nfts{
+  display: flex;
+  margin-top: 5%;
+}
+
+
+.nfts .nft1{
+  width: 20vw;
+  height: 55vh;
+  margin-top: 30%;
+  background: linear-gradient(160.61deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 101.7%);
+border-width: 3.72189px 0px;
+border-style: solid;
+border-color: rgba(255, 255, 255, 0.4);
+backdrop-filter: blur(26.6711px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 62.0315px;
+}
+.nfts .nft1 img{
+  width: 15vw;
+  height: 35vh;
+  margin: 5% 0 0 10%;
+}
+
+.nfts .nft1 p{
+  margin: 5% 0 0 15%;
+}
+
+.nfts .nft2{
+  position: absolute;
+  width: 20vw;
+  height: 55vh;
+  margin-left: 3%;
+  background: linear-gradient(160.61deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 101.7%);
+border-width: 3.72189px 0px;
+border-style: solid;
+border-color: rgba(255, 255, 255, 0.4);
+backdrop-filter: blur(26.6711px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 62.0315px;
+}
+.nfts .nft2 img{
+  width: 16vw;
+  height: 35vh;
+  margin: 5% 0 0 10%;
+}
+
+.nfts .nft2 p{
+  margin: 5% 0 0 15%;
+}
+

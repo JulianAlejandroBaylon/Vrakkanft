@@ -1,0 +1,16 @@
+*{
+    font-family: Rubik;
+    color: aliceblue;
+}
+p{
+    font-size: 1vw;
+}
+table{
+    border-style: solid;
+    border-width: 2x 2px;
+    border-image-source: linear-gradient(to right, #ff00d0 0%, #00c8ff 100%);
+    border-image-slice: 20;
+    border-image-repeat: stretch;
+    width: 65vw;
+    border-radius: 500px;
+}
