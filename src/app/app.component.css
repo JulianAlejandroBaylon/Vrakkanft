@@ -25,7 +25,10 @@ nav ul li {
   float: left;
   margin: 0 20px 0 25px;
 }
-
+/*Hide horizontal scrollbar*/
+::-webkit-scrollbar {
+  display: none;
+}
 
 /*NavBar logo*/
  .logo{
@@ -77,7 +80,8 @@ header{
 
 
 .page-content {
-  width: 65vw;
+  /*Width to horizontal scroll bar*/
+  width: 40vw;
   height: 98vw;
   transform: rotate(-90deg) translateX(-78vh) translateY(-10px);
   transform-origin: top left;
@@ -106,4 +110,8 @@ header{
   font-size: 30px;
   color: #000;
   height: 100%;
+}
+
+.slide two{
+  display: flex;
 }
