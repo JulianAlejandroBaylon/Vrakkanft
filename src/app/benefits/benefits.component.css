@@ -1,0 +1,53 @@
+*{
+  font-family: rubik;
+}
+
+#title{
+  text-align: center;
+  color: #fff;
+}
+
+#title p{
+  line-height: 150%;
+  font-size: 1.5vw;
+  font-weight: 700;
+  background: linear-gradient(90.13deg, #FFFFFF 0%, #FE1DF8 78.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0;
+}
+
+#title h2{
+  font-size: 3vw;
+  margin-top: 0;
+  font-weight: 700;
+  line-height: 71px;
+}
+
+.carrousel{
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.carrousel .slider{
+  display: flex;
+  overflow: hidden;
+  padding: 2px;
+  width: 40vw;
+  height: 41vh;
+}
+
+.carrousel #izq{
+  width: 5vw;
+  height: 15vh;
+  cursor: pointer;
+  transform: translate(0%, 70%);
+}
+
+.carrousel #der{
+  width: 5vw;
+  height: 15vh;
+  cursor: pointer;
+  transform: translate(0%, 70%);
+}

@@ -7,26 +7,21 @@
   display: flex;
 }
 
-#fondo{
-  position: absolute;
-  width: 98vw;
-  height: 80vh;
-}
 
 .text{
   font-family: rubik;
   font-style: normal;
   font-weight: 700;
   margin-top: 5%;
-  width: 60vw;
+  width: 50vw;
 }
 
 .text #title{
   margin-left: 35%;
-  font-size: 15px;
+  font-size: 1vw;
 }
 .text #desc{
-  font-size: 15px;
+  font-size: 1.2vw;
   margin-top: 3%;
   margin-left: 28%
 }
@@ -38,7 +33,7 @@ font-weight: 600;
 line-height: 100%;
 margin-bottom: 0;
 margin-top: 0;
-font-size: 70px;
+font-size: 5vw;
 /* identical to box height, or 115px */
 
 text-align: center;
@@ -49,7 +44,6 @@ letter-spacing: 0.19092px;
   background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-background-clip: text;
 }
 
 .text #wall{
@@ -71,8 +65,8 @@ background-clip: text;
 
 
 .nfts .nft1{
-  width: 20vw;
-  height: 55vh;
+  width: 18vw;
+  height: 44vh;
   margin-top: 30%;
   background: linear-gradient(160.61deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 101.7%);
 border-width: 3.72189px 0px;
@@ -80,38 +74,42 @@ border-style: solid;
 border-color: rgba(255, 255, 255, 0.4);
 backdrop-filter: blur(26.6711px);
 /* Note: backdrop-filter has minimal browser support */
-border-radius: 62.0315px;
+border-radius: 40px;
 }
 .nfts .nft1 img{
-  width: 15vw;
-  height: 35vh;
-  margin: 5% 0 0 10%;
+  width: 16vw;
+  height: 31vh;
+  margin: 5% 0 0 6%;
 }
 
 .nfts .nft1 p{
-  margin: 5% 0 0 15%;
+  margin: 5% 0 0 0;
+  font-size: 1.2vw;
+  text-align: center;
 }
 
 .nfts .nft2{
   position: absolute;
-  width: 20vw;
-  height: 55vh;
-  margin-left: 3%;
+  width: 18vw;
+  height: 44vh;
+  margin-left: 2.4%;
   background: linear-gradient(160.61deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 101.7%);
 border-width: 3.72189px 0px;
 border-style: solid;
 border-color: rgba(255, 255, 255, 0.4);
 backdrop-filter: blur(26.6711px);
 /* Note: backdrop-filter has minimal browser support */
-border-radius: 62.0315px;
+border-radius: 40px;
 }
 .nfts .nft2 img{
   width: 16vw;
-  height: 35vh;
-  margin: 5% 0 0 10%;
+  height: 31vh;
+  margin: 5% 0 0 6%;
 }
 
 .nfts .nft2 p{
-  margin: 5% 0 0 15%;
+  margin: 5% 0 0 0;
+  font-size: 1.2vw;
+  text-align: center;
 }
 
