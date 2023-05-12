@@ -7,6 +7,7 @@ import { IndexComponent } from './index/index.component';
 import { AboutComponent } from './about/about.component';
 import { BenefitsComponent } from './benefits/benefits.component';
 import { TypesComponent } from './types/types.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TypesComponent } from './types/types.component';
     IndexComponent,
     AboutComponent,
     BenefitsComponent,
-    TypesComponent
+    TypesComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
