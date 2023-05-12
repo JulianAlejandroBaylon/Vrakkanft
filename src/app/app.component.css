@@ -101,7 +101,7 @@ header{
   transform: rotate(90deg) translateY(-80vh) translateX(0px);
   transform-origin: top left;
   overflow-y: hidden;
-  width: 400vw;
+  width: 800vw;
   height: 100vh;
 }
 
