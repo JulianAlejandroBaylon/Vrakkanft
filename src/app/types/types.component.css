@@ -1,0 +1,108 @@
+* {
+    font-family: rubik;    
+}
+
+#titletypes {
+    text-align: center;
+    color: #fff;
+}
+
+#titletypes p {
+    line-height: 150%;
+    font-size: 1vw;
+    font-weight: 700;
+    background: linear-gradient(90.13deg, #FFFFFF 0%, #FE1DF8 78.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0;
+}
+
+#titletypes h2 {
+    font-size: 2vw;
+    margin-top: 0;
+    font-weight: 700;
+    line-height: 71px;
+}
+#legimg{
+    position: absolute;
+    left: 25vw;
+    width: 34vw;
+    height: 54vh;
+} 
+#normalimg{
+    position: absolute;
+    left: 65vw;
+    width: 24vw;
+    height: 54vh;
+}
+
+#rarimg{    
+    position: absolute;
+    left: 7vw;
+    width: 24vw;
+    height: 54vh;
+}
+#rarimgtwo{
+    position: absolute;
+    left: 50vw;
+    width: 22vw;
+    height: 42vh;
+}
+.blurbox{
+    width: 10vw;
+    height: 11vh;
+    background: linear-gradient(68.8deg, rgba(255, 255, 255, 0.2) 10.42%, rgba(255, 255, 255, 0.035) 77.11%);
+    box-shadow: 0px 1.03433px 25.8582px rgba(69, 42, 124, 0.1);
+    backdrop-filter: blur(6.2536px);
+    border-radius: 15px;
+    border-width: 3.72189px 0px;
+    border-color: rgba(255, 255, 255, 0.4);
+    border-style: solid;
+    position: relative;    
+}
+/*float for the animation*/
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.nftanimation{
+    animation: float 6s ease-in-out infinite;
+    transform: translatey(0px);
+}
+.nftanimationtwo{
+    animation: float 4s ease-in-out infinite;
+    transform: translatey(0px);
+}
+#yellowbtn{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 10.42%, rgb(241, 254, 1) 150.11%);
+    backdrop-filter: blur(6.2536px);
+    position: absolute;
+    right: 0.5vw;
+    bottom: 0.4vh;
+    border-radius: 25px;
+    width: 9vw;
+    height: 5vh;
+    color: white;
+}
+#bluebtn{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 10.42%, rgb(1, 22, 254) 150.11%);
+    backdrop-filter: blur(6.2536px);
+    position: absolute;
+    right: 0.5vw;
+    bottom: 0.4vh;
+    border-radius: 25px;
+    width: 9vw;
+    height: 5vh;
+    color: white;
+}
