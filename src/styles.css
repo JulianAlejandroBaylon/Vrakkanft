@@ -2,3 +2,6 @@
 body{
   background: #140C1F;
 }
+*{
+  scroll-behavior: smooth;
+}
