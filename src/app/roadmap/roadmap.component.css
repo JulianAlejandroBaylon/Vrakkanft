@@ -1,9 +1,18 @@
 *{
     font-family: Rubik;
 }
+#titleroadmap h2 {
+    font-weight: 600;
+    text-align: center;
+    color: #fff;    
+    font-size: 4.3vw;
+    margin-top: 0;
+    font-weight: 700;
+    line-height: 71px;
+}
 /*Planet ONE*/
 #p-one{
-    width: 6vw;
+    width: 10vw;
     height: 30vh;
 }
 #p-one-title{
@@ -21,7 +30,7 @@
 
 /*Planet TWO*/
 #p-two{
-    width: 6vw;
+    width: 8vw;
     height: 30vh;
 }
 #p-two-title{
@@ -39,7 +48,7 @@
 
 /*Planet THREE*/
 #p-three{
-    width: 11vw;
+    width: 12vw;
     height: 31vh;
 }
 #p-three-title{
@@ -57,7 +66,7 @@
 
 /*Planet FOUR*/
 #p-four{
-    width: 6vw;
+    width: 8vw;
     height: 30vh;
 }
 #p-four-title{
@@ -78,7 +87,7 @@
 
 /*Planet FIVE*/
 #p-five{
-    width: 6vw;
+    width: 8vw;
     height: 30vh;
 }
 #p-five-title{
@@ -98,7 +107,7 @@
 
 /*Planet SIX*/
 #p-six{
-    width: 6vw;
+    width: 10vw;
     height: 30vh;
 }
 #p-six-title{
@@ -118,7 +127,7 @@
 
 /*Planet SEVEN*/
 #p-seven{
-    width: 6vw;
+    width: 9vw;
     height: 30vh;
 }
 #p-seven-title{
@@ -139,7 +148,7 @@
 
 /*Planet EIGHT*/
 #p-eight{
-    width: 6vw;
+    width: 7vw;
     height: 30vh;
 }
 #p-eight-title{
@@ -159,7 +168,7 @@
 
 /*Planet NINE*/
 #p-nine{
-    width: 6vw;
+    width: 10vw;
     height: 30vh;
 }
 #p-nine-title{

@@ -141,4 +141,9 @@ header{
   background-size: 100vw 80vh;
   background-repeat: no-repeat;
 }
+.six{
+  background-image: url(/assets/Frame.png);
+  background-size: 100vw 80vh;
+  background-repeat: no-repeat;
+}
 
