@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { BenefitsComponent } from './benefits/benefits.component';
 import { TypesComponent } from './types/types.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { RoadmapComponent } from './roadmap/roadmap.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     AboutComponent,
     BenefitsComponent,
     TypesComponent,
-    GalleryComponent
+    GalleryComponent,
+    RoadmapComponent
   ],
   imports: [
     BrowserModule,
