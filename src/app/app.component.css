@@ -2,7 +2,6 @@
   font-family: "Rubik";
   src: url(../assets/Rubik-Regular.ttf);
 }
-
 /*NavBar */
 nav ul{
   display: flex;
@@ -81,14 +80,13 @@ header{
 
 .page-content {
   /*Width to horizontal scroll bar*/
-  width: 40vw;
-  height: 98vw;
+  width: 41vw;
+  height: 100vw;
   transform: rotate(-90deg) translateX(-78vh) translateY(-10px);
   transform-origin: top left;
   overflow-y: scroll;
   overflow-x: hidden;
   position: absolute;
-
   scrollbar-width: none;
   -ms-overflow-style: none;
   -webkit-scrollbar-thumb: none;
@@ -101,7 +99,7 @@ header{
   transform: rotate(90deg) translateY(-80vh) translateX(0px);
   transform-origin: top left;
   overflow-y: hidden;
-  width: 800vw;
+  width: 500vw;
   height: 100vh;
 }
 
@@ -114,3 +112,33 @@ header{
 .slide two{
   display: flex;
 }
+
+.one{
+  background-image: url(/assets/LooperBG.png);
+  background-size: 100vw 80vh;
+  background-repeat: no-repeat;
+}
+
+.two{
+  background-image: url(/assets/Estrellas.png);
+  background-size: 100vw 80vh;
+  background-repeat: no-repeat;
+}
+
+.three{
+  background-image: url(/assets/Estrellas.png);
+  background-size: 100vw 80vh;
+  background-repeat: no-repeat;
+}
+
+.four{
+  background-image: url(/assets/Espacio.png);
+  background-size: 100vw 80vh;
+  background-repeat: no-repeat;
+}
+.five{
+  background-image: url(/assets/Espacio2.png);
+  background-size: 100vw 80vh;
+  background-repeat: no-repeat;
+}
+
