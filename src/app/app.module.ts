@@ -9,6 +9,8 @@ import { BenefitsComponent } from './benefits/benefits.component';
 import { TypesComponent } from './types/types.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
+import { VrkComponent } from './vrk/vrk.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { RoadmapComponent } from './roadmap/roadmap.component';
     BenefitsComponent,
     TypesComponent,
     GalleryComponent,
-    RoadmapComponent
+    RoadmapComponent,
+    VrkComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

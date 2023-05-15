@@ -1,0 +1,80 @@
+* {
+    font-family: Rubik;
+    color: aliceblue;
+  }
+  p {
+    font-size: 1vw;
+  }
+  .about {
+    margin-top: 2vw;
+  }
+  .divabout {
+    width: 65vw;
+    height: 70vh;
+    margin: 0 auto;
+    border: solid 1px;
+    border-image: linear-gradient(to right, #e808d1 0%, #0fd8fc 100%) 1;
+    border-radius: 15px;
+  }
+  .imga {
+    width: 25vw;
+    height: 65vh;
+  }
+  .imgabout {
+    text-align: center;
+    margin: 1vw 1vw 1vw 1vw;
+  }
+  .textabout {
+    margin: 0vw 6vw 0vw 5vw;
+  }
+  #firsttextbox {
+    font-size: 0.8vw;
+  }
+  #secondtextbox {
+    font-size: 1vw;
+  }
+  .blackbox {
+    background: linear-gradient(0deg, #262840, #262840),
+      linear-gradient(0deg, #060714, #060714),
+      linear-gradient(
+        187.96deg,
+        rgba(255, 255, 255, 0.07) 0%,
+        rgba(255, 255, 255, 0) 93.86%
+      );
+    height: 20vh;
+    width: 27vw;
+    border-radius: 30px;
+  }
+  #textgray {
+    color: #7780a1;
+  }
+  .divbox {
+    margin-left: 2vw;
+    font-size: 1vw;
+  }
+  .buttonbox {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+  }
+  button {
+    background: linear-gradient(91.06deg, #ff1cf7 2.26%, #00f0ff 100%);
+    width: 25vw;
+    height: 5vh;
+    border-radius: 50px;
+  }
+  #price {
+    font-size: 2vw;
+  }
+  #butShare {
+    position: absolute;
+    width: 3vw;
+    height: 6vh;
+    margin-left: 20.25%;
+    margin-top: 0.5%;
+  }
+  
+  .about {
+    display: flex;
+  }
+  
