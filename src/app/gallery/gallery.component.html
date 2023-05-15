@@ -14,14 +14,16 @@
       <input type="radio" name="slider" id="item-7" />
 
       <div class="cards">
-        <label class="card" for="item-1" id="selector-1"><img src="assets/2 3.png" alt=""></label>
-        <label class="card" for="item-2" id="selector-2"><img src="assets/2 4.png" alt=""></label>
-        <label class="card" for="item-3" id="selector-3"><img src="assets/2 5.png" alt=""></label>
-        <label class="card" for="item-4" id="selector-4"><img src="assets/2 6.png" alt=""></label>
-        <label class="card" for="item-5" id="selector-5"><img src="assets/2 7.png" alt=""></label>
-        <label class="card" for="item-6" id="selector-6"><img src="assets/2 8.png" alt=""></label>
-        <label class="card" for="item-7" id="selector-7"><img src="assets/2 9.png" alt=""></label>
+        <label
+          class="card"
+          id="selector-{{ j }}"
+          *ngFor="let j of item"
+        >
+          <img src="{{ img[j-1] }}" alt="" />
+        </label>
       </div>
     </div>
+    <label class="left" for="item-{{x}}" id="selector-{{ x }}" (click)="res()"></label>
+    <label class="rigth" for="item-{{x}}" id="selector-{{ x }}" (click)="suma()"></label>
   </div>
 </div>

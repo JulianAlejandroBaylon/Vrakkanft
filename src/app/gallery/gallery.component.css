@@ -1,38 +1,54 @@
-*{
-  font-family: 'Rubik';
-font-style: normal;
+* {
+  font-family: "Rubik";
+  font-style: normal;
 }
-#text{
+#text {
   text-align: center;
 }
-#text p{
+#text p {
   font-weight: 700;
   font-size: 1.3vw;
-  background: linear-gradient(90.13deg, #FFFFFF 0%, #FE1DF8 99.96%);
+  background: linear-gradient(90.13deg, #ffffff 0%, #fe1df8 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.left {
+  width: 43vw;
+  height: 55vh;
+  position: absolute;
+  cursor: pointer;
+  margin-right: 57vw;
+  opacity: 0;
+}
 
-#text h2{
+.rigth {
+    width: 43vw;
+    height: 55vh;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 57vw;
+    opacity: 0;
+}
+#text h2 {
   font-weight: 600;
   font-size: 4.3vw;
   line-height: 0;
   letter-spacing: 0.1vw;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-#slider{
+#slider {
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-input[type="radio"]{
+input[type="radio"] {
   display: none;
 }
 
-.container{
+.container {
   width: 100vw;
   height: 55vh;
   transform-style: preserve-3d;
@@ -41,14 +57,13 @@ input[type="radio"]{
   align-items: center;
 }
 
-.cards{
+.cards {
   position: relative;
   width: 100%;
   height: 100%;
-
 }
 
-.card{
+.card {
   position: absolute;
   width: 20%;
   height: 100%;
@@ -56,10 +71,10 @@ input[type="radio"]{
   right: 0;
   margin: auto;
   cursor: pointer;
-  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1)
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-img{
+img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -71,7 +86,7 @@ img{
 #item-4:checked ~ .cards #selector-4,
 #item-5:checked ~ .cards #selector-5,
 #item-6:checked ~ .cards #selector-6,
-#item-7:checked ~ .cards #selector-7{
+#item-7:checked ~ .cards #selector-7 {
   transform: translateX(-120%) scale(0.4);
   z-index: 10;
   opacity: 0.4;
@@ -83,7 +98,7 @@ img{
 #item-5:checked ~ .cards #selector-4,
 #item-6:checked ~ .cards #selector-5,
 #item-7:checked ~ .cards #selector-6,
-#item-1:checked ~ .cards #selector-7{
+#item-1:checked ~ .cards #selector-7 {
   transform: translateX(-90%) scale(0.6);
   z-index: 20;
   opacity: 0.6;
@@ -95,7 +110,7 @@ img{
 #item-6:checked ~ .cards #selector-4,
 #item-7:checked ~ .cards #selector-5,
 #item-1:checked ~ .cards #selector-6,
-#item-2:checked ~ .cards #selector-7{
+#item-2:checked ~ .cards #selector-7 {
   transform: translateX(-50%) scale(0.8);
   z-index: 30;
   opacity: 0.8;
@@ -107,7 +122,7 @@ img{
 #item-7:checked ~ .cards #selector-4,
 #item-1:checked ~ .cards #selector-5,
 #item-2:checked ~ .cards #selector-6,
-#item-3:checked ~ .cards #selector-7{
+#item-3:checked ~ .cards #selector-7 {
   transform: translateX(0) scale(1);
   z-index: 40;
   opacity: 1;
@@ -119,7 +134,7 @@ img{
 #item-1:checked ~ .cards #selector-4,
 #item-2:checked ~ .cards #selector-5,
 #item-3:checked ~ .cards #selector-6,
-#item-4:checked ~ .cards #selector-7{
+#item-4:checked ~ .cards #selector-7 {
   transform: translateX(50%) scale(0.8);
   z-index: 30;
   opacity: 0.8;
@@ -131,7 +146,7 @@ img{
 #item-2:checked ~ .cards #selector-4,
 #item-3:checked ~ .cards #selector-5,
 #item-4:checked ~ .cards #selector-6,
-#item-5:checked ~ .cards #selector-7{
+#item-5:checked ~ .cards #selector-7 {
   transform: translateX(90%) scale(0.6);
   z-index: 20;
   opacity: 0.6;
@@ -143,7 +158,7 @@ img{
 #item-3:checked ~ .cards #selector-4,
 #item-4:checked ~ .cards #selector-5,
 #item-5:checked ~ .cards #selector-6,
-#item-6:checked ~ .cards #selector-7{
+#item-6:checked ~ .cards #selector-7 {
   transform: translateX(120%) scale(0.4);
   z-index: 10;
   opacity: 0.4;
