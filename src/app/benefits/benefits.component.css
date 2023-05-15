@@ -25,24 +25,27 @@
 }
 
 .left {
-  width: 43vw;
-  height: 55vh;
+  width: 3vw;
+  height: 11vh;
   position: absolute;
   cursor: pointer;
   margin-right: 57vw;
-  opacity: 0;
 }
 
 .rigth {
-    width: 43vw;
-    height: 55vh;
-    position: absolute;
-    cursor: pointer;
-    margin-left: 57vw;
-    opacity: 0;
+  width: 3vw;
+  height: 11vh;
+  position: absolute;
+  cursor: pointer;
+  margin-left: 57vw;
 }
 
-#slider {
+.rigth img, .left img{
+  width: 100%;
+  height: 100%;
+}
+
+#Benefits {
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -64,8 +67,8 @@ input[type="radio"] {
 
 .cards {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 70%;
 }
 
 .card {
@@ -78,91 +81,91 @@ input[type="radio"] {
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-img {
+.card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-#item-1:checked ~ .cards #selector-1,
-#item-2:checked ~ .cards #selector-2,
-#item-3:checked ~ .cards #selector-3,
-#item-4:checked ~ .cards #selector-4,
-#item-5:checked ~ .cards #selector-5,
-#item-6:checked ~ .cards #selector-6,
-#item-7:checked ~ .cards #selector-7 {
+#img-1:checked ~ .cards #select-1,
+#img-2:checked ~ .cards #select-2,
+#img-3:checked ~ .cards #select-3,
+#img-4:checked ~ .cards #select-4,
+#img-5:checked ~ .cards #select-5,
+#img-6:checked ~ .cards #select-6,
+#img-7:checked ~ .cards #select-7 {
   transform: translateX(-120%) scale(0.4);
   z-index: 10;
   opacity: 0.4;
 }
 
-#item-2:checked ~ .cards #selector-1,
-#item-3:checked ~ .cards #selector-2,
-#item-4:checked ~ .cards #selector-3,
-#item-5:checked ~ .cards #selector-4,
-#item-6:checked ~ .cards #selector-5,
-#item-7:checked ~ .cards #selector-6,
-#item-1:checked ~ .cards #selector-7 {
+#img-2:checked ~ .cards #select-1,
+#img-3:checked ~ .cards #select-2,
+#img-4:checked ~ .cards #select-3,
+#img-5:checked ~ .cards #select-4,
+#img-6:checked ~ .cards #select-5,
+#img-7:checked ~ .cards #select-6,
+#img-1:checked ~ .cards #select-7 {
   transform: translateX(-90%) scale(0.6);
   z-index: 20;
   opacity: 0.6;
 }
 
-#item-3:checked ~ .cards #selector-1,
-#item-4:checked ~ .cards #selector-2,
-#item-5:checked ~ .cards #selector-3,
-#item-6:checked ~ .cards #selector-4,
-#item-7:checked ~ .cards #selector-5,
-#item-1:checked ~ .cards #selector-6,
-#item-2:checked ~ .cards #selector-7 {
+#img-3:checked ~ .cards #select-1,
+#img-4:checked ~ .cards #select-2,
+#img-5:checked ~ .cards #select-3,
+#img-6:checked ~ .cards #select-4,
+#img-7:checked ~ .cards #select-5,
+#img-1:checked ~ .cards #select-6,
+#img-2:checked ~ .cards #select-7 {
   transform: translateX(-50%) scale(0.8);
   z-index: 30;
   opacity: 0.8;
 }
 
-#item-4:checked ~ .cards #selector-1,
-#item-5:checked ~ .cards #selector-2,
-#item-6:checked ~ .cards #selector-3,
-#item-7:checked ~ .cards #selector-4,
-#item-1:checked ~ .cards #selector-5,
-#item-2:checked ~ .cards #selector-6,
-#item-3:checked ~ .cards #selector-7 {
+#img-4:checked ~ .cards #select-1,
+#img-5:checked ~ .cards #select-2,
+#img-6:checked ~ .cards #select-3,
+#img-7:checked ~ .cards #select-4,
+#img-1:checked ~ .cards #select-5,
+#img-2:checked ~ .cards #select-6,
+#img-3:checked ~ .cards #select-7 {
   transform: translateX(0) scale(1);
   z-index: 40;
   opacity: 1;
 }
 
-#item-5:checked ~ .cards #selector-1,
-#item-6:checked ~ .cards #selector-2,
-#item-7:checked ~ .cards #selector-3,
-#item-1:checked ~ .cards #selector-4,
-#item-2:checked ~ .cards #selector-5,
-#item-3:checked ~ .cards #selector-6,
-#item-4:checked ~ .cards #selector-7 {
+#img-5:checked ~ .cards #select-1,
+#img-6:checked ~ .cards #select-2,
+#img-7:checked ~ .cards #select-3,
+#img-1:checked ~ .cards #select-4,
+#img-2:checked ~ .cards #select-5,
+#img-3:checked ~ .cards #select-6,
+#img-4:checked ~ .cards #select-7 {
   transform: translateX(50%) scale(0.8);
   z-index: 30;
   opacity: 0.8;
 }
 
-#item-6:checked ~ .cards #selector-1,
-#item-7:checked ~ .cards #selector-2,
-#item-1:checked ~ .cards #selector-3,
-#item-2:checked ~ .cards #selector-4,
-#item-3:checked ~ .cards #selector-5,
-#item-4:checked ~ .cards #selector-6,
-#item-5:checked ~ .cards #selector-7 {
+#img-6:checked ~ .cards #select-1,
+#img-7:checked ~ .cards #select-2,
+#img-1:checked ~ .cards #select-3,
+#img-2:checked ~ .cards #select-4,
+#img-3:checked ~ .cards #select-5,
+#img-4:checked ~ .cards #select-6,
+#img-5:checked ~ .cards #select-7 {
   transform: translateX(90%) scale(0.6);
   z-index: 20;
   opacity: 0.6;
 }
 
-#item-7:checked ~ .cards #selector-1,
-#item-1:checked ~ .cards #selector-2,
-#item-2:checked ~ .cards #selector-3,
-#item-3:checked ~ .cards #selector-4,
-#item-4:checked ~ .cards #selector-5,
-#item-5:checked ~ .cards #selector-6,
-#item-6:checked ~ .cards #selector-7 {
+#img-7:checked ~ .cards #select-1,
+#img-1:checked ~ .cards #select-2,
+#img-2:checked ~ .cards #select-3,
+#img-3:checked ~ .cards #select-4,
+#img-4:checked ~ .cards #select-5,
+#img-5:checked ~ .cards #select-6,
+#img-6:checked ~ .cards #select-7 {
   transform: translateX(120%) scale(0.4);
   z-index: 10;
   opacity: 0.4;
