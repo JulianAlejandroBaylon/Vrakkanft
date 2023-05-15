@@ -70,7 +70,6 @@ input[type="radio"] {
   left: 0;
   right: 0;
   margin: auto;
-  cursor: pointer;
   transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 

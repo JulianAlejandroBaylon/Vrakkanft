@@ -3,14 +3,27 @@
     <p>Why we are the best?</p>
     <h2>Benefits you can't miss</h2>
   </div>
-  <div class="carrousel">
-      <img id="izq" src="assets/flechaIzq.png" alt="" />
-      <div class="slider">
-        <img src="assets/compu1.png" alt="" />
-        <img src="assets/staking1.png" alt="" />
-        <img src="assets/gaming1.png" alt="" />
+  <div id="slider">
+    <div class="container">
+      <input type="radio" name="slider" id="item-1" checked />
+      <input type="radio" name="slider" id="item-2" />
+      <input type="radio" name="slider" id="item-3" />
+      <input type="radio" name="slider" id="item-4" />
+      <input type="radio" name="slider" id="item-5" />
+      <input type="radio" name="slider" id="item-6" />
+      <input type="radio" name="slider" id="item-7" />
+
+      <div class="cards">
+        <label
+          class="card"
+          id="selector-{{ j }}"
+          *ngFor="let j of item"
+        >
+          <img src="{{ img[j-1] }}" alt="" />
+        </label>
       </div>
-      <img id="der" src="assets/flechaDer.png" alt="" />
-      <div id="text"></div>
     </div>
+    <label class="left" for="item-{{x}}" id="selector-{{ x }}" (click)="suma()"></label>
+    <label class="rigth" for="item-{{x}}" id="selector-{{ x }}" (click)="res()"></label>
+  </div>
 </div>

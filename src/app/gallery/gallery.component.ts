@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./gallery.component.css'],
 })
 export class GalleryComponent {
-  x: number = 0;
+  x: number = 1;
   item: number[] = [1, 2, 3, 4, 5, 6, 7];
   img: string[] = [
     'assets/2 3.png',
@@ -23,7 +23,6 @@ export class GalleryComponent {
     if (this.x > 7) {
       this.x = 1;
     }
-    console.log(this.x);
   }
 
   res(): void {
@@ -31,6 +30,5 @@ export class GalleryComponent {
     if (this.x < 1) {
       this.x = 7;
     }
-    console.log(this.x);
   }
 }

@@ -24,30 +24,146 @@
   line-height: 71px;
 }
 
-.carrousel{
+.left {
+  width: 43vw;
+  height: 55vh;
+  position: absolute;
+  cursor: pointer;
+  margin-right: 57vw;
+  opacity: 0;
+}
+
+.rigth {
+    width: 43vw;
+    height: 55vh;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 57vw;
+    opacity: 0;
+}
+
+#slider {
+  width: 100vw;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: center
 }
 
-.carrousel .slider{
+input[type="radio"] {
+  display: none;
+}
+
+.container {
+  width: 100vw;
+  height: 55vh;
+  transform-style: preserve-3d;
   display: flex;
-  overflow: hidden;
-  padding: 2px;
-  width: 40vw;
-  height: 41vh;
+  justify-content: center;
+  align-items: center;
 }
 
-.carrousel #izq{
-  width: 5vw;
-  height: 15vh;
-  cursor: pointer;
-  transform: translate(0%, 70%);
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.carrousel #der{
-  width: 5vw;
-  height: 15vh;
-  cursor: pointer;
-  transform: translate(0%, 70%);
+.card {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#item-1:checked ~ .cards #selector-1,
+#item-2:checked ~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-3,
+#item-4:checked ~ .cards #selector-4,
+#item-5:checked ~ .cards #selector-5,
+#item-6:checked ~ .cards #selector-6,
+#item-7:checked ~ .cards #selector-7 {
+  transform: translateX(-120%) scale(0.4);
+  z-index: 10;
+  opacity: 0.4;
+}
+
+#item-2:checked ~ .cards #selector-1,
+#item-3:checked ~ .cards #selector-2,
+#item-4:checked ~ .cards #selector-3,
+#item-5:checked ~ .cards #selector-4,
+#item-6:checked ~ .cards #selector-5,
+#item-7:checked ~ .cards #selector-6,
+#item-1:checked ~ .cards #selector-7 {
+  transform: translateX(-90%) scale(0.6);
+  z-index: 20;
+  opacity: 0.6;
+}
+
+#item-3:checked ~ .cards #selector-1,
+#item-4:checked ~ .cards #selector-2,
+#item-5:checked ~ .cards #selector-3,
+#item-6:checked ~ .cards #selector-4,
+#item-7:checked ~ .cards #selector-5,
+#item-1:checked ~ .cards #selector-6,
+#item-2:checked ~ .cards #selector-7 {
+  transform: translateX(-50%) scale(0.8);
+  z-index: 30;
+  opacity: 0.8;
+}
+
+#item-4:checked ~ .cards #selector-1,
+#item-5:checked ~ .cards #selector-2,
+#item-6:checked ~ .cards #selector-3,
+#item-7:checked ~ .cards #selector-4,
+#item-1:checked ~ .cards #selector-5,
+#item-2:checked ~ .cards #selector-6,
+#item-3:checked ~ .cards #selector-7 {
+  transform: translateX(0) scale(1);
+  z-index: 40;
+  opacity: 1;
+}
+
+#item-5:checked ~ .cards #selector-1,
+#item-6:checked ~ .cards #selector-2,
+#item-7:checked ~ .cards #selector-3,
+#item-1:checked ~ .cards #selector-4,
+#item-2:checked ~ .cards #selector-5,
+#item-3:checked ~ .cards #selector-6,
+#item-4:checked ~ .cards #selector-7 {
+  transform: translateX(50%) scale(0.8);
+  z-index: 30;
+  opacity: 0.8;
+}
+
+#item-6:checked ~ .cards #selector-1,
+#item-7:checked ~ .cards #selector-2,
+#item-1:checked ~ .cards #selector-3,
+#item-2:checked ~ .cards #selector-4,
+#item-3:checked ~ .cards #selector-5,
+#item-4:checked ~ .cards #selector-6,
+#item-5:checked ~ .cards #selector-7 {
+  transform: translateX(90%) scale(0.6);
+  z-index: 20;
+  opacity: 0.6;
+}
+
+#item-7:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-4,
+#item-4:checked ~ .cards #selector-5,
+#item-5:checked ~ .cards #selector-6,
+#item-6:checked ~ .cards #selector-7 {
+  transform: translateX(120%) scale(0.4);
+  z-index: 10;
+  opacity: 0.4;
 }
