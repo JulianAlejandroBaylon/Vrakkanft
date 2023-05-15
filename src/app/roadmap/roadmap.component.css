@@ -12,14 +12,15 @@
 }
 /*Planet ONE*/
 #p-one{
-    width: 10vw;
-    height: 30vh;
+    width: 14vw;
+    height: 34vh;
 }
 #p-one-title{
     color: #3671E9;
     font-size: 1.5vw;
     font-weight: 700;
     margin: 0;
+    margin-top: 4vh;
 }
 #p-one-p{
     color: white;
@@ -49,13 +50,14 @@
 /*Planet THREE*/
 #p-three{
     width: 12vw;
-    height: 31vh;
+    height: 43vh;
 }
 #p-three-title{
     color: #3671E9;
     font-size: 1.5vw;
     font-weight: 700;
     margin: 0;
+    margin-top:9vh;
 }
 #p-three-p{
     color: white;
@@ -87,8 +89,8 @@
 
 /*Planet FIVE*/
 #p-five{
-    width: 8vw;
-    height: 30vh;
+    width: 12vw;
+    height: 41vh;
 }
 #p-five-title{
     background: linear-gradient(180deg, #B4C0FE 0%, #9075D5 100%);
@@ -97,6 +99,7 @@
     font-size: 1.5vw;
     font-weight: 700;
     margin: 0;
+    margin-top:11vh
 }
 #p-five-p{
     color: white;
@@ -138,6 +141,7 @@
     font-size: 1.5vw;
     font-weight: 700;
     margin: 0;
+    margin-top: 13vh;
 }
 #p-seven-p{
     color: white;
@@ -148,7 +152,7 @@
 
 /*Planet EIGHT*/
 #p-eight{
-    width: 7vw;
+    width: 12vw;
     height: 30vh;
 }
 #p-eight-title{
@@ -157,7 +161,8 @@
     -webkit-text-fill-color: transparent;
     font-size: 1.5vw;
     font-weight: 700;
-    margin: 0;
+    margin: 0;    
+    margin-top: 2vh;
 }
 #p-eight-p{
     color: white;
@@ -168,8 +173,8 @@
 
 /*Planet NINE*/
 #p-nine{
-    width: 10vw;
-    height: 30vh;
+    width: 12vw;
+    height: 44vh;
 }
 #p-nine-title{
     background: linear-gradient(180deg, #B4C0FE 0%, #9075D5 100%);
@@ -177,7 +182,8 @@
     -webkit-text-fill-color: transparent;
     font-size: 1.5vw;
     font-weight: 700;
-    margin: 0;
+    margin: 0;    
+    margin-top: 12vh;
 }
 #p-nine-p{
     color: white;

@@ -8,6 +8,14 @@
   .about {
     margin-top: 2vw;
   }
+  #presale{    
+    background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    font-size: 2vw;
+    font-weight: 800;
+  }
   .divabout {
     width: 65vw;
     height: 70vh;
@@ -15,6 +23,11 @@
     border: solid 1px;
     border-image: linear-gradient(to right, #e808d1 0%, #0fd8fc 100%) 1;
     border-radius: 15px;
+    list-style-image: url("/assets/check.png");    
+  }
+  ul{
+    font-size: 1vw;
+    margin-left: 6vw;
   }
   .imga {
     width: 25vw;

@@ -131,16 +131,21 @@ header{
 }
 
 .four{
-  background-image: url(/assets/Espacio.png);
+  background-image: url(/assets/Estrellas.png);
   background-size: 100vw 80vh;
   background-repeat: no-repeat;
 }
 .five{
-  background-image: url(/assets/Espacio2.png);
+  background-image: url(/assets/Espacio.png);
   background-size: 100vw 80vh;
   background-repeat: no-repeat;
 }
 .six{
+  background-image: url(/assets/Espacio2.png);
+  background-size: 100vw 80vh;
+  background-repeat: no-repeat;
+}
+.seven{
   background-image: url(/assets/Frame.png);
   background-size: 100vw 80vh;
   background-repeat: no-repeat;
