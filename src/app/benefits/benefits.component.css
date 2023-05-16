@@ -63,6 +63,7 @@ input[type="radio"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 2vw;
 }
 
 .cards {
@@ -96,7 +97,7 @@ input[type="radio"] {
 #img-7:checked ~ .cards #select-7 {
   transform: translateX(-120%) scale(0.4);
   z-index: 10;
-  opacity: 0.4;
+  opacity: 0;
 }
 
 #img-2:checked ~ .cards #select-1,
@@ -168,5 +169,16 @@ input[type="radio"] {
 #img-6:checked ~ .cards #select-7 {
   transform: translateX(120%) scale(0.4);
   z-index: 10;
-  opacity: 0.4;
+  opacity: 0;
+}
+.text{
+  margin-right: 5vw;
+  width: 40vw;
+}
+.text h3{
+  color: #9075D5;
+}
+
+.text p{
+  color: #FFFFFF;
 }
