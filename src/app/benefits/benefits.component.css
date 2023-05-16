@@ -177,8 +177,10 @@ input[type="radio"] {
 }
 .text h3{
   color: #9075D5;
+  font-size: 3vw;
 }
 
 .text p{
   color: #FFFFFF;
+  font-size: 2vw;
 }
