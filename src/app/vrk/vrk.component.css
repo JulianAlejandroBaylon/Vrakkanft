@@ -21,9 +21,9 @@
     height: 70vh;
     margin: 0 auto;
     border: solid 1px;
-    border-image: linear-gradient(to right, #e808d1 0%, #0fd8fc 100%) 1;
+    border-image: linear-gradient(to right, #0fd8fc 0%,#e808d1 100%) 1;
     border-radius: 15px;
-    list-style-image: url("/assets/check.png");    
+    list-style-image: url("/assets/check.png");
   }
   ul{
     font-size: 1vw;
@@ -78,13 +78,6 @@
   }
   #price {
     font-size: 2vw;
-  }
-  #butShare {
-    position: absolute;
-    width: 3vw;
-    height: 6vh;
-    margin-left: 20.25%;
-    margin-top: 0.5%;
   }
   
   .about {
