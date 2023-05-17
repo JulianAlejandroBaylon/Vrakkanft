@@ -25,9 +25,10 @@ nav ul li {
   margin: 0 20px 0 25px;
 }
 /*Hide horizontal scrollbar*/
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
   display: none;
-}
+}*/
+
 
 /*NavBar logo*/
  .logo{
