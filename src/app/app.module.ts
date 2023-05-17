@@ -10,6 +10,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
 import { VrkComponent } from './vrk/vrk.component';
 import { AboutComponent } from './about/about.component';
+import { NgParticlesModule } from "ng-particles";
+
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import { AboutComponent } from './about/about.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgParticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
