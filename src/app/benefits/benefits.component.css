@@ -18,8 +18,9 @@
 }
 
 #title h2{
-  font-size: 3vw;
+  font-size: 2vw;
   margin-top: 0;
+  margin-bottom: 0;
   font-weight: 700;
   line-height: 71px;
 }
@@ -29,7 +30,7 @@
   height: 11vh;
   position: absolute;
   cursor: pointer;
-  margin-right: 77vw;
+  margin-right: 57vw;
 }
 
 .rigth {
@@ -37,7 +38,7 @@
   height: 11vh;
   position: absolute;
   cursor: pointer;
-  margin-left: 18vw;
+  margin-left: -3vw;
 }
 
 .rigth img, .left img{
@@ -177,10 +178,12 @@ input[type="radio"] {
 }
 .text h3{
   color: #9075D5;
-  font-size: 3vw;
+  font-size: 2vw;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .text p{
   color: #FFFFFF;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }

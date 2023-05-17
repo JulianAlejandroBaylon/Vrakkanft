@@ -1,21 +1,18 @@
-<div class="particle">
-  
-</div>
 <header>
-  
+
   <img class="logo" src="../assets/logo HM.png" alt="Vrakka" />
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#vrk">VRK</a></li>
-        <li><a href="#NFT">NFT</a></li>
-        <li><a href="#benefits">Benefits</a></li>
-        <li><a href="#types">Types</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#roadmap">Roadmap</a></li>
-        <li><a href="">About</a></li>
-      </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#vrk">VRK</a></li>
+      <li><a href="#NFT">NFT</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#types">Types</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="">About</a></li>
+    </ul>
+  </nav>
   <div class="buttons">
     <button class="NFT">Conect Wallet</button>
   </div>
@@ -23,18 +20,22 @@
     <img src="../assets/Vector.png" alt="" width="40vw">
   </div>
 </header>
-  <div class="page">
-  
-    <div class="page-content">
-      <div class="slides">
-        <app-index class="slide one" ></app-index>
-        <app-vrk class="slide two"></app-vrk>
-        <app-nft class="slide three"></app-nft>
-        <app-benefits class="slide four"></app-benefits>
-        <app-types class="slide five"></app-types>
-        <app-gallery class="slide six"></app-gallery>
-        <app-roadmap class="slide seven"></app-roadmap>
-        <app-about class="slide eight"></app-about>
-      </div>
+<div class="page">
+  <!--particles of background-->
+  <ng-particles [id]="id" [options]="particlesOptions" [particlesInit]="particlesInit"
+    (particlesLoaded)="particlesLoaded($event)">
+  </ng-particles>
+  <!--All of horizontal slide components-->
+  <div class="page-content">
+    <div class="slides">
+      <app-index class="slide one"></app-index>
+      <app-vrk class="slide two"></app-vrk>
+      <app-nft class="slide three"></app-nft>
+      <app-benefits class="slide four"></app-benefits>
+      <app-types class="slide five"></app-types>
+      <app-gallery class="slide six"></app-gallery>
+      <app-roadmap class="slide seven"></app-roadmap>
+      <app-about class="slide eight"></app-about>
     </div>
   </div>
+</div>
