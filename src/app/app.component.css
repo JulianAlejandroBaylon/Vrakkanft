@@ -118,6 +118,17 @@ header{
   background-size: 100vw 80vh;
   background-repeat: no-repeat;
 }
+.two {
+  transform: translateX(100px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.two.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 
 .three{
   /*background-image: url(/assets/Estrellas.png);*/
