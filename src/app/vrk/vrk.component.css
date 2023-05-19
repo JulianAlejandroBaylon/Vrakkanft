@@ -17,13 +17,26 @@
     font-weight: 800;
   }
   .divabout {
+    position: relative;
     width: 65vw;
     height: 70vh;
     margin: 0 auto;
-    border: solid 1px;
-    border-image: linear-gradient(to right, #0fd8fc 0%,#e808d1 100%) 1;
-    border-radius: 15px;
+    z-index: 0; /* Valor predeterminado */
     list-style-image: url("/assets/check.png");
+  }
+  .divabout::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px; 
+    padding: 1px; 
+    z-index: -1; /* Valor inferior al del div principal */
+    background:linear-gradient(45deg,#FF1CF7 2.26%, #00F0FF 100%); 
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;             
   }
   ul{
     font-size: 1vw;

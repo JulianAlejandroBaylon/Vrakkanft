@@ -1,0 +1,63 @@
+*{
+    font-family: Rubik;
+    color: aliceblue;
+}
+
+  .box {
+    position: relative;    
+    height: 25vh;
+    width: 75vw;
+    margin: auto;
+    z-index: 0; /* Valor predeterminado */
+  }
+  .box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px; 
+    padding: 1px; 
+    z-index: -1; /* Valor inferior al del div principal */
+    background:linear-gradient(45deg,#FF1CF7 2.26%, #00F0FF 100%); 
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;             
+  }
+  .aboutc{
+    text-align: justify;
+  }
+  h4{
+    font-size: 1.5vw;
+  }
+  #firsttextbox{
+    font-size: 0.8vw;
+  }
+  #secondtextbox {
+    font-size: 1vw;
+    
+    font-weight: 600;
+  }
+  #textboxa{
+    margin-left: 3vw;
+    width: 50vw;
+  }
+  #textcolors{
+    background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    font-size: 2vw;
+    font-weight: 900;
+  }
+  #textgray{
+    font-size: 1vw;
+    color: #7780a1;
+  }
+  #textboxb{
+    margin: 4vh 4vw 0 4vw;
+    width: 15vw;
+  }
+  .aboutd{
+    margin-top: 5vh;
+  }
