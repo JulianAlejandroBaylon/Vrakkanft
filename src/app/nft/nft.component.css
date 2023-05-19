@@ -9,12 +9,25 @@ p {
   margin-top: 2vw;
 }
 .divabout {
-  width: 65vw;
-  height: 70vh;
-  margin: 0 auto;
-  border: solid 1px;
-  border-image: linear-gradient(to right, #e808d1 0%, #0fd8fc 100%) 1;
-  border-radius: 15px;
+    position: relative;
+    width: 65vw;
+    height: 70vh;
+    margin: 0 auto;
+    z-index: 0; /* Valor predeterminado */
+}
+.divabout::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px; 
+  padding: 1px; 
+  z-index: -1; /* Valor inferior al del div principal */
+  background:linear-gradient(45deg,#FF1CF7 2.26%, #00F0FF 100%); 
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;             
 }
 .imga {
   width: 25vw;
