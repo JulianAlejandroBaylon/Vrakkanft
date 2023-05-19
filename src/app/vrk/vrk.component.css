@@ -54,10 +54,12 @@
     margin: 0vw 6vw 0vw 5vw;
   }
   #firsttextbox {
-    font-size: 0.8vw;
+    font-size: 0.8vw;    
+    text-align: justify;
   }
   #secondtextbox {
     font-size: 1vw;
+    text-align: justify;
   }
   .blackbox {
     background: linear-gradient(0deg, #262840, #262840),
