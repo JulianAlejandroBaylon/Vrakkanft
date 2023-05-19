@@ -25,9 +25,9 @@ nav ul li {
   margin: 0 20px 0 25px;
 }
 /*Hide horizontal scrollbar*/
-/*::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
-}*/
+}
 
 
 /*NavBar logo*/
@@ -111,22 +111,28 @@ header{
   background-image: url(/assets/LooperBG.png);
   background-size: 100vw 80vh;
   background-repeat: no-repeat;
+  opacity: 0;
+  transition: .7s ease-in-out all;
+}
+
+.one.visible,
+.two.visible,
+.three.visible,
+.four.visible,
+.five.visible,
+.six.visible,
+.seven.visible,
+.eight.visible{
+  opacity: 1;
+  transform: scale(1);
 }
 
 .two{
  /* background-image: url(/assets/Estrellas.png);*/
   background-size: 100vw 80vh;
   background-repeat: no-repeat;
-}
-.two {
-  transform: translateX();
   opacity: 0;
-  transition: 5s all ease;
-}
-
-.two.active {
-  transform: translateX(0);
-  opacity: 1;
+  transition: .7s ease-in-out all;
 }
 
 
@@ -134,25 +140,35 @@ header{
   /*background-image: url(/assets/Estrellas.png);*/
   background-size: 100vw 80vh;
   background-repeat: no-repeat;
+  opacity: 0;
+  transition: .7s ease-in-out all;
 }
 
 .four{
   /*background-image: url(/assets/Estrellas.png);*/
   background-size: 100vw 80vh;
   background-repeat: no-repeat;
+  opacity: 0;
+  transition: .7s ease-in-out all;
 }
 .five{
   background-image: url(/assets/Espacio.png);
   background-size: 100vw 80vh;
   background-repeat: no-repeat;
+  opacity: 0;
+  transition: .7s ease-in-out all;
 }
 .six{
  /* background-image: url(/assets/Espacio2.png);*/
   background-size: 100vw 80vh;
   background-repeat: no-repeat;
+  opacity: 0;
+  transition: .7s ease-in-out all;
 }
 .seven{
   background-image: url(/assets/Frame.png);
   background-size: 100vw 80vh;
   background-repeat: no-repeat;
+  opacity: 0;
+  transition: .7s ease-in-out all;
 }
