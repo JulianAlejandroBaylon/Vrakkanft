@@ -59,5 +59,10 @@
     width: 15vw;
   }
   .aboutd{
-    margin-top: 5vh;
+    margin-top: 5vh;    
+  }
+  #carrouselmembers{
+    height: 25vh;
+    width: 75vw;    
+    margin: auto;
   }
