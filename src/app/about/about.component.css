@@ -61,3 +61,15 @@
   .aboutd{
     margin-top: 5vh;
   }
+
+  .team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .team div{
+    background-color: aqua;
+    width: 20vw;
+    height: 20vh;
+  }
