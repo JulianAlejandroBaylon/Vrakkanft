@@ -123,5 +123,11 @@ export class AppComponent {
     observador.observe(p6);
     observador.observe(p7);
     observador.observe(p8);
+
+    addEventListener("wheel", (event) => {});
+
+    onwheel = (event) => {
+      console.log(event.deltaY);
+    };
   }
 }
