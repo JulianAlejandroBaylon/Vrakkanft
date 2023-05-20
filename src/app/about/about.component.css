@@ -68,8 +68,37 @@
     align-items: center;
   }
 
-  .team div{
-    background-color: aqua;
-    width: 20vw;
-    height: 20vh;
+  #teams {
+    position: relative;
+    width: 11vw;
+    height: 30vh;
+    margin: auto;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+  #teams::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 1px;
+    z-index: -1; /* Valor inferior al del div principal */
+    background: linear-gradient(91deg,#FF1CF7 82.26%, #00F0FF 100%);
+    -webkit-mask:
+       linear-gradient(#fff 0 0) content-box,
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+  }
+
+  #foto{
+    width: 55%;
+    height: 40%;
+    border-radius: 50px;
+    margin: auto;
+    box-shadow: 0px 0px 22.5517px 3.0069px #239DEB;
+  }
+

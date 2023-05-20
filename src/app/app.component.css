@@ -105,7 +105,6 @@ header{
   overflow-y: hidden;
   width: 800vw;
   height: 100vh;
-  scroll-snap-type: y mandatory;
 }
 
 .one{
@@ -114,7 +113,6 @@ header{
   background-repeat: no-repeat;
   opacity: 0;
   transition: .7s ease-in-out all;
-  scroll-snap-align: center;
 }
 
 .one.visible,
@@ -127,7 +125,6 @@ header{
 .eight.visible{
   opacity: 1;
   transform: scale(1);
-  scroll-snap-align: center;
 }
 
 .two{
@@ -140,13 +137,9 @@ header{
 }
 
 
-.three{
-  /*background-image: url(/assets/Estrellas.png);*/
-  background-size: 100vw 80vh;
-  background-repeat: no-repeat;
+.three, .eight{
   opacity: 0;
   transition: .7s ease-in-out all;
-  scroll-snap-align: center;
 }
 
 .four{
@@ -155,15 +148,15 @@ header{
   background-repeat: no-repeat;
   opacity: 0;
   transition: .7s ease-in-out all;
-  scroll-snap-align: center;
 }
+
 .five{
   background-image: url(/assets/Espacio.png);
   background-size: 100vw 80vh;
   background-repeat: no-repeat;
   opacity: 0;
   transition: .7s ease-in-out all;
-  scroll-snap-align: center;
+
 }
 .six{
  /* background-image: url(/assets/Espacio2.png);*/
@@ -171,7 +164,6 @@ header{
   background-repeat: no-repeat;
   opacity: 0;
   transition: .7s ease-in-out all;
-  scroll-snap-align: center;
 }
 .seven{
   background-image: url(/assets/Frame.png);
@@ -179,5 +171,4 @@ header{
   background-repeat: no-repeat;
   opacity: 0;
   transition: .7s ease-in-out all;
-  scroll-snap-align: center;
 }
