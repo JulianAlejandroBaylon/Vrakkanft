@@ -20,10 +20,10 @@ export class AppComponent {
 
   /*JavaScript object */
   particlesOptions = {
-    fpsLimit: 120,
+    fpsLimit: 60,
     particles: {
       color: {
-        value: '#ffffff',
+        value: '#D899FF',
       },
       move: {
         direction: MoveDirection.none,

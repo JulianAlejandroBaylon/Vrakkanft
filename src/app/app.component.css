@@ -181,3 +181,11 @@ header{
   transition: .7s ease-in-out all;
   scroll-snap-align: center;
 }
+footer {
+  /* place on the bottom */
+  height: 100%;
+ color: white;
+  background: #252a47;
+  display: grid;
+  place-items: center;
+}
