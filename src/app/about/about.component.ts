@@ -30,12 +30,12 @@ export class AboutComponent {
   ]
 
   fotos: string []=[
-    'assets/yeri 1.png',
-    'assets/Robert.png',
-    'assets/Saul.png',
-    'assets/Eduardo.png',
-    'assets/Yanncik.png',
-    'assets/Raul.png',
-    'assets/Nancy.png'
+    'assets/images/yeri 1.png',
+    'assets/images/Robert.png',
+    'assets/images/Saul.png',
+    'assets/images/Eduardo.png',
+    'assets/images/Yanncik.png',
+    'assets/images/Raul.png',
+    'assets/images/Nancy.png'
   ]
 }

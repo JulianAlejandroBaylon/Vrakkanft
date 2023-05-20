@@ -9,13 +9,13 @@ export class BenefitsComponent {
   x: number = 1;
   item: number[] = [1, 2, 3, 4, 5, 6, 7];
   img: string[] = [
-    'assets/benefits3.png',
-    'assets/benefits1.png',
-    'assets/benefits4.png',
-    'assets/benefits2.png',
-    'assets/benefits7.png',
-    'assets/benefits6.png',
-    'assets/benefits5.png',
+    'assets/images/benefits3.png',
+    'assets/images/benefits1.png',
+    'assets/images/benefits4.png',
+    'assets/images/benefits2.png',
+    'assets/images/benefits7.png',
+    'assets/images/benefits6.png',
+    'assets/images/benefits5.png',
   ];
 
   texto: any = {
