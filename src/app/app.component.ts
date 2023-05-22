@@ -1,22 +1,38 @@
 import { Component } from '@angular/core';
-import { HostListener } from '@angular/core';
+import Web3 from 'web3';
 
-import {
-  MoveDirection,
-  ClickMode,
-  HoverMode,
-  OutMode,
-  Container,
-  Engine,
-} from 'tsparticles-engine';
+import { MoveDirection, OutMode, Container, Engine } from 'tsparticles-engine';
 import { loadFull } from 'tsparticles';
-import { Router } from '@angular/router';
+
+declare var window: any;
+const web3 = new Web3(window.ethereum);
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  conectWallet() {
+    web3.eth
+      .requestAccounts()
+      .then(async (accounts) => {
+        // La conexión se realizó correctamente y tienes acceso a las cuentas del usuario.
+        // Puedes utilizar las cuentas para realizar operaciones en Ethereum.
+        // Obtener la dirección de la cuenta activa
+        const address = accounts[0];
+        // Obtener el saldo de la cuenta en Ether
+        const balanceWei = await web3.eth.getBalance(address);
+        const balanceEther = web3.utils.fromWei(balanceWei, 'ether');
+
+        console.log('Dirección de la cuenta:', address);
+        console.log('Saldo de la cuenta:', balanceEther, 'ETH');
+      })
+      .catch((error) => {
+        // Ocurrió un error al conectar con MetaMask o el usuario no autorizó la conexión.
+      });
+  }
+
   //Id for particles of background
   id = 'tsparticles';
   activeLink: string = '';
@@ -76,12 +92,9 @@ export class AppComponent {
     detectRetina: true,
   };
 
-  particlesLoaded(container: Container): void {
-    console.log(container);
-  }
+  particlesLoaded(container: Container): void {}
 
   async particlesInit(engine: Engine): Promise<void> {
-
     // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
@@ -98,23 +111,23 @@ export class AppComponent {
     const p7 = document.querySelector('.seven');
     const p8 = document.querySelector('.eight');
 
-    const carga = (entradas, observador) => {
+    const carga = (entradas) => {
       /*console.log("entradas", entradas);
       console.log("observador", observador);*/
 
-      entradas.forEach((entrada)=>{
-        if(entrada.isIntersecting){
+      entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
           entrada.target.classList.add('visible');
-        }else{
+        } else {
           entrada.target.classList.remove('visible');
         }
       });
-    }
+    };
 
     const observador = new IntersectionObserver(carga, {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5
+      threshold: 0.5,
     });
 
     observador.observe(p1);
@@ -126,30 +139,6 @@ export class AppComponent {
     observador.observe(p7);
     observador.observe(p8);
 
-  /*  const ethereumButton = document.querySelector('.enableEthereumButton');
-const showAccount = document.querySelector('.showAccount');
-
-ethereumButton.addEventListener('click', () => {
-  getAccount();
-});
-
-// While awaiting the call to eth_requestAccounts, you should disable
-// any buttons the user can select to initiate the request.
-// MetaMask rejects any additional requests while the first is still
-// pending.
-async function getAccount() {
-  const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
-    .catch((err) => {
-      if (err.code === 4001) {
-        // EIP-1193 userRejectedRequest error
-        // If this happens, the user rejected the connection request.
-        console.log('Please connect to MetaMask.');
-      } else {
-        console.error(err);
-      }
-    });
-  const account = accounts[0];
-  showAccount.innerHTML = account;
-}*/
+    console.log('Web: ', web3);
   }
 }
