@@ -22,7 +22,7 @@
     height: 70vh;
     margin: 0 auto;
     z-index: 0; /* Valor predeterminado */
-    list-style-image: url("/assets/check.png");
+    list-style-image: url("/assets/images/check.webp");
   }
   .divabout::before {
     content: "";

@@ -81,16 +81,20 @@ header{
   width:80vw;
 }
 /*Button Wallet format*/
-.NFT{
-  background: linear-gradient(91.06deg, #FF1CF7 39.26%, #00F0FF 100%);
-  border-radius: 25px;
+.NFT {
+  background: transparent;
+  border: none;
+  padding: 0;
   font-size: 1vw;
+  color: white;
+  border-radius: 25px;
   width: 15vw;
   height: 6vh;
-  color: white;
-  font-family: Rubik;
+  font-family: Rubik; 
 }
-
+.NFT:hover {
+  background-image: linear-gradient(91.06deg, #FF1CF7 39.26%, #00F0FF 100%);
+}
 
 .slide {
   width: 100vw;
@@ -205,78 +209,84 @@ header{
   opacity: 0;
   transition: .7s ease-in-out all;
 }
-.footer #button{
-	width:35px;
-	height:35px;
-	border: #eaeaea 12px solid;
-	border-radius:35px;
-	margin:0 auto;
-	position:relative;
-	-webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
+.footer #button {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  position: relative;
+  transform: rotate(90deg);
+  transition: all 1s ease;
 }
-.footer #button:hover{
-	width:35px;
-	height:35px;
-	-webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-	position:relative;
+.footer #button:hover {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transition: all 1s ease;
+  transform: rotate(-90deg);
 }
 .footer {
-	bottom:0;
-	left:0;
-	position:fixed;
-    width: 100%;
-    height: 2em;
-    overflow:hidden;
-    margin:0 auto;
-	-webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-	z-index:999;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 2em;
+  overflow: hidden;
+  margin: 0 auto;
+  transition: all 1s ease;
+  z-index: 999;
+  color: white;
 }
+
 .footer:hover {
-	-webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-	height: 10em;
+  transition: all 1s ease;
+  height: 8em;
 }
-.footer #container{
-	margin-top:5px;
-	width:100%;
-height:100%;
-  position:relative;
-  top:0;
-  left:0;
-	background: #2e0d46;
+
+.footer #container {
+  margin-top: 5px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;  
 }
-.footer #cont{
-  position:relative;
-  top:-45px;
-  right:190px;
-	width:150px;
-	height:auto;
-	margin:0 auto;
+
+.footer #cont {
+  position: relative;
+  width: 100%;  
 }
-.footer_center{
-	width:500px;
-	float:left;
-  text-align:center;
+
+.footer_center {
+  width: 100%;
+  display: flex;
 }
-.footer h3{
-	font-family: 'Helvetica';
-	font-size: 30px;
-	font-weight: 100;
-	margin-top:70px;
-	margin-left:40px;
+
+.contact{
+  font-family: 'Rubik';
+  font-size: 15px;
+  font-weight: 100;
+  margin: 0;
+  width: 50vw;
+  padding-left: 1vw;
+}
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  width: 50vw;
+}
+
+.social-icons img {
+  width: 35px;
+  height: 35px;
+  margin-left: 5px;
+}
+
+.contact p{
+  margin: auto;
+}
+.contact img{
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+  text-align: center;
 }
