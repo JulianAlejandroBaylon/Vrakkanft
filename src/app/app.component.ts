@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HostListener } from '@angular/core';
+
 import {
   MoveDirection,
   ClickMode,
@@ -8,6 +10,7 @@ import {
   Engine,
 } from 'tsparticles-engine';
 import { loadFull } from 'tsparticles';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,6 +19,7 @@ import { loadFull } from 'tsparticles';
 export class AppComponent {
   //Id for particles of background
   id = 'tsparticles';
+  activeLink: string = '';
 
   /*JavaScript object */
   particlesOptions = {
@@ -148,6 +152,4 @@ async function getAccount() {
   showAccount.innerHTML = account;
 }*/
   }
-
-
 }

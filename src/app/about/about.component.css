@@ -78,6 +78,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transform: scale(1.0);
+    transition: .7s ease-in-out all;
   }
   #teams::before {
     content: "";
@@ -92,6 +94,7 @@
        linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
             mask-composite: exclude;
+            
   }
 
   #teams:hover{

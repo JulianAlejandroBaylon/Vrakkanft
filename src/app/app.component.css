@@ -3,7 +3,7 @@
   src: url(../assets/Rubik-Regular.ttf);
 }
 /*NavBar */
-nav ul{
+nav ul {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -11,8 +11,9 @@ nav ul{
   color: white;
   padding-left: 0;
 }
+
 /*Text format of the navigation bar*/
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   color: white;
   scroll-behavior: smooth;
@@ -21,35 +22,53 @@ nav ul li a{
 /*List order of navBar*/
 nav ul li {
   list-style: none;
-  float: left;
   margin: 0 20px 0 25px;
 }
+
 /*Hide horizontal scrollbar*/
 ::-webkit-scrollbar {
   display: none;
 }
 
-
 /*NavBar logo*/
- .logo{
+.logo {
   width: 13vw;
   height: 8vh;
- }
- /*NavBar sections*/
-nav{
+}
+
+/*NavBar sections*/
+nav {
   font-family: 'Rubik';
   font-style: Regular;
   font-weight: 500;
   font-size: 1vw;
-  line-height: 150%;
-  background: linear-gradient(180deg, #8284FC 0%, rgba(141, 126, 180, 0.8) 100%);
-  border-radius: 10px;
+  background-color: transparent;
   height: 6vh;
   width: 160vw;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-left: 5%;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+a:hover, a:focus {
+  background-size: 100% 2px;
+}
+
+a.active {
+  font-weight: bold;
+  color: #000;
+  border-bottom-color: #ffffff;
+  background-size: 100% 2px;
 }
 /*header padding*/
 header{
@@ -122,7 +141,7 @@ header{
 }
 
 .one{
-  background-image: url(/assets/images/LooperBG.png);
+  background-image: url(/assets/images/looperbg.webp);
   background-size: 100vw 80vh;
   background-repeat: no-repeat;
   opacity: 0;
@@ -165,7 +184,7 @@ header{
 }
 
 .five{
-  background-image: url(/assets/images/Espacio.png);
+  background-image: url(/assets/images/espacio.webp);
   background-size: 100vw 80vh;
   background-repeat: no-repeat;
   opacity: 0;
@@ -180,7 +199,7 @@ header{
   transition: .7s ease-in-out all;
 }
 .seven{
-  background-image: url(/assets/images/Frame.png);
+  background-image: url(/assets/images/frame.webp);
   background-size: 100vw 80vh;
   background-repeat: no-repeat;
   opacity: 0;
