@@ -13,21 +13,21 @@
   -webkit-text-fill-color: transparent;
 }
 .left {
-  width: 43vw;
+  width: 20vw;
   height: 55vh;
   position: absolute;
   cursor: pointer;
-  margin-right: 57vw;
+  margin-right: 35vw;
   opacity: 0;
 }
 
 .rigth {
-    width: 43vw;
-    height: 55vh;
-    position: absolute;
-    cursor: pointer;
-    margin-left: 57vw;
-    opacity: 0;
+  width: 20vw;
+  height: 55vh;
+  position: absolute;
+  cursor: pointer;
+  margin-left: 35vw;
+  opacity: 0;
 }
 #text h2 {
   font-weight: 600;

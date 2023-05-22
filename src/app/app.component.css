@@ -80,7 +80,7 @@ header{
   color: #000;
 }
 
-@media screen and (min-height: 1200px ) {
+@media screen and (min-height: 700px ) {
   .page-content {
     /*Width to horizontal scroll bar*/
     width: 42vw;
