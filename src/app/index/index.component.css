@@ -122,7 +122,7 @@
 }
 
 /*Media query, de partir de los 800px de resolucion se cambia el diseno*/
-@media (max-width:700px) {
+@media (max-width:800px) {
   .index {
     display: flex;
     flex-direction: column;
