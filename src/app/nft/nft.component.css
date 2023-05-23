@@ -9,25 +9,23 @@ p {
   margin-top: 2vw;
 }
 .divabout {
-    position: relative;
-    width: 65vw;
-    height: 70vh;
-    margin: 0 auto;
-    z-index: 0; /* Valor predeterminado */
+  position: relative;
+  width: 65vw;
+  height: 70vh;
+  margin: 0 auto;
+  z-index: 0; /* Valor predeterminado */
 }
 .divabout::before {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 20px; 
-  padding: 1px; 
+  border-radius: 20px;
+  padding: 1px;
   z-index: -1; /* Valor inferior al del div principal */
-  background:linear-gradient(45deg,#FF1CF7 2.26%, #00F0FF 100%); 
-  -webkit-mask: 
-     linear-gradient(#fff 0 0) content-box, 
-     linear-gradient(#fff 0 0);
+  background: linear-gradient(45deg, #ff1cf7 2.26%, #00f0ff 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
-          mask-composite: exclude;             
+  mask-composite: exclude;
 }
 .imga {
   width: 25vw;
@@ -70,14 +68,51 @@ p {
   justify-content: center;
   margin-top: 2vh;
 }
-button {
+#conect2 {
   background: linear-gradient(91.06deg, #ff1cf7 2.26%, #00f0ff 100%);
   width: 25vw;
   height: 5vh;
   border-radius: 50px;
 }
+#conect2.nel {
+  display: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#cantidad2 {
+  border-radius: 20px;
+  margin-right: 7vw;
+  text-align: center;
+  color: black;
+  width: 5vw;
+  height: auto;
+  font-size: 1.5vw;
+  background-color: blueviolet;
+  display: none;
+}
+#cantidad2.nel,
+#buy2.nel {
+  display: block;
+}
 #price {
   font-size: 2vw;
+}
+
+#buy2 {
+  background: linear-gradient(91.06deg, #ff1cf7 2.26%, #00f0ff 100%);
+  width: 10vw;
+  height: 5vh;
+  border-radius: 50px;
+  display: none;
 }
 
 .about {
