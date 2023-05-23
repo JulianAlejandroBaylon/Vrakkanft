@@ -161,8 +161,8 @@
 
   .nfts .nft1 {
     width: 34vw;
-    height: 23vh;
-    margin-top: 30%;
+    height: 23vh; 
+    margin-right: 15vw;   
   }
 
   .nfts .nft1 img {
@@ -179,7 +179,7 @@
   .nfts .nft2 {
     width: 34vw;
     height: 23vh;
-    margin-left: 9vw;
+    margin-left: 18vw;
   }
   
   .nfts .nft2 img {
