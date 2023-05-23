@@ -130,7 +130,7 @@
   }
   .text {
     width: 100vw;
-    height: 40vh;
+    height: 30vh;
     margin: 0;
   }
   .text #title {
@@ -160,16 +160,14 @@
   }
 
   .nfts .nft1 {
-    width: 32vw;
-    height: 30vh;
+    width: 34vw;
+    height: 23vh;
     margin-top: 30%;
-    border-width: 3.72189px 0px;
-    border-style: solid;
   }
 
   .nfts .nft1 img {
-    width: 28vw;
-    height: 20vh;
+    width: 30vw;
+    height: 18vh;
     margin: 5% 0 0 6%;
   }
 
@@ -179,14 +177,14 @@
     text-align: center;
   }
   .nfts .nft2 {
-    width: 32vw;
-    height: 30vh;
+    width: 34vw;
+    height: 23vh;
     margin-left: 9vw;
   }
   
   .nfts .nft2 img {
-    width: 28vw;
-    height: 20vh;
+    width: 30vw;
+    height: 18vh;
     margin: 5% 0 0 6%;
   }
   
