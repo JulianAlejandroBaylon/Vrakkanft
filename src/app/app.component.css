@@ -103,22 +103,6 @@ header{
   color: #000;
 }
 
-@media screen and (min-height: 700px ) {
-  .page-content {
-    /*Width to horizontal scroll bar*/
-    width: 42vw;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-79vh) translateY(-10px);
-    transform-origin: top left;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    position: absolute;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    -webkit-scrollbar-thumb: none;
-  }
-}
-
 .page-content {
   /*Width to horizontal scroll bar*/
   width: 41vw;
@@ -289,4 +273,65 @@ header{
   height: 18px;
   margin-left: 5px;
   text-align: center;
+}
+
+
+/* Estilos para el botón desplegable */
+button.dropdown-toggle {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  
+  /* Ocultar los elementos de la lista */
+  nav ul.navbar-links li {
+    display: none;
+  }
+  
+  /* Mostrar el botón desplegable */
+  button.dropdown-toggle {
+    display: block;
+  }
+  
+  nav ul.navbar-links {
+    display: none;
+  }
+  button.dropdown-toggle {
+    display: block;
+  }
+  .page-content {
+    /* Revert the horizontal scrolling styles */
+    width: auto;
+    height: auto;
+    transform: none;
+    transform-origin: initial;
+    overflow: initial;
+    position: initial;
+    scrollbar-width: initial;
+    -ms-overflow-style: initial;
+    -webkit-scrollbar-thumb: initial;
+  }
+
+  .slides {
+    /* Revert the horizontal scrolling styles */
+    transform: none;
+    transform-origin: initial;
+    overflow-y: initial;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .one{
+    background-image: none;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: .7s ease-in-out all;
+  }
+  
+}
+
+@media (max-width: 800px) {
+  
 }
