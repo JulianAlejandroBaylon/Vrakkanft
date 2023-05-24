@@ -13,12 +13,11 @@ const web3 = new Web3(window.ethereum);
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  navbarDesplegado = false;
-
-  toggleNavbarDesplegado() {
-    this.navbarDesplegado = !this.navbarDesplegado;
+  
+  desplegado = false;
+  toggleDesplegado() {
+    this.desplegado = !this.desplegado;
   }
-
   conectWallet() {
     web3.eth
       .requestAccounts()

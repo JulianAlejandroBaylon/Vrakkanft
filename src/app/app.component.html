@@ -1,7 +1,7 @@
 <header>
   <img class="logo" src="../assets/images/logo-hm.webp" alt="Vrakka" />
   <nav>
-    <ul class="navbar-links" [ngClass]="{ 'desplegado': navbarDesplegado }">
+    <ul class="navbar-links" [ngClass]="{ 'desplegado': desplegado }">
       <li><a href="#home">Home</a></li>
       <li><a href="#vrk">VRK</a></li>
       <li><a href="#NFT">NFT</a></li>
@@ -11,7 +11,7 @@
       <li><a href="#roadmap">Roadmap</a></li>
       <li><a href="#about">About</a></li>
     </ul>
-    <button  class="dropdown-toggle" (click)="toggleNavbarDesplegado()">Menu</button>
+    <button class="dropdown-toggle">Menu</button>
   </nav>
   <div class="buttons">
     <button type="button" (click)="conectWallet()" class="NFT">Connect Wallet</button>

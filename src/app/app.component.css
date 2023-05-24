@@ -281,7 +281,9 @@ button.dropdown-toggle {
   display: none;
 }
 @media (max-width: 800px) {
-  
+  nav ul.navbar-links.desplegado {
+    display: block;
+  }
   /* Ocultar los elementos de la lista */
   nav ul.navbar-links li {
     display: none;
