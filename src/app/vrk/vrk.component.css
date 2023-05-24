@@ -50,6 +50,7 @@ p {
 ul {
   font-size: 1vw;
   margin-left: 6vw;
+  text-align: justify;
 }
 
 .imga {
@@ -163,10 +164,6 @@ input[type=number] {
     display: row;
     flex-direction: column;
     align-items: center;
-  }
-
-  .imgabout {
-
   }
   .imga{
     height: 10vh;
