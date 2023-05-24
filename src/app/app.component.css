@@ -280,7 +280,6 @@ header{
 button.dropdown-toggle {
   display: none;
 }
-
 @media (max-width: 800px) {
   
   /* Ocultar los elementos de la lista */
@@ -288,7 +287,6 @@ button.dropdown-toggle {
     display: none;
   }
   
-  /* Mostrar el botón desplegable */
   button.dropdown-toggle {
     display: block;
   }
@@ -296,15 +294,11 @@ button.dropdown-toggle {
   nav ul.navbar-links {
     display: none;
   }
-  button.dropdown-toggle {
-    display: block;
-  }
 
   .buttons{
     margin-left: 0%;
     width:80vw;
   }
-  /*Button Wallet format*/
   .NFT {
     background-image: linear-gradient(91.06deg, #FF1CF7 39.26%, #00F0FF 100%);
     font-size: 3vw;
@@ -314,7 +308,6 @@ button.dropdown-toggle {
     font-family: Rubik; 
   }
   .page-content {
-    /* Revert the horizontal scrolling styles */
     width: auto;
     height: auto;
     transform: none;
@@ -327,7 +320,6 @@ button.dropdown-toggle {
   }
 
   .slides {
-    /* Revert the horizontal scrolling styles */
     transform: none;
     transform-origin: initial;
     overflow-y: initial;
@@ -339,9 +331,8 @@ button.dropdown-toggle {
   }
   .one{
     background-image: none;
-    background-repeat: no-repeat;
-    opacity: 0;
-    transition: .7s ease-in-out all;
   }
-  
+  .two{
+      margin-bottom: 15vh;
+   }
 }

@@ -120,7 +120,7 @@
 .fondo {
   position: absolute;
 }
-
+/*
 /*Media query, de partir de los 800px de resolucion se cambia el diseno*/
 @media (max-width:800px) {
   .index {
@@ -154,7 +154,7 @@
     text-align: center;
   }
   .nfts {
-    height: 70vh;
+    height: 60vh;
     width: 50vw;
     margin: 0;
   }

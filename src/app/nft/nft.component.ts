@@ -4,6 +4,7 @@ import Web3 from 'web3';
 declare var window: any;
 const web3 = new Web3(window.ethereum);
 
+
 window.ethereum.on('accountsChanged', (accounts: string[]) => {
   if (accounts.length > 0) {
     // El usuario ha conectado su cartera de MetaMask y hay al menos una cuenta disponible
