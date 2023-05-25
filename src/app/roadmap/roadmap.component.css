@@ -1,28 +1,42 @@
-*{
+* {
     font-family: Rubik;
 }
+
+#roadmaplanets {
+    display: flex;
+    text-align: center;
+}
+
 #titleroadmap h2 {
     font-weight: 600;
     text-align: center;
-    color: #fff;    
+    color: #fff;
     font-size: 4.3vw;
     margin-top: 0;
     font-weight: 700;
     line-height: 71px;
 }
+
 /*Planet ONE*/
-#p-one{
+#p-one {
     width: 14vw;
     height: 34vh;
 }
-#p-one-title{
+
+#p-one img {
+    width: 10.5vw;
+    height: 21vh;
+}
+
+#p-one-title {
     color: #3671E9;
     font-size: 1.5vw;
     font-weight: 700;
     margin: 0;
     margin-top: 4vh;
 }
-#p-one-p{
+
+#p-one-p {
     color: white;
     margin: 0;
     font-size: 1vw;
@@ -30,17 +44,24 @@
 }
 
 /*Planet TWO*/
-#p-two{
+#p-two {
     width: 8vw;
     height: 30vh;
 }
-#p-two-title{
+
+#p-two img {
+    width: 8vw;
+    height: 16vh;
+}
+
+#p-two-title {
     color: #3671E9;
     font-size: 1.5vw;
     font-weight: 700;
     margin: 0;
 }
-#p-two-p{
+
+#p-two-p {
     color: white;
     margin: 0;
     font-size: 1vw;
@@ -48,18 +69,25 @@
 }
 
 /*Planet THREE*/
-#p-three{
+#p-three {
     width: 12vw;
     height: 43vh;
 }
-#p-three-title{
+
+#p-three img {
+    width: 12vw;
+    height: 25vh;
+}
+
+#p-three-title {
     color: #3671E9;
     font-size: 1.5vw;
     font-weight: 700;
     margin: 0;
-    margin-top:9vh;
+    margin-top: 9vh;
 }
-#p-three-p{
+
+#p-three-p {
     color: white;
     margin: 0;
     font-size: 1vw;
@@ -67,11 +95,17 @@
 }
 
 /*Planet FOUR*/
-#p-four{
+#p-four {
     width: 8vw;
     height: 30vh;
 }
-#p-four-title{
+
+#p-four img {
+    width: 8vw;
+    height: 16vh;
+}
+
+#p-four-title {
     color: #3671E9;
     background: linear-gradient(180deg, #B4C0FE 0%, #9075D5 100%);
     -webkit-background-clip: text;
@@ -80,7 +114,8 @@
     font-weight: 700;
     margin: 0;
 }
-#p-four-p{
+
+#p-four-p {
     color: white;
     margin: 0;
     font-size: 1vw;
@@ -88,20 +123,27 @@
 }
 
 /*Planet FIVE*/
-#p-five{
+#p-five {
     width: 12vw;
     height: 41vh;
 }
-#p-five-title{
+
+#p-five img {
+    width: 8vw;
+    height: 16vh;
+}
+
+#p-five-title {
     background: linear-gradient(180deg, #B4C0FE 0%, #9075D5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.5vw;
     font-weight: 700;
     margin: 0;
-    margin-top:11vh
+    margin-top: 11vh
 }
-#p-five-p{
+
+#p-five-p {
     color: white;
     margin: 0;
     font-size: 1vw;
@@ -109,11 +151,17 @@
 }
 
 /*Planet SIX*/
-#p-six{
+#p-six {
     width: 10vw;
     height: 30vh;
 }
-#p-six-title{
+
+#p-six img {
+    width: 10vw;
+    height: 20vh;
+}
+
+#p-six-title {
     background: linear-gradient(180deg, #B4C0FE 0%, #9075D5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -121,7 +169,8 @@
     font-weight: 700;
     margin: 0;
 }
-#p-six-p{
+
+#p-six-p {
     color: white;
     margin: 0;
     font-size: 1vw;
@@ -129,11 +178,17 @@
 }
 
 /*Planet SEVEN*/
-#p-seven{
+#p-seven {
     width: 9vw;
     height: 30vh;
 }
-#p-seven-title{
+
+#p-seven img {
+    width: 9vw;
+    height: 18vh;
+}
+
+#p-seven-title {
     color: #3671E9;
     background: linear-gradient(180deg, #8284FC 0%, rgba(141, 126, 180, 0.8) 100%);
     -webkit-background-clip: text;
@@ -143,7 +198,8 @@
     margin: 0;
     margin-top: 13vh;
 }
-#p-seven-p{
+
+#p-seven-p {
     color: white;
     margin: 0;
     font-size: 1vw;
@@ -151,20 +207,28 @@
 }
 
 /*Planet EIGHT*/
-#p-eight{
+#p-eight {
     width: 12vw;
     height: 30vh;
 }
-#p-eight-title{
+
+#p-eight img {
+    width: 7vw;
+    height: 14vh;
+    ;
+}
+
+#p-eight-title {
     background: linear-gradient(180deg, #B4C0FE 0%, #9075D5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.5vw;
     font-weight: 700;
-    margin: 0;    
+    margin: 0;
     margin-top: 2vh;
 }
-#p-eight-p{
+
+#p-eight-p {
     color: white;
     margin: 0;
     font-size: 1vw;
@@ -172,22 +236,97 @@
 }
 
 /*Planet NINE*/
-#p-nine{
+#p-nine {
     width: 12vw;
     height: 44vh;
 }
-#p-nine-title{
+
+#p-nine img {
+    width: 10.5vw;
+    height: 21vh;
+}
+
+#p-nine-title {
     background: linear-gradient(180deg, #B4C0FE 0%, #9075D5 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.5vw;
     font-weight: 700;
-    margin: 0;    
+    margin: 0;
     margin-top: 12vh;
 }
-#p-nine-p{
+
+#p-nine-p {
     color: white;
     margin: 0;
     font-size: 1vw;
     font-weight: 500;
+}
+
+@media (max-width:768px) {
+    #roadmaplanets {
+        display: row;
+        flex-direction: column;        
+    }
+
+    #p-one {
+        height: 12vh;
+        margin: auto;
+    }
+
+    #p-one img {
+        width: 20vw;
+        height: 10vh;
+    }
+
+    #p-two{
+        height: 12vh;
+    }
+    #p-two img {
+        width: 4vw;
+        height: 8vh;
+    }
+
+    #p-three{
+        height: 12vh;
+    }
+    #p-three img {
+        width: 6vw;
+        height: 12.5vh;
+        margin: 0;
+    }
+
+    #p-four{
+        height: 12vh;
+    }
+    #p-four img {
+        width: 4vw;
+        height: 8vh;
+    }
+
+    #p-five img {
+        width: 4vw;
+        height: 8vh;
+    }
+
+    #p-six img {
+        width: 5vw;
+        height: 10vh;
+    }
+
+    #p-seven img {
+        width: 4.5vw;
+        height: 9vh;
+    }
+
+    #p-eight img {
+        width: 3.5vw;
+        height: 7vh;
+        ;
+    }
+
+    #p-nine img {
+        width: 5vw;
+        height: 10vh;
+    }
 }
