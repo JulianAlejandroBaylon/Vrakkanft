@@ -187,3 +187,50 @@ input[type="radio"] {
   color: #FFFFFF;
   font-size: 1.5vw;
 }
+
+
+@media (max-width:768px) {
+  .container {
+    width: 100vw;
+    height: 30vh;
+    display: row;
+    flex-direction: column-reverse;
+    margin-left: 0vw;
+  }
+  .card {
+    width: 35%;
+  }
+  .text{
+    text-align: center;
+    margin-right: 0vw;
+    width: 80vw;
+    margin-bottom: 5vh;
+  }
+  .left {
+    width: 5vw;
+    height: 8vh;
+    margin-right: 45vw;
+  }  
+  .rigth {
+    width: 5vw;
+    height: 8vh;
+    margin-left: 40vw;
+  }
+  #title p{
+    line-height: 150%;
+    font-size: 3vw;
+  }
+  
+  #title h2{
+    font-size: 4vw;
+    font-weight: 700;
+    line-height: 71px;
+  }
+  
+  .text h3{
+    font-size: 4vw;
+  }
+  .text p{
+    font-size: 3vw;
+  }
+}

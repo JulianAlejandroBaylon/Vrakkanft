@@ -335,9 +335,12 @@ button.dropdown-toggle {
     background-image: none;
   }
   .two{
-      margin-bottom: 15vh;
+      margin-bottom: 20vh;
    }
   .three{
-    margin-bottom: 15vh;
+    margin-bottom: 20vh;
+  }
+  .four{
+    margin-bottom: 20vh;
   }
 }
