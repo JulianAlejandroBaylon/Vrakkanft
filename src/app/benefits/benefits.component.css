@@ -198,13 +198,13 @@ input[type="radio"] {
     margin-left: 0vw;
   }
   .card {
+    margin-top: 5vh;
     width: 35%;
   }
   .text{
     text-align: center;
     margin-right: 0vw;
     width: 80vw;
-    margin-bottom: 5vh;
   }
   .left {
     width: 5vw;
