@@ -158,12 +158,13 @@ input[type=number] {
 }
 
 
-@media (max-width:800px) {
+@media (max-width:768px) {
 
   .divabout {
     display: row;
     flex-direction: column;
     align-items: center;
+    height: 80vh;
   }
   .imga{
     height: 10vh;
