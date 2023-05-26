@@ -43,13 +43,18 @@ nav {
   font-weight: 500;
   font-size: 1vw;
   background-color: transparent;
-  height: 6vh;
+  height: 8vh;
   width: 160vw;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-left: 5%;
   position: relative;
+}
+.idioma{
+  width: 11vw;
+  height: 6vh;
+  margin: auto auto;
 }
 
 a {
@@ -79,6 +84,9 @@ header{
 .buttons{
   margin-left: 10%;
   width:80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /*Button Wallet format*/
 .NFT {
@@ -90,7 +98,7 @@ header{
   border-radius: 25px;
   width: 15vw;
   height: 6vh;
-  font-family: Rubik; 
+  font-family: Rubik;
 }
 .NFT:hover {
   background-image: linear-gradient(91.06deg, #FF1CF7 39.26%, #00F0FF 100%);
@@ -230,12 +238,12 @@ header{
   margin-top: 5px;
   width: 100vw;
   height: 100vh;
-  position: relative;  
+  position: relative;
 }
 
 .footer #cont {
   position: relative;
-  width: 100%;  
+  width: 100%;
 }
 
 .footer_center {
@@ -281,33 +289,34 @@ button.dropdown-toggle {
   display: none;
 }
 @media (max-width: 768px) {
-  nav ul.navbar-links.desplegado {
-    display: block;
-  }
-  /* Ocultar los elementos de la lista */
-  nav ul.navbar-links li {
-    display: none;
-  }
-  
-  button.dropdown-toggle {
-    display: block;
-  }
-  
-  nav ul.navbar-links {
+.logo{
+  width: 38vw;
+  height: 4vh;
+}
+  nav {
     display: none;
   }
 
+  .idioma{
+    width: 8vw;
+    height: 3.5vh;
+    margin: auto auto;
+  }
+
   .buttons{
-    margin-left: 0%;
-    width:80vw;
+    margin: auto auto;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .NFT {
     background-image: linear-gradient(91.06deg, #FF1CF7 39.26%, #00F0FF 100%);
     font-size: 3vw;
     color: white;
-    width: 20vw;
-    height: 6vh;
-    font-family: Rubik; 
+    width: 30vw;
+    height: 3vh;
+    font-family: Rubik;
   }
   .page-content {
     width: auto;
@@ -329,7 +338,7 @@ button.dropdown-toggle {
     height: auto;
     display: flex;
     flex-direction: column;
-    
+
   }
   .one{
     background-image: none;

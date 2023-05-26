@@ -45,10 +45,10 @@
                     </div>
                 </div>
                 <div class="buttonbox">
-                  <button id="conect2" (click)="conectWallet()">
+                  <button [ngClass]="{'nel': this.connectService.isConnected}" id="conect2" (click)="connectWallet()">
                       Connect wallet
                   </button>
-                  <button id="buy2">Buy</button>
+                  <button [ngClass]="{'nel': this.connectService.isConnected}" id="buy2">Buy</button>
               </div>
 
             </div>
