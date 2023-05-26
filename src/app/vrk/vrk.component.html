@@ -41,11 +41,11 @@
                     </div>
                 </div>
                 <div class="buttonbox">
-                    <button [ngClass]="{'disable': connected}" id="connect" (click)="conectWallet()">
+                    <button [ngClass]="{'disable': this.connectService.isConnected}" id="connect" (click)="conectWallet()">
                         Connect wallet
                     </button>
-                    <input [ngClass]="{'disable': connected}" id="cantidad" type="number">
-                    <button [ngClass]="{'disable': connected}" id="buy">Buy</button>
+                    <input [ngClass]="{'disable': this.connectService.isConnected}" id="cantidad" type="number">
+                    <button [ngClass]="{'disable': this.connectService.isConnected}" id="buy">Buy</button>
                 </div>
 
             </div>

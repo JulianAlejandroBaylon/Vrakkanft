@@ -29,28 +29,7 @@ window.ethereum.on('accountsChanged', (accounts: string[]) => {
 })
 export class NftComponent {
   constructor (public connectService: ConnectService ){}
-  connected = this.connectService.isConnected;
-  conectWallet() {
-    web3.eth
-      .requestAccounts()
-      .then(async (accounts) => {
-        // La conexión se realizó correctamente y tienes acceso a las cuentas del usuario.
-        // Puedes utilizar las cuentas para realizar operaciones en Ethereum.
-        // Obtener la dirección de la cuenta activa
-        const address = accounts[0];
-        this.connectService.isConnected=true;
-        // Obtener el saldo de la cuenta en Ether
-        const balanceWei = await web3.eth.getBalance(address);
-        const balanceEther = web3.utils.fromWei(balanceWei, 'ether');
-
-        console.log('Dirección de la cuenta:', address);
-        console.log('Saldo de la cuenta:', balanceEther, 'ETH');
-      })
-      .catch((error) => {
-        // Ocurrió un error al conectar con MetaMask o el usuario no autorizó la conexión.
-      });
-      if(this.connectService.isInstalled === false){
-        window.open("https://metamask.app.link/dapp/vrakkanft.com/");
-      }
+  connectWallet(){
+    this.connectService.connectWallet()
   }
 }
