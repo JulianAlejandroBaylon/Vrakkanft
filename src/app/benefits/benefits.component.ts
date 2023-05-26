@@ -25,7 +25,7 @@ export class BenefitsComponent {
     },
     2:{
       title: 'Access to Vrakka Gaming',
-      text: '',
+      text: 'Enjoy IQ games where you can bet and win more.',
     },
     3:{
       title: 'Discounts and promotions',

@@ -40,9 +40,11 @@ p {
 }
 #firsttextbox {
   font-size: 0.8vw;
+  text-align: justify;
 }
 #secondtextbox {
   font-size: 1vw;
+  text-align: justify;
 }
 .blackbox {
   background: linear-gradient(0deg, #262840, #262840),
@@ -117,4 +119,43 @@ input[type="number"] {
 
 .about {
   display: flex;
+}
+
+@media (max-width:768px) {
+  .divabout{
+    display: row;
+    flex-direction: column;
+    
+    align-items: center;
+  }
+  .imga{
+    margin-top: 3vh;
+    width: 25vw;
+    height: 20vh;
+  }
+  .textabout {
+    text-align: center;
+  }
+  #firsttextbox{
+    font-size: 2.8vw;
+  }
+  #secondtextbox{
+    font-size: 3vw;
+  }
+  #textgray{
+    font-size: 2.5vw;
+  }
+  #price{
+    font-size: 5vw;
+  }
+  #textb{
+    font-size: 2vw;
+  }
+  .blackbox{
+    width: 60vw;
+    height: 15vh;
+  }
+  .divbox{
+    margin: auto;
+  }
 }
