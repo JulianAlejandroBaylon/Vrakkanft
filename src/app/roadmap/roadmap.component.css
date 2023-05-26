@@ -19,13 +19,13 @@
 
 /*Planet ONE*/
 #p-one {
-    width: 14vw;
+    width: 9vw;
     height: 34vh;
 }
 
 #p-one img {
-    width: 10.5vw;
-    height: 21vh;
+    width: 8vw;
+    height: 16vh;
 }
 
 #p-one-title {
@@ -33,7 +33,7 @@
     font-size: 1.5vw;
     font-weight: 700;
     margin: 0;
-    margin-top: 4vh;
+    margin-top: 10vh;
 }
 
 #p-one-p {
@@ -46,10 +46,11 @@
 /*Planet TWO*/
 #p-two {
     width: 8vw;
-    height: 30vh;
+    height: 60vh; 
 }
 
 #p-two img {
+    margin-top: 26vh;
     width: 8vw;
     height: 16vh;
 }
@@ -70,13 +71,13 @@
 
 /*Planet THREE*/
 #p-three {
-    width: 12vw;
+    width: 10vw;
     height: 43vh;
 }
 
 #p-three img {
-    width: 12vw;
-    height: 25vh;
+    width: 10vw;
+    height: 21vh;
 }
 
 #p-three-title {
@@ -84,7 +85,7 @@
     font-size: 1.5vw;
     font-weight: 700;
     margin: 0;
-    margin-top: 9vh;
+    margin-top: 0;
 }
 
 #p-three-p {
@@ -96,20 +97,18 @@
 
 /*Planet FOUR*/
 #p-four {
-    width: 8vw;
-    height: 30vh;
+    width: 10vw;
+    height: 60vh;
 }
 
 #p-four img {
+    margin-top: 25vh;
     width: 8vw;
     height: 16vh;
 }
 
 #p-four-title {
     color: #3671E9;
-    background: linear-gradient(180deg, #B4C0FE 0%, #9075D5 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 1.5vw;
     font-weight: 700;
     margin: 0;
@@ -124,23 +123,20 @@
 
 /*Planet FIVE*/
 #p-five {
-    width: 12vw;
+    width: 8vw;
     height: 41vh;
 }
 
 #p-five img {
     width: 8vw;
-    height: 16vh;
+    height: 18vh;
 }
 
 #p-five-title {
-    background: linear-gradient(180deg, #B4C0FE 0%, #9075D5 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #3671E9;
     font-size: 1.5vw;
     font-weight: 700;
     margin: 0;
-    margin-top: 11vh
 }
 
 #p-five-p {
@@ -157,14 +153,13 @@
 }
 
 #p-six img {
-    width: 10vw;
+    margin-top: 26vh;
+    width: 9vw;
     height: 20vh;
 }
 
 #p-six-title {
-    background: linear-gradient(180deg, #B4C0FE 0%, #9075D5 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #3671E9;
     font-size: 1.5vw;
     font-weight: 700;
     margin: 0;
@@ -179,7 +174,7 @@
 
 /*Planet SEVEN*/
 #p-seven {
-    width: 9vw;
+    width: 11vw;
     height: 30vh;
 }
 
@@ -190,13 +185,10 @@
 
 #p-seven-title {
     color: #3671E9;
-    background: linear-gradient(180deg, #8284FC 0%, rgba(141, 126, 180, 0.8) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 1.5vw;
     font-weight: 700;
     margin: 0;
-    margin-top: 13vh;
+    margin-top: 5vh;
 }
 
 #p-seven-p {
@@ -208,24 +200,21 @@
 
 /*Planet EIGHT*/
 #p-eight {
-    width: 12vw;
+    width: 10vw;
     height: 30vh;
+    margin-top: 27vh;
 }
 
 #p-eight img {
     width: 7vw;
     height: 14vh;
-    ;
 }
 
 #p-eight-title {
-    background: linear-gradient(180deg, #B4C0FE 0%, #9075D5 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #3671E9;
     font-size: 1.5vw;
     font-weight: 700;
     margin: 0;
-    margin-top: 2vh;
 }
 
 #p-eight-p {
@@ -242,21 +231,44 @@
 }
 
 #p-nine img {
-    width: 10.5vw;
-    height: 21vh;
+    width: 8vw;
+    height: 18vh;
 }
 
 #p-nine-title {
-    background: linear-gradient(180deg, #B4C0FE 0%, #9075D5 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #3671E9;
     font-size: 1.5vw;
     font-weight: 700;
     margin: 0;
-    margin-top: 12vh;
+    margin-top: 5vh;
 }
 
 #p-nine-p {
+    color: white;
+    margin: 0;
+    font-size: 1vw;
+    font-weight: 500;
+}
+/*Planet TEN*/
+#p-ten {
+    width: 12vw;
+    height: 44vh;
+}
+
+#p-ten img {
+    margin-top: 25vh;
+    width: 8vw;
+    height: 18vh;
+}
+
+#p-ten-title {
+    color: #3671E9;
+    font-size: 1.5vw;
+    font-weight: 700;
+    margin: 0;
+}
+
+#p-ten-p {
     color: white;
     margin: 0;
     font-size: 1vw;
@@ -275,7 +287,7 @@
     }
 
     #p-one img {
-        width: 20vw;
+        width: 5vw;
         height: 10vh;
     }
 
