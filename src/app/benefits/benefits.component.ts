@@ -76,7 +76,6 @@ export class BenefitsComponent {
     if (this.x > 11) {
       this.x = 1;
     }
-    console.log(this.x)
   }
 
   res() {
@@ -84,6 +83,5 @@ export class BenefitsComponent {
     if (this.x < 1) {
       this.x = 11;
     }
-    console.log(this.x)
   }
 }
