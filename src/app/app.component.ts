@@ -1,11 +1,23 @@
 import { Component } from '@angular/core';
 import Web3 from 'web3';
-
+import { ConnectService } from './services/connect.service'
 import { MoveDirection, OutMode, Container, Engine } from 'tsparticles-engine';
 import { loadFull } from 'tsparticles';
 
 declare var window: any;
 const web3 = new Web3(window.ethereum);
+
+/*window.ethereum.on('accountsChanged', (accounts: string[]) => {
+  if (accounts.length > 0) {
+    // El usuario ha conectado su cartera de MetaMask y hay al menos una cuenta disponible
+    // Aquí puedes realizar acciones adicionales cuando se conecta la cartera
+    console.log('Cartera de MetaMask conectada. Cuenta actual:', accounts[0]);
+  } else {
+    // El usuario ha desconectado su cartera de MetaMask
+    // Aquí puedes realizar acciones adicionales cuando se desconecta la cartera
+    console.log('Cartera de MetaMask desconectada');
+  }
+});*/
 
 @Component({
   selector: 'app-root',
@@ -13,13 +25,15 @@ const web3 = new Web3(window.ethereum);
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  conectWallet() {
+  constructor (public connectService: ConnectService ){}
+  conectWallet(): void {
     web3.eth
       .requestAccounts()
       .then(async (accounts) => {
         // La conexión se realizó correctamente y tienes acceso a las cuentas del usuario.
         // Puedes utilizar las cuentas para realizar operaciones en Ethereum.
         // Obtener la dirección de la cuenta activa
+        this.connectService.isConnected = true;
         const address = accounts[0];
         // Obtener el saldo de la cuenta en Ether
         const balanceWei = await web3.eth.getBalance(address);
@@ -31,6 +45,9 @@ export class AppComponent {
       .catch((error) => {
         // Ocurrió un error al conectar con MetaMask o el usuario no autorizó la conexión.
       });
+      if(this.connectService.isInstalled === false){
+        window.open("https://metamask.app.link/dapp/vrakkanft.com/");
+      }
   }
 
   //Id for particles of background
@@ -102,6 +119,14 @@ export class AppComponent {
   }
 
   ngOnInit() {
+    if (window.ethereum !== undefined) {
+      this.connectService.isInstalled=true;
+      console.log(window.ethereum)
+    }else{
+      alert('Bienvenido! para navegar en la pagina te recomendamos tener instalado Metamask para una mejor experiencia')
+      this.connectService.isInstalled=false;
+    }
+
     const p1 = document.querySelector('.one');
     const p2 = document.querySelector('.two');
     const p3 = document.querySelector('.three');
@@ -138,7 +163,5 @@ export class AppComponent {
     observador.observe(p6);
     observador.observe(p7);
     observador.observe(p8);
-
-    console.log('Web: ', web3);
   }
 }

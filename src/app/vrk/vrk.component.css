@@ -85,13 +85,13 @@
     justify-content: center;
     margin-top: 2vh;
   }
-  #conect{
+  #connect{
     background: linear-gradient(91.06deg, #ff1cf7 2.26%, #00f0ff 100%);
     width: 25vw;
     height: 5vh;
     border-radius: 50px;
   }
-  #conect.disable{
+  #connect.disable{
     display:none;
   }
 
