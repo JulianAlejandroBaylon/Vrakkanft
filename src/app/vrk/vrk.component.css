@@ -161,7 +161,7 @@ input[type=number] {
 @media (max-width:768px) {
 
   .divabout {
-    display: row;
+    display: table-row;
     flex-direction: column;
     align-items: center;
     height: 78vh;

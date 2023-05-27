@@ -283,7 +283,7 @@ input[type="radio"] {
   .container {
     width: 100vw;
     height: 30vh;
-    display: row;
+    display: table-row;
     flex-direction: column-reverse;
     margin-left: 0vw;
   }
