@@ -46,15 +46,7 @@
 .imgs {
     height: 40vh;
     float: left;
-    transform: scale(1.0);
-    transition: .7s ease-in-out all;
 }
-
-.imgs:hover {
-    transform: scale(1.2);
-    transition: .7s ease-in-out all;
-}
-
 .legendary{
     display: table-row;
     flex-direction: column;
@@ -131,17 +123,17 @@ p {
     .nft {
         width: 100%;
         margin-left: 0;
+        position: relative;
     }
 
     .nft1 {
-        width: 11.5vw;
+        width: 100%vw;
         float: none;
-        margin-right: 0vw;
-        margin: auto;
+        
     }
     .blurbox1 {
-        width: 100%;
-        margin-left: 0;
+        margin-left: 20vw;
+        width: 70%;
     }
 
     .blurbox2 {
@@ -149,7 +141,7 @@ p {
     }
 
     #yellowbtn{
-        width: 70vw;
+        width: 50vw;
         height: 3vh;
         font-size: 3vw;
     }
@@ -177,5 +169,28 @@ p {
         height: 30vh;
         width: 36vw;
     }
-    
+    #first{
+        z-index: 2;
+        position: absolute;
+        transform: translateX(100%);
+        
+    }
+    #second{
+        z-index: 1;
+        position: absolute;
+        transform: translateX(170%);
+        opacity: .8;
+        margin-top: 2vh;
+    }
+    #third{
+        z-index: 1;
+        transform: translateX(30%);
+        opacity: .8;
+        margin-top: 2vh;
+    }
+    #fourth{
+        z-index: 1;
+        transform: translateX(100%);
+        margin-top: 2vh;
+    }
 }
