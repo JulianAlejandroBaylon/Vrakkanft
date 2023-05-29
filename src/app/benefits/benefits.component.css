@@ -285,7 +285,7 @@ input[type="radio"] {
     height: 30vh;
     display: table-row;
     flex-direction: column-reverse;
-    margin-left: 0vw;
+    margin: auto;
   }
   .card {
     margin-top: 5vh;
@@ -298,8 +298,9 @@ input[type="radio"] {
   }
   .text{
     text-align: center;
-    margin-right: 0vw;
-    width: 80vw;
+    width: 80vw;    
+    margin: auto;
+    margin-top: 10vh;
   }
   .text h3{
     font-size: 4vw;
@@ -311,13 +312,13 @@ input[type="radio"] {
     width: 5vw;
     height: 8vh;
     margin-right: 45vw;
-    margin-top: 15vh;
+    margin-top: 5vh;
   }
   .rigth {
     width: 5vw;
     height: 8vh;
-    margin-left: 40vw;
-    margin-top: 15vh;
+    margin-left: 45vw;    
+    margin-top: 5vh;
   }
   #title p{
     line-height: 150%;

@@ -125,7 +125,7 @@ input[type="number"] {
   .divabout{
     display: table-row;
     flex-direction: column;
-    height: 78vh;
+    height: 88vh;
     align-items: center;
   }
   .imga{
