@@ -8,7 +8,6 @@
 }
 
 #titleroadmap h2 {
-    font-weight: 600;
     text-align: center;
     color: #fff;
     font-size: 4.3vw;
@@ -278,67 +277,210 @@
 @media (max-width:768px) {
     #roadmaplanets {
         display: row;
-        flex-direction: column;        
+        flex-direction: column; 
     }
-
+    #titleroadmap h2 {
+        text-align: center;
+        font-size: 7vw;
+        margin-top: 0;
+        font-weight: 700;
+    }
     #p-one {
+        width: 60vw;
         height: 12vh;
         margin: auto;
+        display: flex;
+        align-items: center;
     }
-
+    #p-one-title {
+        margin-top: 0;
+        font-size: 3vw;
+        font-weight: 1000;
+    }
     #p-one img {
-        width: 5vw;
+        width: 15vw;
         height: 10vh;
     }
-
+    #p-one-p{
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
     #p-two{
+        display: flex;
+        width: 60vw;
+        margin: auto;
         height: 12vh;
+        align-items: center;
+    }
+    #p-two-title{
+        font-size: 3vw;
+        font-weight: 1000;
     }
     #p-two img {
-        width: 4vw;
+        margin-top: 0;
+        width: 14vw;
         height: 8vh;
     }
-
+    #p-two-p{
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
     #p-three{
-        height: 12vh;
+        display: flex;
+        width: 60vw;
+        margin: auto;
+        height: 16vh;
+        align-items: center;
+    }
+    #p-three-title{
+        font-size: 3vw;
+        font-weight: 1000;
     }
     #p-three img {
-        width: 6vw;
+        width: 26vw;
         height: 12.5vh;
         margin: 0;
     }
-
+    #p-three-p{
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
     #p-four{
+        display: flex;
+        width: 60vw;
+        margin: auto;
         height: 12vh;
+        align-items: center;
+    }
+    #p-four-title{
+        font-size: 3vw;
+        font-weight: 1000;
     }
     #p-four img {
-        width: 4vw;
+        margin-top: 0;
+        width: 17vw;
         height: 8vh;
     }
-
+    #p-four-p{
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+    #p-five{
+        display: flex;
+        width: 60vw;
+        margin: auto;
+        height: 12vh;
+        align-items: center;
+    }
+    #p-five-title{
+        font-size: 3vw;
+        font-weight: 1000;
+    }
     #p-five img {
-        width: 4vw;
+        width: 14vw;
         height: 8vh;
     }
-
+    #p-five-p{
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+    #p-six{
+        display: flex;
+        width: 60vw;
+        margin: auto;
+        height: 14vh;
+        align-items: center;
+    }
+    #p-six-title{
+        font-size: 3vw;
+        font-weight: 1000;
+    }
     #p-six img {
-        width: 5vw;
+        margin-top: 0;
+        width: 20vw;
         height: 10vh;
     }
-
+    #p-six-p{
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+    #p-seven{
+        display: flex;
+        width: 60vw;
+        margin: auto;
+        height: 12vh;
+        align-items: center;
+    }
+    #p-seven-title{
+        margin-top: 0;
+        font-size: 3vw;
+        font-weight: 1000;
+    }
     #p-seven img {
-        width: 4.5vw;
+        width: 16vw;
         height: 9vh;
     }
-
-    #p-eight img {
-        width: 3.5vw;
-        height: 7vh;
-        ;
+    #p-seven-p{
+        font-size: 2.5vw;
+        font-weight: 500;
     }
-
+    #p-eight{
+        display: flex;
+        width: 60vw;
+        margin: auto;
+        height: 12vh;
+        align-items: center;
+    }
+    #p-eight-title{
+        font-size: 3vw;
+        font-weight: 1000;
+    }
+    #p-eight img {
+        width: 14vw;
+        height: 7vh;
+    }
+    #p-eight-p{
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+    #p-nine{
+        display: flex;
+        width: 60vw;
+        margin: auto;
+        height: 12vh;
+        align-items: center;
+    }
+    #p-nine-title{
+        margin-top: 0;
+        font-size: 3vw;
+        font-weight: 1000;
+    }
     #p-nine img {
-        width: 5vw;
+        width: 18vw;
         height: 10vh;
+    }
+    #p-nine-p{
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+    #p-ten{
+        display: flex;
+        width: 60vw;
+        margin: auto;
+        height: 14vh;
+        align-items: center;
+    }
+    #p-ten-title{
+        font-size: 3vw;
+        font-weight: 1000;
+    }
+    #p-ten img{
+        margin-top: 0;
+        width: 18vw;
+        height: 10vh;
+    }
+    #p-ten-p{
+        font-size: 2.5vw;
+        font-weight: 500;
     }
 }
