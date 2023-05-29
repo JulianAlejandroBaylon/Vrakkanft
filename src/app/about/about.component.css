@@ -27,6 +27,12 @@
   .aboutc{
     text-align: justify;
   }
+  .textimg1{
+    font-size: 1vw; font-weight: 500;
+  }
+  .textimg2{
+    font-size: 0.8vw; font-weight: 500;
+  }
   h4{
     font-size: 1.5vw;
   }
@@ -110,3 +116,56 @@
     box-shadow: 0px 0px 22.5517px 3.0069px #239DEB;
   }
 
+@media (max-width:768px) {
+  .box{
+    display: row;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+  }
+  #textboxa{
+    margin-left: 0;
+  }
+  #textboxb{
+    margin: 4vh 4vw 0 4vw;
+    width: 70%;
+  }
+  #textboxa h4{
+    font-size: 5vw;
+  }
+  #firsttextbox{
+    font-size: 3.5vw;
+  }
+  #secondtextbox {
+    font-size: 4vw;
+
+    font-weight: 600;
+  }
+  #textcolors{
+    background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    font-size: 6vw;
+    font-weight: 900;
+  }
+  #textgray{
+    font-size: 3vw;
+    color: #7780a1;
+  }
+  .team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Divide en dos columnas */
+    gap: 1em; /* Espacio entre las columnas */
+  }
+  #teams {
+    width: 40vw;
+    height: 30vh;
+  }
+  .textimg1{
+    font-size: 4vw; font-weight: 500;
+  }
+  .textimg2{
+    font-size: 3.5vw; font-weight: 500;
+  }
+}
