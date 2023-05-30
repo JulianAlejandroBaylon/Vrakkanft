@@ -236,8 +236,8 @@ header{
 
 .footer #container {
   margin-top: 5px;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 
@@ -253,23 +253,23 @@ header{
 
 .contact{
   font-family: 'Rubik';
-  font-size: 15px;
+  font-size: 100%;
   font-weight: 100;
   margin: 0;
-  width: 50vw;
-  padding-left: 1vw;
+  width: 100%;
+  padding-left: 1%;
 }
 .social-icons {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 10px;
-  width: 50vw;
+  width: 10vw;
 }
 
 .social-icons img {
-  width: 35px;
-  height: 35px;
+  width: 45%;
+  height: 45%;
   margin-left: 5px;
 }
 
@@ -277,17 +277,13 @@ header{
   margin: auto;
 }
 .contact img{
-  width: 18px;
-  height: 18px;
+  width: 1%;
+  height: 2%;
   margin-left: 5px;
   text-align: center;
 }
 
 
-/* Estilos para el botón desplegable */
-button.dropdown-toggle {
-  display: none;
-}
 @media (max-width: 768px) {
 .logo{
   width: 38vw;
