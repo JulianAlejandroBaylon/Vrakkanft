@@ -86,7 +86,7 @@ img {
 #item-5:checked ~ .cards #selector-5,
 #item-6:checked ~ .cards #selector-6,
 #item-7:checked ~ .cards #selector-7 {
-  transform: translateX(-120%) scale(0.4);
+  transform: translateX(-100%) scale(0.4);
   z-index: 10;
   opacity: 0.4;
 }
@@ -158,7 +158,7 @@ img {
 #item-4:checked ~ .cards #selector-5,
 #item-5:checked ~ .cards #selector-6,
 #item-6:checked ~ .cards #selector-7 {
-  transform: translateX(120%) scale(0.4);
+  transform: translateX(100%) scale(0.4);
   z-index: 10;
   opacity: 0.4;
 }
