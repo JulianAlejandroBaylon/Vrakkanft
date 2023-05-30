@@ -113,7 +113,7 @@ header{
 
 .page-content {
   /*Width to horizontal scroll bar*/
-  width: 41vw;
+  width: 40%;
   height: 100vw;
   transform: rotate(-90deg) translateX(-78vh) translateY(-10px);
   transform-origin: top left;
