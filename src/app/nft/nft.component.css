@@ -126,6 +126,7 @@ input[type="number"] {
     display: table-row;
     flex-direction: column;
     height: 88vh;
+    width: 78vw;
     align-items: center;
   }
   .imga{
