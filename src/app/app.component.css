@@ -11,7 +11,6 @@ nav ul {
   color: white;
   padding-left: 0;
 }
-
 /*Text format of the navigation bar*/
 nav ul li a {
   text-decoration: none;
@@ -113,8 +112,8 @@ header{
 
 .page-content {
   /*Width to horizontal scroll bar*/
-  width: 40%;
-  height: 206%;
+  width: 41vw;
+  height: 100vw;
   transform: rotate(-90deg) translateX(-78vh) translateY(-10px);
   transform-origin: top left;
   overflow-y: scroll;
@@ -325,7 +324,6 @@ header{
     -ms-overflow-style: initial;
     -webkit-scrollbar-thumb: initial;
   }
-
   .slides {
     transform: none;
     transform-origin: initial;
@@ -334,7 +332,6 @@ header{
     height: auto;
     display: flex;
     flex-direction: column;
-
   }
   .one{
     width: 100%;
