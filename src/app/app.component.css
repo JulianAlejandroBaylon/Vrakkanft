@@ -318,7 +318,7 @@ header{
     height: auto;
     transform: none;
     transform-origin: initial;
-    overflow: initial;
+    overflow: none;
     position: initial;
     scrollbar-width: initial;
     -ms-overflow-style: initial;
@@ -335,7 +335,7 @@ header{
   }
   .one{
     width: 100%;
-    background-image: none;
+    background-image: none; 
   }
   .two{
     width: 100%;
