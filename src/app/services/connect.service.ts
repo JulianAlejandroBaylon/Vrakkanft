@@ -69,7 +69,10 @@ export class ConnectService {
         console.log('Saldo de la cuenta:', balanceEther, 'ETH');
       })
       .catch((error) => {
-        console.error('Error al conectar con MetaMask o el usuario no autorizó la conexión:', error);
+        console.error(
+          'Error al conectar con MetaMask o el usuario no autorizó la conexión:',
+          error
+        );
       });
 
     if (!this.isInstalled) {
@@ -78,6 +81,36 @@ export class ConnectService {
 
     console.log(this.isConnected);
   }
+
+  /*buy() {
+    // Importa la biblioteca web3.js
+    const Web3 = require('web3');
+
+    // Conecta con MetaMask
+    const web3 = new Web3(window.ethereum);
+
+    // Escucha el evento de clic del botón de compra
+    document
+      .getElementById('botonCompra')
+      .addEventListener('click', async () => {
+        // Comprueba si MetaMask está conectado
+        if (typeof web3 !== 'undefined') {
+          // Pide permiso al usuario para acceder a su cuenta de MetaMask
+          await window.ethereum.enable();
+
+          // Crea una instancia del contrato utilizando la dirección del contrato
+          const contrato = new web3.eth.Contract(ABI, contratoAddress);
+
+          // Realiza la compra utilizando el método apropiado del contrato
+          await contrato.methods
+            .comprar()
+            .send({ from: web3.eth.defaultAccount });
+          console.log('Compra realizada correctamente');
+        } else {
+          console.log('MetaMask no está instalado');
+        }
+      });
+  }*/
 
   constructor() {}
 }
