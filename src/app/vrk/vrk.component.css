@@ -28,7 +28,7 @@ p {
   margin: 0 auto;
   z-index: 0;
   /* Valor predeterminado */
-  list-style-image: url("/assets/images/check.webp");
+  list-style-image: url("/assets/images/check.webp");  
 }
 
 .divabout::before {
@@ -54,7 +54,7 @@ ul {
 }
 
 .imga {
-  width: 25vw;
+  width: 21vw;
   height: 50vh;
 }
 
