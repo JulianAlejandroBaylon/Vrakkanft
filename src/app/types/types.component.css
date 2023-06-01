@@ -48,11 +48,11 @@
     float: left;
 }
 .legendary{
-    display: table-row;
+    display: flex;
     flex-direction: column;
 }
 .normal{
-    display: table-row;
+    display: flex;
     flex-direction: column;
 }
 .blurbox1 {
@@ -66,11 +66,9 @@
     border-width: 3.72189px 0px;
     border-color: rgba(255, 255, 255, 0.4);
     border-style: solid;
-    float: left;
 }
 
 .blurbox2 {
-    float: right;
     margin-left: auto;
     margin-right: 10vw;
     width: 11vw;
@@ -122,32 +120,33 @@ p {
 
     .nft {
         width: 100%;
-        margin-left: 0;
+        margin-left: -6vw;
         position: relative;
     }
 
     .nft1 {
-        width: 100%vw;
+        width: 100%;
         float: none;
-        
+        margin-left: -6vw;
     }
     .blurbox1 {
-        margin-left: 20vw;
-        width: 70%;
+        margin-left: 23vw;
+        width: 50%;
     }
 
     .blurbox2 {
-        width: 70%;
+        width: 50%;
+        margin-right: 28vw;
     }
 
     #yellowbtn{
-        width: 50vw;
-        height: 3vh;
+        width: 80%;
+        height: 10%;
         font-size: 3vw;
     }
     #bluebtn{
-        width: 50vw;
-        height: 3vh;
+        width: 80%;
+        height: 10%;
         font-size: 3vw;
     }
     .text{

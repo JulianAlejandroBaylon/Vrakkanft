@@ -299,6 +299,7 @@
         margin-top: 0;
         font-size: 3vw;
         font-weight: 1000;
+        width: 50%;
     }
     #p-one img {
         width: 22vw;
@@ -323,6 +324,7 @@
     #p-two-title{
         font-size: 3vw;
         font-weight: 1000;
+        width: 30%;
     }
     #p-two img {
         margin-top: 0;
@@ -344,6 +346,7 @@
         font-size: 3vw;
         font-weight: 1000;
         order: 2;
+        width: 50%;
     }
     #p-three img {
         width: 26vw;
@@ -366,6 +369,7 @@
     #p-four-title{
         font-size: 3vw;
         font-weight: 1000;
+        width: 50%;
     }
     #p-four img {
         margin-top: 0;
@@ -378,7 +382,7 @@
     }
     #p-five{
         display: flex;
-        width: 40vw;
+        width: 50vw;
         margin: auto;
         height: 12vh;
         align-items: center;
@@ -387,6 +391,7 @@
         font-size: 3vw;
         font-weight: 1000;
         order: 2;
+        width: 50%;
     }
     #p-five img {
         width: 14vw;
@@ -408,6 +413,7 @@
     #p-six-title{
         font-size: 3vw;
         font-weight: 1000;
+        width: 50%;
     }
     #p-six img {
         margin-top: 0;
@@ -430,6 +436,7 @@
         font-size: 3vw;
         font-weight: 1000;
         order: 2;
+        width: 50%;
     }
     #p-seven img {
         width: 16vw;
@@ -451,6 +458,7 @@
     #p-eight-title{
         font-size: 3vw;
         font-weight: 1000;
+        width: 50%;
     }
     #p-eight img {
         width: 14vw;
@@ -472,6 +480,7 @@
         font-size: 3vw;
         font-weight: 1000;
         order: 2;
+        width: 50%;
     }
     #p-nine img {
         width: 18vw;
@@ -493,6 +502,7 @@
     #p-ten-title{
         font-size: 3vw;
         font-weight: 1000;
+        width: 50%;
     }
     #p-ten img{
         margin-top: 0;
