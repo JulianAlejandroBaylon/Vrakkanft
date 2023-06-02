@@ -6,8 +6,119 @@
     "Gallery": "Gallery",
     "About": "About"
   },
+  "Buttons":{
+    "connect": "Connect Wallet",
+    "buy": "Buy"
+  },
 
   "Home": {
+    "title": "ARE YOU READY TO BE A HYPERHERO?",
+    "h1": "In your habits",
+    "future": "Is your future",
+    "desc": "As a community we give you the tools to achieve your goals!",
+    "nft1": "Hyperhero #203",
+    "nft2": "Hyperhero #10567"
+  },
+  "VRK": {
+    "description1": "Is a digital asset created for the Vrakka ecosystem that seeks to revalue itself, based on Blockchain technology supported on BSC, developed by a team of experts.",
+    "description2": "VRK Token as a product is a great solution to introduce people to the world of digital assets and allow them to receive financial rewards for fulfilling their habits.",
+    "dontMiss": "Don't miss the...",
+    "preSale": "PRE SALE",
+    "utilityToken": "Utility Token",
+    "deflationaryToken": "Deflationary Token",
+    "tokenLimit": "Token with limit",
+    "currentPrice": "Current price",
+    "disclaimer": "Disclaimer",
+    "nonRevelationSale": "Non revelation sale"
+  },
+  "NFT": {
+    "title": "Hyperhabits Multiverse",
+    "firsttextbox": "Join us to save our planet and help humanity Grow & Win. This collection is created to improve the quality of life in people and the realization of their good habits.",
+    "secondtextbox": "A 12,000 NFT collection that potentiates the obtention of VRK tokens and allows you to get benefits within a very broad ecosystem!",
+    "textgray": "Don't miss the reveal...",
+    "ecosystem": "Ecosystem",
+    "price": "Current price",
+    "disclaimer": "Disclaimer"
+  },
 
+  "Benefits": {
+    "Title": "Why we are the best?",
+    "Title2": "Benefits you can't miss",
+    "1": {
+      "title": "Discounts and promotions",
+      "text": "On the Vrakka Marketplace for products and courses."
+    },
+    "2": {
+      "title": "Monetize",
+      "text": "The amount of tokens you get in the app."
+    },
+    "3": {
+      "title": "Access to Vrakka Academy",
+      "text": "Learn more about crypto and new technologies."
+    },
+    "4": {
+      "title": "Exclusive access to Vrk community",
+      "text": "Attend exclusive events, find out before everyone else about the news and much more."
+    },
+    "5": {
+      "title": "Access to Vrakka trading",
+      "text": "Learn more about trading and investments."
+    },
+    "6": {
+      "title": "Access to Vrakka Metaverse",
+      "text": "Personal development workshops, coaches, nutritionists, and more services!"
+    },
+    "7": {
+      "title": "Rent and sale in APP",
+      "text": "Earn passive tokens renting your NFT"
+    },
+    "8": {
+      "title": "Token private sales access",
+      "text": "And future products within the ecosystem"
+    },
+    "9": {
+      "title": "Enhance ",
+      "text": "The amount of tokens you get in the app."
+    },
+    "10": {
+      "title": "Staking",
+      "text": "Safeguard your NFT and get more VRK tokens. "
+    },
+    "11": {
+      "title": "Access to Vrakka Gaming",
+      "text": "Enjoy IQ games where you can bet and win more."
+    }
+  },
+  "Gallery": {
+    "title": "Gallery",
+    "text": "Explore our newly released NFT collection"
+  },
+  "Types": {
+    "title": "Enhancer Types",
+    "text": "Do you want to potenciate you earnings?",
+    "legend": "Legendary"
+  },
+  "Roadmap": {
+      "description": "Creation & \ndevelopment",
+      "description2": "Community \norientation",
+      "description3": "Smart contract audit\nNon-disclosed sale\nAccess to Vrakka Academy\n& Vrakka Trading",
+      "description4": "Disclosure of minted \ncollection",
+      "description5": "Community introduction in App\nVRK enhancer\nBenefits in App",
+      "description6": "Monetization of VRK\nstaking functions",
+      "description7": "NFT'S marketplace launch\nAccess to Vrakka Events",
+      "description8": "Sale and rent in Vrakka Habits",
+      "description9": "Vrakka Gaming functions and access\nPresale participation in digital assets",
+      "description10": "Introduction\nVrakkaverse"
+    },
+    "About": {
+      "about": "About",
+      "title": "What is Hyperhabits Multiverse?",
+      "text": "It is a collection of NFTs created in the Vrakka ecosystem to encourage users to seek to improve their quality of life by performing good habits. The collection is based on a story, where the NFTs are \"heroes\" who come to earth to help users improve their lives, so that they can contribute to society to save the world.",
+      "text2": "The NFT has a utility In the ecosystem , becoming a master key to access multiple benefits.",
+      "hyper": "Hyperheroes...",
+      "desc": "We are here to save the world!",
+      "team": "Team"
+    }
   }
-}
+
+
