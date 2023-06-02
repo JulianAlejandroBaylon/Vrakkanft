@@ -160,4 +160,7 @@ input[type="number"] {
   .divbox{
     margin: auto;
   }
+  .vrakkalg{
+    width: 70%;
+  }
 }
