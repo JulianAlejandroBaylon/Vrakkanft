@@ -5,19 +5,19 @@
         </div>
         <div style="display:row" class="textabout">
             <h3>VRK Token</h3>
-            <p id="firsttextbox">Is a digital asset created for the Vrakka ecosystem that seeks to revalue itself,  based on Blockchain technology supported on BSC, developed by a team of experts.  </p>
-            <p id="secondtextbox">VRK Token as a product is a great solution to introduce people to the world of digital assets and allow them to receive financial rewards for fulfilling their habits.</p>
+            <p id="firsttextbox">{{'VRK.description1' | translate}}</p>
+            <p id="secondtextbox">{{'VRK.description2' | translate}}</p>
 
             <div style="display: flex;">
                 <div>
-                    <p id="textgray" style="margin-bottom: 0;">Don't miss the...</p>
-                    <p id="presale">PRE SALE</p>
+                    <p id="textgray" style="margin-bottom: 0;">{{'VRK.dontMiss' | translate}}</p>
+                    <p id="presale">{{'VRK.preSale' | translate}}</p>
                 </div>
                 <div style="display: row;">
                         <ul>
-                            <li>Utility Token</li>
-                            <li>Deflationary Token</li>
-                            <li>Token with limit</li>
+                            <li>{{'VRK.utilityToken' | translate}}</li>
+                            <li>{{'VRK.deflationaryToken' | translate}}</li>
+                            <li>{{'VRK.tokenLimit' | translate}}</li>
                         </ul>
                 </div>
             </div>
@@ -25,7 +25,7 @@
                 <div style="display:flex">
                     <div style="display: row;" class="divbox">
                         <div>
-                            <p id="textgray">Current price</p>
+                            <p id="textgray">{{'VRK.currentPrice' | translate}}</p>
                         </div>
                         <div>
                             <strong id="price">0.10</strong>USD
@@ -33,19 +33,19 @@
                     </div>
                     <div style="display: row;" class="divbox">
                         <div>
-                            <p id="textgray">Disclaimer</p>
+                            <p id="textgray">{{'VRK.disclaimer' | translate}}</p>
                         </div>
                         <div id="textb" style="margin-top: 1.5vw;">
-                            Non revelation sale
+                            {{'VRK.nonRevelationSale' | translate}}
                         </div>
                     </div>
                 </div>
                 <div class="buttonbox">
                     <button [ngClass]="{'disable': this.connectService.isConnected}" id="connect" (click)="conectWallet()">
-                        Connect wallet
+                        {{'Buttons.connect' | translate}}
                     </button>
                     <input [ngClass]="{'disable': this.connectService.isConnected}" id="cantidad" type="number">
-                    <button [ngClass]="{'disable': this.connectService.isConnected}" id="buy">Buy</button>
+                    <button [ngClass]="{'disable': this.connectService.isConnected}" id="buy">{{'Buttons.buy' | translate}}</button>
                 </div>
 
             </div>

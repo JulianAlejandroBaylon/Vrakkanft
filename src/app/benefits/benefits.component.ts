@@ -23,54 +23,6 @@ export class BenefitsComponent {
     'assets/images/benefits11.webp',
   ];
 
-  texto: any = {
-    1: {
-      title: 'Discounts and promotions',
-      text: 'On the Vrakka Marketplace for products and courses.',
-    },
-    2:{
-      title: 'Monetize',
-      text: 'The amount of tokens you get in the app.',
-    },
-    3:{
-      title: 'Access to Vrakka Academy',
-      text: 'Learn more about crypto and new technologies.',
-    },
-    4:{
-      title: 'Exclusive access to Vrk community',
-      text: 'Attend exclusive events, find out before everyone else about the news and much more.',
-    },
-    5:{
-      title: 'Access to Vrakka trading',
-      text: 'Learn more about trading and investments.',
-    },
-    6:{
-      title: 'Access to Vrakka Metaverse',
-      text: 'Personal development workshops, coaches, nutritionists, and more services!',
-    },
-    7:{
-      title: 'Rent and sale in APP',
-      text: 'Earn passive tokens renting your NFT',
-    },
-    8:{
-      title: 'Token private sales access',
-      text: 'And future products within the ecosystem',
-    },
-    9:{
-      title: 'Enhance ',
-      text: 'The amount of tokens you get in the app.',
-    },
-    10:{
-      title: 'Staking',
-      text: 'Safeguard your NFT and get more VRK tokens. ',
-    },
-    11:{
-      title: 'Access to Vrakka Gaming',
-      text: 'Enjoy IQ games where you can bet and win more.',
-    },
-  };
-
-
   suma() {
     this.x++;
     if (this.x > 11) {

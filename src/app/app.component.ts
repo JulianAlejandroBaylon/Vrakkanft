@@ -10,18 +10,18 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  idioma=false;
   constructor(
     public connectService: ConnectService,
     private translateService: TranslateService) {
-      // Establecer el idioma predeterminado
       this.translateService.setDefaultLang('en');
-      // Cargar traducciones adicionales según sea necesario
-      this.translateService.use('en');
   }
 
-  /*changeLanguage(language: string) {
-    this.translate.use(language);
-  }*/
+  changeLanguage() {
+    this.idioma=!this.idioma;
+      this.translateService.use(this.idioma ? 'es' : 'en')
+  }
+
   conectWallet(): void {
     this.connectService.connectWallet();
   }

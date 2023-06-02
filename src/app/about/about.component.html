@@ -1,29 +1,24 @@
 <div id="about">
   <div class="aboutc">
-    <h3 style="margin: 0 0 1vw 0; text-align: center">About</h3>
+    <h3 style="margin: 0 0 1vw 0; text-align: center">{{'About.about' | translate}}</h3>
     <div class="box" style="display: flex">
       <div id="textboxa">
-        <h4>What is Hyperhabits Multiverse?</h4>
+        <h4>{{'About.title' | translate}}</h4>
         <p id="firsttextbox">
-          It is a collection of NFTs created in the Vrakka ecosystem to
-          encourage users to seek to improve their quality of life by performing
-          good habits. The collection is based on a story, where the NFTs are
-          "heroes" who come to earth to help users improve their lives, so that
-          they can contribute to society to save the world.
+          {{'About.text' | translate}}
         </p>
         <p id="secondtextbox">
-          The NFT has a utility In the ecosystem , becoming a master key to
-          access multiple benefits.
+          {{'About.text2' | translate}}
         </p>
       </div>
       <div id="textboxb">
-        <p id="textgray" style="margin-bottom: 0">Hyperheroes...</p>
-        <p id="textcolors">We are here to save the world!</p>
+        <p id="textgray" style="margin-bottom: 0">{{'About.hyper' | translate}}</p>
+        <p id="textcolors">{{'About.desc' | translate}}</p>
       </div>
     </div>
   </div>
   <div class="aboutd">
-    <h3 style="margin: 0 0 1vw 0; text-align: center">Team</h3>
+    <h3 style="margin: 0 0 1vw 0; text-align: center">{{'About.team' | translate}}</h3>
     <div class="team">
       <div id="teams" *ngFor="let x of ran">
         <img id="foto" src="{{ fotos[x] }}" alt="">

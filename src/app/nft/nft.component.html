@@ -4,15 +4,13 @@
             <img class="imga" src="../assets/images/nonreveal.webp" alt="">
         </div>
         <div style="display:row" class="textabout">
-            <h3>Hyperhabits Multiverse</h3>
-            <p id="firsttextbox">Join us to save our planet and help humanity Grow & Win. This collection is created to
-                improve the quality of life in people and the realization of their good habits. </p>
-            <p id="secondtextbox">A 12,000 NFT collection that potentiates the obtention of VRK tokens and allows you to
-                get benefits within a very broad ecosystem!</p>
+            <h3>{{'NFT.title' | translate}}</h3>
+            <p id="firsttextbox">{{'NFT.firsttextbox' | translate}}</p>
+            <p id="secondtextbox">{{'NFT.secondtextbox' | translate}}</p>
 
             <div style="display: flex;">
                 <div>
-                    <p id="textgray">Don't miss the reveal...</p>
+                    <p id="textgray">{{'NFT.textgray' | translate}}</p>
                 </div>
                 <div style="display: flex;">
                     <div style="margin-left: 8vw; margin-top: 0.8vw;">
@@ -20,7 +18,7 @@
                     </div>
                     <div>
                         <p id='textb' style="margin-bottom: -1vw;">Vrakka</p>
-                        <p id='textb' style="color: #7780A1;">Ecosystem</p>
+                        <p id='textb' style="color: #7780A1;">{{'NFT.ecosystem' | translate}}</p>
                     </div>
 
                 </div>
@@ -29,7 +27,7 @@
                 <div style="display:flex">
                     <div style="display: row;" class="divbox">
                         <div>
-                            <p id="textgray">Current price</p>
+                            <p id="textgray">{{'NFT.price' | translate}}</p>
                         </div>
                         <div>
                             <strong id="price">250</strong>USD
@@ -37,18 +35,18 @@
                     </div>
                     <div style="display: row;" class="divbox">
                         <div>
-                            <p id="textgray">Disclaimer</p>
+                            <p id="textgray">{{'NFT.disclaimer' | translate}}</p>
                         </div>
                         <div id='textb' style="margin-top: 1.5vw;">
-                            Non revelation sale
+                            {{'VRK.nonRevelationSale' | translate}}
                         </div>
                     </div>
                 </div>
                 <div class="buttonbox">
                   <button [ngClass]="{'nel': this.connectService.isConnected}" id="conect2" (click)="connectWallet()">
-                      Connect wallet
+                     {{'Buttons.connect' | translate}}
                   </button>
-                  <button [ngClass]="{'nel': this.connectService.isConnected}" id="buy2">Buy</button>
+                  <button [ngClass]="{'nel': this.connectService.isConnected}" id="buy2">{{'Buttons.buy' | translate }}</button>
               </div>
 
             </div>
