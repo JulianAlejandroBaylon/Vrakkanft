@@ -11,7 +11,14 @@ import { RoadmapComponent } from './roadmap/roadmap.component';
 import { VrkComponent } from './vrk/vrk.component';
 import { AboutComponent } from './about/about.component';
 import { NgParticlesModule } from "ng-particles";
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+// Función para cargar archivos JSON
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -28,7 +35,15 @@ import { NgParticlesModule } from "ng-particles";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgParticlesModule
+    NgParticlesModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,23 +1,8 @@
 import { Component } from '@angular/core';
-import Web3 from 'web3';
-import { ConnectService } from './services/connect.service'
+import { ConnectService } from './services/connect.service';
 import { MoveDirection, OutMode, Container, Engine } from 'tsparticles-engine';
 import { loadFull } from 'tsparticles';
-
-declare var window: any;
-const web3 = new Web3(window.ethereum);
-
-/*window.ethereum.on('accountsChanged', (accounts: string[]) => {
-  if (accounts.length > 0) {
-    // El usuario ha conectado su cartera de MetaMask y hay al menos una cuenta disponible
-    // Aquí puedes realizar acciones adicionales cuando se conecta la cartera
-    console.log('Cartera de MetaMask conectada. Cuenta actual:', accounts[0]);
-  } else {
-    // El usuario ha desconectado su cartera de MetaMask
-    // Aquí puedes realizar acciones adicionales cuando se desconecta la cartera
-    console.log('Cartera de MetaMask desconectada');
-  }
-});*/
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -25,9 +10,20 @@ const web3 = new Web3(window.ethereum);
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  constructor (public connectService: ConnectService ){}
+  constructor(
+    public connectService: ConnectService,
+    private translateService: TranslateService) {
+      // Establecer el idioma predeterminado
+      this.translateService.setDefaultLang('en');
+      // Cargar traducciones adicionales según sea necesario
+      this.translateService.use('en');
+  }
+
+  /*changeLanguage(language: string) {
+    this.translate.use(language);
+  }*/
   conectWallet(): void {
-    this.connectService.connectWallet()
+    this.connectService.connectWallet();
   }
 
   //Id for particles of background
@@ -99,7 +95,7 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    this.connectService.addMetaMaskEventListeners()
+    this.connectService.addMetaMaskEventListeners();
     const p1 = document.querySelector('.one');
     const p2 = document.querySelector('.two');
     const p3 = document.querySelector('.three');
