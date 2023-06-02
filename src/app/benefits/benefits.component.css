@@ -333,3 +333,56 @@ input[type="radio"] {
   }
 
 }
+@media (max-width: 992px)and(min-width: 768px){
+  .container {
+    width: 100vw;
+    height: 30vh;
+    display: table-row;
+    flex-direction: column-reverse;
+    margin: auto;
+  }
+  .card {
+    margin-top: 5vh;
+    width: 30%;
+  }
+  .card img{
+    width: 115%;
+    height: 95%;
+    object-fit: cover;
+  }
+  .text{
+    text-align: center;
+    width: 80vw;    
+    margin: auto;
+    margin-top: 10vh;
+  }
+  .text h3{
+    font-size: 4vw;
+  }
+  .text p{
+    font-size: 3vw;
+  }
+  .left {
+    width: 5vw;
+    height: 8vh;
+    margin-right: 45vw;
+    margin-top: 5vh;
+  }
+  .rigth {
+    width: 5vw;
+    height: 8vh;
+    margin-left: 45vw;    
+    margin-top: 5vh;
+  }
+  #title p{
+    line-height: 150%;
+    font-size: 5vw;
+  }
+
+  #title h2{
+    font-size: 6vw;
+    font-weight: 700;
+    line-height: 71px;
+    margin-bottom: 5vh;
+  }
+}

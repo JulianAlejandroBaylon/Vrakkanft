@@ -514,3 +514,243 @@
         font-weight: 500;
     }
 }
+@media (max-width: 992px)and(min-width: 768px){
+    #roadmaplanets {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #titleroadmap h2 {
+        text-align: center;
+        font-size: 7vw;
+        margin-top: 0;
+        font-weight: 700;
+        align-items: center;
+    }
+    #p-one {
+        width: 50vw;
+        height: 12vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    
+    #p-one-title {
+        margin-top: 0;
+        font-size: 3vw;
+        font-weight: 1000;
+        width: 50%;
+    }
+    #p-one img {
+        width: 22vw;
+        height: 10vh;
+        order: 3;
+    }
+    #p-one p{
+        font-size: 2.5vw;
+        font-weight: 500;
+        order: 1;
+    }
+    #p-one h3{
+        order: 3;
+    }
+    #p-two{
+        display: flex;
+        width: 50vw;
+        margin: auto;
+        height: 12vh;
+        align-items: center;
+    }
+    #p-two-title{
+        font-size: 3vw;
+        font-weight: 1000;
+        width: 30%;
+    }
+    #p-two img {
+        margin-top: 0;
+        width: 17vw;
+        height: 8vh;
+    }
+    #p-two-p{
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+    #p-three{
+        display: flex;
+        width: 60vw;
+        margin: auto;
+        height: 16vh;
+        align-items: center;
+    }
+    #p-three-title{
+        font-size: 3vw;
+        font-weight: 1000;
+        order: 2;
+        width: 50%;
+    }
+    #p-three img {
+        width: 26vw;
+        height: 12.5vh;
+        margin: 0;
+        order: 3;
+    }
+    #p-three-p{
+        font-size: 2.5vw;
+        font-weight: 500;
+        order: 1;
+    }
+    #p-four{
+        display: flex;
+        width: 50vw;
+        margin: auto;
+        height: 12vh;
+        align-items: center;
+    }
+    #p-four-title{
+        font-size: 3vw;
+        font-weight: 1000;
+        width: 50%;
+    }
+    #p-four img {
+        margin-top: 0;
+        width: 17vw;
+        height: 8vh;
+    }
+    #p-four-p{
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+    #p-five{
+        display: flex;
+        width: 50vw;
+        margin: auto;
+        height: 12vh;
+        align-items: center;
+    }
+    #p-five-title{
+        font-size: 3vw;
+        font-weight: 1000;
+        order: 2;
+        width: 50%;
+    }
+    #p-five img {
+        width: 14vw;
+        height: 8vh;
+        order: 3;
+    }
+    #p-five-p{
+        font-size: 2.5vw;
+        font-weight: 500;
+        order: 1;
+    }
+    #p-six{
+        display: flex;
+        width: 60vw;
+        margin: auto;
+        height: 14vh;
+        align-items: center;
+    }
+    #p-six-title{
+        font-size: 3vw;
+        font-weight: 1000;
+        width: 50%;
+    }
+    #p-six img {
+        margin-top: 0;
+        width: 20vw;
+        height: 10vh;
+    }
+    #p-six-p{
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+    #p-seven{
+        display: flex;
+        width: 50vw;
+        margin: auto;
+        height: 12vh;
+        align-items: center;
+    }
+    #p-seven-title{
+        margin-top: 0;
+        font-size: 3vw;
+        font-weight: 1000;
+        order: 2;
+        width: 50%;
+    }
+    #p-seven img {
+        width: 16vw;
+        height: 9vh;
+        order: 3;
+    }
+    #p-seven-p{
+        font-size: 2.5vw;
+        font-weight: 500;
+        order: 1;
+    }
+    #p-eight{
+        display: flex;
+        width: 50vw;
+        margin: auto;
+        height: 12vh;
+        align-items: center;
+    }
+    #p-eight-title{
+        font-size: 3vw;
+        font-weight: 1000;
+        width: 50%;
+    }
+    #p-eight img {
+        width: 14vw;
+        height: 7vh;
+    }
+    #p-eight-p{
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+    #p-nine{
+        display: flex;
+        width: 50vw;
+        margin: auto;
+        height: 12vh;
+        align-items: center;
+    }
+    #p-nine-title{
+        margin-top: 0;
+        font-size: 3vw;
+        font-weight: 1000;
+        order: 2;
+        width: 50%;
+    }
+    #p-nine img {
+        width: 18vw;
+        height: 10vh;
+        order: 3;
+    }
+    #p-nine-p{
+        font-size: 2.5vw;
+        font-weight: 500;
+        order: 1;
+    }
+    #p-ten{
+        display: flex;
+        width: 50vw;
+        margin: auto;
+        height: 14vh;
+        align-items: center;
+    }
+    #p-ten-title{
+        font-size: 3vw;
+        font-weight: 1000;
+        width: 50%;
+    }
+    #p-ten img{
+        margin-top: 0;
+        width: 18vw;
+        height: 10vh;
+    }
+    #p-ten-p{
+        font-size: 2.5vw;
+        font-weight: 500;
+    }
+}
