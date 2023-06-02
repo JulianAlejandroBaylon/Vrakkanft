@@ -31,10 +31,8 @@
 }
 
 .nft {
-    display: flex;
-    justify-content: space-between;
     width: 20vw;
-    margin-left: 10vw;
+    margin-left: 5vw;
 }
 
 .nft1 {
@@ -49,6 +47,7 @@
 
 .legendary {
     display: flex;
+    margin-left: 10%;
 }
 
 .textboxes {
@@ -59,7 +58,10 @@
 .title1 {
     position: absolute;
     width: 15vw;
-    height: 10vh;    
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .title1::before {
