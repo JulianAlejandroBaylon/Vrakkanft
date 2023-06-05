@@ -260,9 +260,11 @@ p {
 
     .nft {
         order: 2;
-        width: 40vw;
+        width: 43vw;
         margin-left: 0;
         margin-top: 40%;
+        display: flex;
+        align-items: center;
     }
 
     .textboxes {
