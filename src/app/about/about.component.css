@@ -170,3 +170,56 @@ h4 {
     font-weight: 500;
   }
 }
+@media (max-width: 992px)and(min-width: 768px){
+  .box{
+    display: row;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  #textboxa{
+    margin-left: 0;
+  }
+  #textboxb{
+    margin: 4vh 4vw 4vh 4vw;
+    width: 70%;
+  }
+  #textboxa h4{
+    font-size: 4vw;
+  }
+  #firsttextbox{
+    font-size: 3vw;
+  }
+  #secondtextbox {
+    font-size: 3vw;
+
+    font-weight: 600;
+  }
+  #textcolors{
+    background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    font-size: 5vw;
+    font-weight: 900;
+  }
+  #textgray{
+    font-size: 3vw;
+    color: #7780a1;
+  }
+  .team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Divide en dos columnas */
+    gap: 1em; /* Espacio entre las columnas */
+  }
+  #teams {
+    width: 30vw;
+    height: 20vh;
+  }
+  .textimg1{
+    font-size: 3vw; font-weight: 500;
+  }
+  .textimg2{
+    font-size: 2.5vw; font-weight: 500;
+  }
+}

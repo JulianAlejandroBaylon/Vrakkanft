@@ -31,10 +31,8 @@
 }
 
 .nft {
-    display: flex;
-    justify-content: space-between;
-    width: 50vw;
-    margin-left: 10vw;
+    width: 20vw;
+    margin-left: 5vw;
 }
 
 .nft1 {
@@ -44,69 +42,250 @@
 }
 
 .imgs {
-    height: 40vh;
-    float: left;
-}
-.legendary{
-    display: flex;
-    flex-direction: column;
-}
-.normal{
-    display: flex;
-    flex-direction: column;
-}
-.blurbox1 {
-    margin-left: 10vw;
-    margin-right: auto;
-    width: 50vw;
-    background: linear-gradient(68.8deg, rgba(255, 255, 255, 0.2) 10.42%, rgba(255, 255, 255, 0.035) 77.11%);
-    box-shadow: 0px 1.03433px 25.8582px rgba(69, 42, 124, 0.1);
-    backdrop-filter: blur(6.2536px);
-    border-radius: 15px;
-    border-width: 3.72189px 0px;
-    border-color: rgba(255, 255, 255, 0.4);
-    border-style: solid;
+    height: 50vh;
 }
 
-.blurbox2 {
-    margin-left: auto;
-    margin-right: 10vw;
-    width: 11vw;
-    background: linear-gradient(68.8deg, rgba(255, 255, 255, 0.2) 10.42%, rgba(255, 255, 255, 0.035) 77.11%);
-    box-shadow: 0px 1.03433px 25.8582px rgba(69, 42, 124, 0.1);
-    backdrop-filter: blur(6.2536px);
-    border-radius: 15px;
-    border-width: 3.72189px 0px;
-    border-color: rgba(255, 255, 255, 0.4);
-    border-style: solid;
+.legendary {
+    display: flex;
+    margin-left: 10%;
 }
 
-.text{
-    font-size: 0.8vw;
+.textboxes {
+    margin-top: 15%;
+    width: 15vw;
 }
-#yellowbtn {
-    background: linear-gradient(360deg, #FF1CF7 39.26%, #00F0FF 100%);
-    border-radius: 25px;
-    width: 30vw;
-    height: 5vh;
+
+.title {
+    position: absolute;
+    width: 15vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    padding: 1px;
+    z-index: -1;
+    background: linear-gradient(45deg, #ff1cf7 2.26%, #00f0ff 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.title2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    padding: 1px;
+    z-index: -1;
+    background: linear-gradient(45deg, #ff1cf7 2.26%, #00f0ff 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.texttitle {
+    text-align: center;
+    background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+.textbox {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.textbox1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    padding: 5px;
+    z-index: -1;
+    background: linear-gradient(45deg, #553C8C 2.26%, #00f0ff 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.textbox2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    padding: 5px;
+    z-index: -1;
+    background: linear-gradient(45deg, #553C8C 2.26%, #00f0ff 100%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.text {
     color: white;
+    text-align: center;
+    width: 80%;
+    font-size: 0.9vw;
+    margin: auto;
+}
+
+.normal {
+    display: flex;
+    margin-right: 10%;
+    flex-direction: row-reverse;
 }
 
 p {
     margin: 0;
 }
 
-#bluebtn {
-    background: linear-gradient(360deg, #FF1CF7 39.26%, #00F0FF 100%);
-    right: 0.5vw;
-    bottom: 0.4vh;
-    border-radius: 25px;
-    width: 9vw;
-    height: 5vh;
-    color: white;
+@media (max-width:768px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #titletypes {
+        text-align: center;
+        color: #fff;
+    }
+
+    #titletypes p {
+        line-height: 150%;
+        font-size: 4vw;
+        font-weight: 700;
+        background: linear-gradient(90.13deg, #FFFFFF 0%, #FE1DF8 78.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0;
+    }
+
+    #titletypes h2 {
+        font-size: 6vw;
+        margin-top: 0;
+        font-weight: 700;
+        line-height: 71px;
+    }
+
+    .imagest {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .legendary {
+        display: flex;
+        margin-right: 0;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        height: 100%;
+    }
+
+    .imgs {
+        height: 40vh;
+    }
+
+    .title {
+        order: 1;
+        width: 45vw;
+        height: 5vh;
+        margin-top: 8%;
+
+    }
+
+    .texttitle {
+        text-align: center;
+        background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0;
+        font-size: 5vw;
+        font-weight: 800;
+    }
+
+    .title1::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 5px;
+        padding: 1px;
+        z-index: -1;
+        background: linear-gradient(45deg, #ff1cf7 2.26%, #00f0ff 100%);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+    }
+
+    .title2::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 5px;
+        padding: 1px;
+        z-index: -1;
+        background: linear-gradient(45deg, #ff1cf7 2.26%, #00f0ff 100%);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+    }
+
+    .text {
+        font-size: 2.5vw;
+    }
+
+    .textbox1::before {
+        padding: 2px;
+    }
+
+    .textbox2::before {
+        padding: 2px;
+    }
+
+    .nft {
+        order: 2;
+        width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40%;
+        display: flex;
+        align-items: center;
+    }
+
+    .textboxes {
+        order: 3;
+        margin-top: 0%;
+        width: 50vw;
+        height: 20vh;
+    }
+
+    .normal {
+        display: flex;
+        margin-right: 0;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        height: 100%;
+    }
 }
 
-@media (max-width:768px) {
+@media (min-width: 768px)and(max-width: 992px) {
     .container {
         display: flex;
         flex-direction: column-reverse;
@@ -129,6 +308,7 @@ p {
         float: none;
         margin-left: -6vw;
     }
+
     .blurbox1 {
         margin-left: 23vw;
         width: 50%;
@@ -139,19 +319,22 @@ p {
         margin-right: 28vw;
     }
 
-    #yellowbtn{
+    #yellowbtn {
         width: 80%;
         height: 10%;
         font-size: 3vw;
     }
-    #bluebtn{
+
+    #bluebtn {
         width: 80%;
         height: 10%;
         font-size: 3vw;
     }
-    .text{
-        font-size:3vw;
+
+    .text {
+        font-size: 3vw;
     }
+
     #titletypes p {
         line-height: 150%;
         font-size: 5vw;
@@ -168,26 +351,30 @@ p {
         height: 30vh;
         width: 36vw;
     }
-    #first{
+
+    #first {
         z-index: 2;
         position: absolute;
         transform: translateX(100%);
-        
+
     }
-    #second{
+
+    #second {
         z-index: 1;
         position: absolute;
         transform: translateX(170%);
         opacity: .8;
         margin-top: 2vh;
     }
-    #third{
+
+    #third {
         z-index: 1;
         transform: translateX(30%);
         opacity: .8;
         margin-top: 2vh;
     }
-    #fourth{
+
+    #fourth {
         z-index: 1;
         transform: translateX(100%);
         margin-top: 2vh;
