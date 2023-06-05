@@ -1,139 +1,138 @@
-*{
-    font-family: Rubik;
-    color: aliceblue;
+* {
+  font-family: Rubik;
+  color: aliceblue;
 }
 
+.box {
+  position: relative;
+  height: 25vh;
+  width: 75vw;
+  margin: auto;
+  z-index: 0; /* Valor predeterminado */
+}
+.box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  z-index: -1; /* Valor inferior al del div principal */
+  background: linear-gradient(45deg, #ff1cf7 2.26%, #00f0ff 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+.aboutc {
+  text-align: justify;
+}
+.textimg1 {
+  font-size: 1vw;
+  font-weight: 500;
+}
+.textimg2 {
+  font-size: 0.8vw;
+  font-weight: 500;
+}
+h4 {
+  font-size: 1.5vw;
+}
+#firsttextbox {
+  font-size: 0.8vw;
+}
+#secondtextbox {
+  font-size: 1vw;
+
+  font-weight: 600;
+}
+#textboxa {
+  margin-left: 3vw;
+  width: 50vw;
+}
+#textcolors {
+  background: linear-gradient(91.06deg, #ff1cf7 2.26%, #00f0ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  font-size: 2vw;
+  font-weight: 900;
+}
+#textgray {
+  font-size: 1vw;
+  color: #7780a1;
+}
+#textboxb {
+  margin: 4vh 4vw 0 4vw;
+  width: 15vw;
+}
+.aboutd {
+  margin-top: 5vh;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#teams {
+  position: relative;
+  width: 11vw;
+  height: 30vh;
+  margin: auto;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s ease-in-out;
+}
+#teams::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10%;
+  padding: 0.5%;
+  z-index: -1;
+  background: linear-gradient(91deg, #ff1cf7 82.26%, #00f0ff 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#teams:hover {
+  transform: perspective(10px) scale(1.2);
+  transition: 0.7s ease-in-out;
+}
+
+#foto {
+  width: 55%;
+  height: 40%;
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: 0px 0px 22.5517px 3.0069px #239deb;
+}
+
+@media (max-width: 768px) {
   .box {
-    position: relative;
-    height: 25vh;
-    width: 75vw;
-    margin: auto;
-    z-index: 0; /* Valor predeterminado */
-  }
-  .box::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 20px;
-    padding: 1px;
-    z-index: -1; /* Valor inferior al del div principal */
-    background:linear-gradient(45deg,#FF1CF7 2.26%, #00F0FF 100%);
-    -webkit-mask:
-       linear-gradient(#fff 0 0) content-box,
-       linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-            mask-composite: exclude;
-  }
-  .aboutc{
-    text-align: justify;
-  }
-  .textimg1{
-    font-size: 1vw; font-weight: 500;
-  }
-  .textimg2{
-    font-size: 0.8vw; font-weight: 500;
-  }
-  h4{
-    font-size: 1.5vw;
-  }
-  #firsttextbox{
-    font-size: 0.8vw;
-  }
-  #secondtextbox {
-    font-size: 1vw;
-
-    font-weight: 600;
-  }
-  #textboxa{
-    margin-left: 3vw;
-    width: 50vw;
-  }
-  #textcolors{
-    background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0;
-    font-size: 2vw;
-    font-weight: 900;
-  }
-  #textgray{
-    font-size: 1vw;
-    color: #7780a1;
-  }
-  #textboxb{
-    margin: 4vh 4vw 0 4vw;
-    width: 15vw;
-  }
-  .aboutd{
-    margin-top: 5vh;
-  }
-
-  .team{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #teams {
-    position: relative;
-    width: 11vw;
-    height: 30vh;
-    margin: auto;
-    z-index: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform: scale(1.0);
-    transition: .7s ease-in-out all;
-  }
-  #teams::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 20px;
-    padding: 1px;
-    z-index: -1; /* Valor inferior al del div principal */
-    background: linear-gradient(91deg,#FF1CF7 82.26%, #00F0FF 100%);
-    -webkit-mask:
-       linear-gradient(#fff 0 0) content-box,
-       linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-            mask-composite: exclude;
-            
-  }
-
-  #teams:hover{
-    transform: scale(1.2);
-    transition: .7s ease-in-out all;
-  }
-
-  #foto{
-    width: 55%;
-    height: 40%;
-    border-radius: 50%;
-    margin: auto;
-    box-shadow: 0px 0px 22.5517px 3.0069px #239DEB;
-  }
-
-@media (max-width:768px) {
-  .box{
     display: row;
     flex-direction: column;
     align-items: center;
     height: 100%;
   }
-  #textboxa{
+  #textboxa {
     margin-left: 0;
   }
-  #textboxb{
+  #textboxb {
     margin: 4vh 4vw 4vh 4vw;
     width: 70%;
   }
-  #textboxa h4{
+  #textboxa h4 {
     font-size: 4vw;
   }
-  #firsttextbox{
+  #firsttextbox {
     font-size: 3vw;
   }
   #secondtextbox {
@@ -141,15 +140,15 @@
 
     font-weight: 600;
   }
-  #textcolors{
-    background: linear-gradient(91.06deg, #FF1CF7 2.26%, #00F0FF 100%);
+  #textcolors {
+    background: linear-gradient(91.06deg, #ff1cf7 2.26%, #00f0ff 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;
     font-size: 5vw;
     font-weight: 900;
   }
-  #textgray{
+  #textgray {
     font-size: 3vw;
     color: #7780a1;
   }
@@ -162,10 +161,12 @@
     width: 30vw;
     height: 20vh;
   }
-  .textimg1{
-    font-size: 3vw; font-weight: 500;
+  .textimg1 {
+    font-size: 3vw;
+    font-weight: 500;
   }
-  .textimg2{
-    font-size: 2.5vw; font-weight: 500;
+  .textimg2 {
+    font-size: 2.5vw;
+    font-weight: 500;
   }
 }

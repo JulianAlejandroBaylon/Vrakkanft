@@ -54,6 +54,7 @@ nav {
   width: 11vw;
   height: 6vh;
   margin: auto auto;
+  cursor: pointer;
 }
 
 a {
@@ -101,6 +102,7 @@ header{
 }
 .NFT:hover {
   background-image: linear-gradient(91.06deg, #FF1CF7 39.26%, #00F0FF 100%);
+  cursor: pointer;
 }
 
 .slide {
@@ -335,7 +337,7 @@ header{
   }
   .one{
     width: 100%;
-    background-image: none; 
+    background-image: none;
   }
   .two{
     width: 100%;
