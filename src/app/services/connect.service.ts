@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import Web3 from 'web3';
+import * as VrakkaNFT from '../../blockchain/VrakkaNFT.js';
+import * as Blockchain from '../../blockchain/Blockchain.js'
 
 declare let window: any;
 const web3 = new Web3(window.ethereum);
@@ -13,10 +15,8 @@ export class ConnectService {
 
   async addMetaMaskEventListeners() {
     try {
-      await this.checkConnection();
-      this.isInstalled = true;
-      this.setupAccountsChangedListener();
-      this.setupDisconnectListener();
+      Blockchain.CheckConexion();
+      Blockchain.RequestConexion();
     } catch (error) {
       console.error('Error al conectar con MetaMask:', error);
     }
@@ -55,31 +55,7 @@ export class ConnectService {
   }
 
   public connectWallet() {
-    web3.eth
-      .requestAccounts()
-      .then(async (accounts) => {
-        const address = accounts[0];
-        this.isConnected = true;
-        this.isInstalled = true;
-
-        const balanceWei = await web3.eth.getBalance(address);
-        const balanceEther = web3.utils.fromWei(balanceWei, 'ether');
-
-        console.log('Dirección de la cuenta:', address);
-        console.log('Saldo de la cuenta:', balanceEther, 'ETH');
-      })
-      .catch((error) => {
-        console.error(
-          'Error al conectar con MetaMask o el usuario no autorizó la conexión:',
-          error
-        );
-      });
-
-    if (!this.isInstalled) {
-      window.open('https://metamask.io/download/');
-    }
-
-    console.log(this.isConnected);
+    Blockchain.ConectWallet()
   }
 
   /*buy() {
