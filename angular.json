@@ -28,6 +28,12 @@
               "src/styles.css"
             ],
             "scripts": [
+              "src/blockchain/Blockchain.js",
+              "src/blockchain/ContractReferido.js",
+              "src/blockchain/Filtrochain.js",
+              "src/blockchain/ICO.js",
+              "src/blockchain/VrakkaNFT.js",
+              "src/blockchain/VRKToken.js"
             ]
           },
           "configurations": {
