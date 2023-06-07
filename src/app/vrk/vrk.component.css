@@ -54,17 +54,20 @@ ul {
 }
 
 .imga {
-  width: 21vw;
+  width: 23.5vw;
   height: 50vh;
 }
 
 .imgabout {
   text-align: center;
-  margin: 1vw 1vw 1vw 1vw;
+  margin: 1vw 1vw 1vw 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .textabout {
-  margin: 0vw 6vw 0vw 5vw;
+  margin: 0vw 6vw 0vw 0vw;
 }
 
 #firsttextbox {
