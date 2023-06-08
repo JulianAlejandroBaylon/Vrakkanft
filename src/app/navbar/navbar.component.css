@@ -12,53 +12,52 @@ nav ul {
     color: white;
     padding-left: 0;
   }
-  
+
   /*Text format of the navigation bar*/
   nav ul li a {
     text-decoration: none;
     color: white;
     scroll-behavior: smooth;
   }
-  
+
   /*List order of navBar*/
   nav ul li {
     list-style: none;
     margin: 0 20px 0 25px;
   }
-  
+
   /*Hide horizontal scrollbar*/
   ::-webkit-scrollbar {
     display: none;
   }
-  
+
   /*NavBar logo*/
   .logo {
     width: 13vw;
     height: 8vh;
   }
-  
+
   /*NavBar sections*/
   nav {
     font-family: 'Rubik';
-    font-style: Regular;
     font-weight: 500;
     font-size: 1vw;
     background-color: transparent;
     height: 8vh;
-    width: 100%;
+    width: 54%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin-left: 5%;
     position: relative;
-  }
-  
+}
+
   .idioma {
-    width: 11vw;
+    width: 3vw;
     height: 6vh;
     margin: auto auto;
   }
-  
+
   a {
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
@@ -67,30 +66,29 @@ nav ul {
     background-size: 0% 2px;
     transition: background-size .3s;
   }
-  
+
   a:hover,
   a:focus {
     background-size: 100% 2px;
   }
-  
+
   a.active {
     font-weight: bold;
     color: #000;
     border-bottom-color: #ffffff;
     background-size: 100% 2px;
   }
-  
+
   /*header padding*/
   header {
     padding: 01%;
     display: flex;
     position: fixed;
   }
-  
+
   /*NavBar button wallet*/
   .buttons {
-    margin-left: 10%;
-    width: 80vw;
+    width: 24vw;
     display: flex;
     align-items: center;
     justify-content: center;
