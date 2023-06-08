@@ -1,6 +1,7 @@
 header{
   position: relative;
   z-index: 9999;
+  width: 100vw;
 }
 /*NavBar */
 nav ul {
@@ -81,7 +82,7 @@ nav ul {
   
   /*header padding*/
   header {
-    padding: 03%;
+    padding: 01%;
     display: flex;
     position: fixed;
   }
@@ -94,4 +95,36 @@ nav ul {
     align-items: center;
     justify-content: center;
   }
+  @media (max-width:700px) {
+    .logo {
+      width: 15%;
+      height: 5%;
+    }
   
+    nav {
+      display: none;
+    }
+  
+    .idioma {
+      width: 8vw;
+      height: 3.5vh;
+      margin: auto auto;
+    }
+  
+    .buttons {
+      margin: auto auto;
+      width: 80vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .NFT {
+      background-image: linear-gradient(91.06deg, #FF1CF7 39.26%, #00F0FF 100%);
+      font-size: 3vw;
+      color: white;
+      width: 30vw;
+      height: 3vh;
+      font-family: Rubik;
+    }
+  }

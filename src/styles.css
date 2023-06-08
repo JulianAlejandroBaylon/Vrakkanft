@@ -6,3 +6,9 @@ body{
 *{
   scroll-behavior: smooth;
 }
+@media (max-width:700px) {
+  body{
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}

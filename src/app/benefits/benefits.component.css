@@ -288,10 +288,14 @@ input[type="radio"] {
 @media (max-width:768px) {
   .container {
     width: 100vw;
-    height: 30vh;
+    height: 50vh;
     display: table-row;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin: auto;
+  }
+  .cards{
+    width: 100vw;
+    height: 22vh;
   }
   .card {
     margin-top: 5vh;
@@ -325,6 +329,10 @@ input[type="radio"] {
     height: 8vh;
     margin-left: 45vw;
     margin-top: 5vh;
+  }
+  .rigth img, .left img{
+    width: 10%;
+    height: 10%;
   }
   #title p{
     line-height: 150%;

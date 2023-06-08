@@ -3,37 +3,12 @@
   src: url(../assets/Rubik-Regular.ttf);
 }
 
-/*Button Wallet format*/
-.NFT {
-  background: transparent;
-  border: none;
-  padding: 0;
-  font-size: 1vw;
-  color: white;
-  border-radius: 25px;
-  width: 15vw;
-  height: 6vh;
-  font-family: Rubik;
-}
-
-.NFT:hover {
-  background-image: linear-gradient(91.06deg, #FF1CF7 39.26%, #00F0FF 100%);
-  cursor: pointer;
-}
-
 .pghorizontal{
   display: flex;
- /* width: 100vw; /* Establece el ancho del contenedor al ancho completo de la ventana */
- /* height: 100vh; /* Establece la altura del contenedor al alto completo de la ventana */
-  /*overflow-x: auto; /* Habilita el desbordamiento horizontal */
-  /*white-space: nowrap;
-  overflow-x: scroll;*/
 }
 
 /* wrapper containing our slides*/
 .one {
-  /*background-image: url(/assets/images/looperbg.webp);*/
-  
   opacity: 0;
   transition: .7s ease-in-out all;
 }
@@ -89,62 +64,11 @@
 
 
 @media (max-width: 768px) {
-  .logo {
-    width: 38vw;
-    height: 4vh;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .idioma {
-    width: 8vw;
-    height: 3.5vh;
-    margin: auto auto;
-  }
-
-  .buttons {
-    margin: auto auto;
-    width: 80vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .NFT {
-    background-image: linear-gradient(91.06deg, #FF1CF7 39.26%, #00F0FF 100%);
-    font-size: 3vw;
-    color: white;
-    width: 30vw;
-    height: 3vh;
-    font-family: Rubik;
-  }
-
-  .page-content {
-    width: auto;
-    height: auto;
-    transform: none;
-    transform-origin: initial;
-    overflow: none;
-    position: initial;
-    scrollbar-width: initial;
-    -ms-overflow-style: initial;
-    -webkit-scrollbar-thumb: initial;
-  }
-
-  .slides {
-    transform: none;
-    transform-origin: initial;
-    overflow-y: initial;
-    width: auto;
-    height: auto;
-    display: flex;
+  .pghorizontal{
     flex-direction: column;
-  }
+  }  
 
   .one {
-    width: 100%;
     background-image: none;
   }
 
@@ -180,7 +104,6 @@
   }
 
   .seven {
-    background-image: url(/assets/images/roadmap-vertical.webp);
     width: 100%;
     height: 160vh;
     margin-bottom: 20vh;

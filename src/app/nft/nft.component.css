@@ -41,6 +41,10 @@ p {
 }
 .textabout {
   margin: 0vw 6vw 0vw 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 #firsttextbox {
   font-size: 0.8vw;
@@ -131,19 +135,16 @@ input[type="number"] {
 
 @media (max-width:768px) {
   .divabout{
-    display: table-row;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: 70%;
     width: 70%;
   }
   .imga{
     margin-top: 3vh;
     width: 25vw;
     height: 20vh;
-  }
-  .textabout {
-    text-align: center;
   }
   #firsttextbox{
     font-size: 2.8vw;
