@@ -1,10 +1,3 @@
-
-import Json from "../assets/json/Ico.json";
-import { TransformarToWei, actulizarCuenta, TransformWei } from "./Blockchain";
-import { determinarChain } from "./FiltroChains";
-
-
-
 export class ObjectICO {
   constructor() {
     this.contrato = {};

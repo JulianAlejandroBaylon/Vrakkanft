@@ -1,8 +1,3 @@
-
-import VrakkaJson from "./build/Vrk.json";
-import { TransformarToWei, actulizarCuenta, TransformWei } from "./Blockchain";
-import { determinarChain } from "./FiltroChains";
-
 export class ObjectToken {
   constructor() {
     this.contrato = {};

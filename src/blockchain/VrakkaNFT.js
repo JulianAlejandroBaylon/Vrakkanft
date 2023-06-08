@@ -1,10 +1,3 @@
-
-import VrakkaJson from "./build/VrakkaNFT.json";
-import { TransformarToWei, actulizarCuenta, TransformWei } from "./Blockchain";
-import { determinarChain } from "./FiltroChains";
-import { ObjectToken } from "./VRKToken";
-
-
 export class ObjectVrakkaNFT {
   constructor() {
     this.contrato = {};

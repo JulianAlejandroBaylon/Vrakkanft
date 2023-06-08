@@ -1,5 +1,3 @@
-import { dameCurrentChain } from "../Blockchain";
-
 export async function determinarChain(deployedNetwork, id) {
   //Old contract Hashima: "0x66cafdD687b83663512bCfC99e36724d86b11C7e"
 

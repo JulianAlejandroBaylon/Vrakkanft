@@ -1,11 +1,3 @@
-
-import VrakkaJson from "../assets/json/Referido.json";
-import { TransformarToWei, actulizarCuenta, TransformWei } from "./Blockchain";
-import { determinarChain } from "./FiltroChains";
-import { ObjectToken } from "./VRKToken";
-
-
-
 export class ContractReferido {
   constructor() {
     this.contrato = {};
