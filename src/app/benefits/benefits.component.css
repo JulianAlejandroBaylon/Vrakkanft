@@ -304,7 +304,7 @@ input[type="radio"] {
   }
   .text{
     text-align: center;
-    width: 80vw;    
+    width: 80vw;
     margin: auto;
     margin-top: 10vh;
   }
@@ -323,7 +323,7 @@ input[type="radio"] {
   .rigth {
     width: 5vw;
     height: 8vh;
-    margin-left: 45vw;    
+    margin-left: 45vw;
     margin-top: 5vh;
   }
   #title p{
