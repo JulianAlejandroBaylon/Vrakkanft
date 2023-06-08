@@ -3,23 +3,7 @@
   src: url(../assets/Rubik-Regular.ttf);
 }
 
-/*Button Wallet format*/
-.NFT {
-  background: transparent;
-  border: none;
-  padding: 0;
-  font-size: 1vw;
-  color: white;
-  border-radius: 25px;
-  width: 15vw;
-  height: 6vh;
-  font-family: Rubik;
-}
 
-.NFT:hover {
-  background-image: linear-gradient(91.06deg, #FF1CF7 39.26%, #00F0FF 100%);
-  cursor: pointer;
-}
 
 .pghorizontal{
   display: flex;
@@ -33,7 +17,7 @@
 /* wrapper containing our slides*/
 .one {
   /*background-image: url(/assets/images/looperbg.webp);*/
-  
+
   opacity: 0;
   transition: .7s ease-in-out all;
 }
@@ -70,7 +54,7 @@
 }
 
 .five {
-  
+
   opacity: 0;
   transition: .7s ease-in-out all;
 

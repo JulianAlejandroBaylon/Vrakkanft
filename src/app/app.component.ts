@@ -9,8 +9,8 @@ import { loadFull } from 'tsparticles';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  
- 
+
+
 
   //Id for particles of background
   id = 'tsparticles';
@@ -81,7 +81,7 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    
+
     const p1 = document.querySelector('.one');
     const p2 = document.querySelector('.two');
     const p3 = document.querySelector('.three');

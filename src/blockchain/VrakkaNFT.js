@@ -1,10 +1,9 @@
-import Web3 from "web3";
+
 import VrakkaJson from "./build/VrakkaNFT.json";
 import { TransformarToWei, actulizarCuenta, TransformWei } from "./Blockchain";
 import { determinarChain } from "./FiltroChains";
 import { ObjectToken } from "./VRKToken";
 
-const web3 = new Web3(window.ethereum);
 
 export class ObjectVrakkaNFT {
   constructor() {
