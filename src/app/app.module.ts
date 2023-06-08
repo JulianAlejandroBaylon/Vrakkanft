@@ -14,6 +14,8 @@ import { NgParticlesModule } from "ng-particles";
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 // Función para cargar archivos JSON
 export function HttpLoaderFactory(http: HttpClient) {
@@ -31,6 +33,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     RoadmapComponent,
     VrkComponent,
     AboutComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

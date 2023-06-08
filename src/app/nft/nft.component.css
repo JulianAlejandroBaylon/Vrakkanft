@@ -6,7 +6,11 @@ p {
   font-size: 1vw;
 }
 .about {
-  margin-top: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
 }
 .divabout {
   position: relative;
@@ -119,6 +123,8 @@ input[type="number"] {
 
 .about {
   display: flex;
+  width: 100vw;
+  height: 100vh;
 }
 
 @media (max-width:768px) {

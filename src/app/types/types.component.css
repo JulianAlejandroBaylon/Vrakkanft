@@ -2,6 +2,19 @@
     font-family: rubik;
 }
 
+#types {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+  flex-direction: column;
+    justify-content: center;
+    background-image: url(/assets/images/Espacio6.webp);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    margin: auto;
+    background-position: 100% 100%;
+}
+
 #titletypes {
     text-align: center;
     color: #fff;
