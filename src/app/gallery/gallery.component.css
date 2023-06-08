@@ -2,6 +2,14 @@
   font-family: "Rubik";
   font-style: normal;
 }
+.gallery{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 #text {
   text-align: center;
 }

@@ -5,6 +5,12 @@
 
 .index {
   display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/assets/images/looperbg.webp);
+  background-size: 100vw 80vh;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
 
@@ -12,7 +18,7 @@
   font-family: rubik;
   font-style: normal;
   font-weight: 700;
-  margin-top: 5%;
+  margin-top: 15%;
   width: 50vw;
 }
 
@@ -92,7 +98,6 @@
 }
 
 .nfts .nft2 {
-  position: absolute;
   width: 18vw;
   height: 44vh;
   margin-left: 9vw;

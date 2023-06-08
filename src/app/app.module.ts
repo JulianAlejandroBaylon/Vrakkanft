@@ -14,7 +14,10 @@ import { NgParticlesModule } from "ng-particles";
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
+
 // Función para cargar archivos JSON
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -31,6 +34,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     RoadmapComponent,
     VrkComponent,
     AboutComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

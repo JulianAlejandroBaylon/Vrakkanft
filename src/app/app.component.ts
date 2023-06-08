@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { ConnectService } from './services/connect.service';
+
 import { MoveDirection, OutMode, Container, Engine } from 'tsparticles-engine';
 import { loadFull } from 'tsparticles';
-import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -10,21 +9,8 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  idioma=false;
-  constructor(
-    public connectService: ConnectService,
-    private translateService: TranslateService) {
-      this.translateService.setDefaultLang('en');
-  }
-
-  changeLanguage() {
-    this.idioma=!this.idioma;
-      this.translateService.use(this.idioma ? 'es' : 'en')
-  }
-
-  conectWallet(): void {
-    this.connectService.connectWallet();
-  }
+  
+ 
 
   //Id for particles of background
   id = 'tsparticles';
@@ -95,7 +81,7 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    this.connectService.addMetaMaskEventListeners();
+    
     const p1 = document.querySelector('.one');
     const p2 = document.querySelector('.two');
     const p3 = document.querySelector('.three');
