@@ -26,20 +26,22 @@
 }
 
 .two {
-  /* background-image: url(/assets/Estrellas.png);*/
   opacity: 0;
   transition: .7s ease-in-out all;
 }
 
 
-.three,
+.three{
+  opacity: 0;
+  transition: .7s ease-in-out all;
+}
+
 .eight {
   opacity: 0;
   transition: .7s ease-in-out all;
 }
 
 .four {
-  /*background-image: url(/assets/Estrellas.png);*/
   opacity: 0;
   transition: .7s ease-in-out all;
 }

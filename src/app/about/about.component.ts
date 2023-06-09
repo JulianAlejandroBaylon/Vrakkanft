@@ -7,13 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
 
-  ran: number [] = [0, 1, 2, 3, 4, 5, 6]
+  ran: number [] = [0, 1, 2, 3, 4, 5]
 
   title: string [] = [
     'Yericko Vielmas',
     'Roberto Mejia',
     'Saul Dominguez',
-    'Eduardo Muñoz',
     'Yannick Vielmas',
     'Raul Peinado',
     'Nancy Altamirano'
@@ -21,10 +20,9 @@ export class AboutComponent {
 
   text: string[]=[
     'CEO & founder',
-    'text',
-    'text',
-    'text',
-    'CAO',
+    'CTO',
+    'CFO',
+    'CDO',
     'COO',
     'text'
   ]
@@ -33,7 +31,6 @@ export class AboutComponent {
     'assets/images/yeri 1.webp',
     'assets/images/Robert.webp',
     'assets/images/Saul.webp',
-    'assets/images/eduardo.webp',
     'assets/images/Yanncik.webp',
     'assets/images/Raul.webp',
     'assets/images/nancy.webp'
