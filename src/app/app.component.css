@@ -5,10 +5,13 @@
 
 .pghorizontal{
   display: flex;
+  width: 100vw;
+  height: 100%;
 }
 
 /* wrapper containing our slides*/
 .one {
+  margin-bottom: 20%;
   opacity: 0;
   transition: .7s ease-in-out all;
 }
@@ -26,39 +29,45 @@
 }
 
 .two {
+  margin-bottom: 20%;
   opacity: 0;
   transition: .7s ease-in-out all;
 }
 
 
 .three{
+  margin-bottom: 20%;
   opacity: 0;
   transition: .7s ease-in-out all;
 }
 
 .eight {
+  margin-bottom: 20%;
   opacity: 0;
   transition: .7s ease-in-out all;
 }
 
 .four {
+  margin-bottom: 20%;
   opacity: 0;
   transition: .7s ease-in-out all;
 }
 
 .five {
-
+  margin-bottom: 20%;
   opacity: 0;
   transition: .7s ease-in-out all;
 
 }
 
 .six {
+  margin-bottom: 20%;
   opacity: 0;
   transition: .7s ease-in-out all;
 }
 
 .seven {
+  margin-bottom: 20%;
   opacity: 0;
   transition: .7s ease-in-out all;
 }
@@ -67,164 +76,13 @@
 
 @media (max-width: 768px) {
   .pghorizontal{
-    flex-direction: column;
-  }  
-
-  .one {
-    background-image: none;
-  }
-
-  .two {
-    width: 100%;
-    height: 80vh;
-    margin-bottom: 20vh;
-  }
-
-  .three {
-    width: 100%;
-    height: 90vh;
-    margin-bottom: 20vh;
-  }
-
-  .four {
-    width: 100%;
-    height: 80vh;
-    margin-bottom: 20vh;
-  }
-
-  .five {
-    background-image: none;
-    width: 100%;
-    height: 160vh;
-    margin-bottom: 20vh;
-  }
-
-  .six {
-    width: 100%;
-    height: 80vh;
-    margin-bottom: 20vh;
-  }
-
-  .seven {
-    width: 100%;
-    height: 160vh;
-    margin-bottom: 20vh;
-    background-size: 90vw 100vh;
-    background-position: 5vw 20vh;
-    background-repeat: no-repeat;
-  }
-
-  .eight {
-    width: 100%;
-    height: 160vh;
-    margin-bottom: 20vh;
-  }
+    flex-direction: column;  
+  
+  }   
+  
 }
 
-@media (min-width: 768px)and(max-width: 992px) {
-  .logo {
-    width: 38vw;
-    height: 4vh;
-  }
 
-  nav {
-    display: none;
-  }
-
-  .idioma {
-    width: 8vw;
-    height: 3.5vh;
-    margin: auto auto;
-  }
-
-  .buttons {
-    margin: auto auto;
-    width: 80vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .NFT {
-    background-image: linear-gradient(91.06deg, #FF1CF7 39.26%, #00F0FF 100%);
-    font-size: 3vw;
-    color: white;
-    width: 30vw;
-    height: 3vh;
-    font-family: Rubik;
-  }
-
-  .page-content {
-    width: auto;
-    height: auto;
-    transform: none;
-    transform-origin: initial;
-    overflow: none;
-    position: initial;
-    scrollbar-width: initial;
-    -ms-overflow-style: initial;
-    -webkit-scrollbar-thumb: initial;
-  }
-
-  .slides {
-    transform: none;
-    transform-origin: none;
-    overflow-y: none;
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .one {
-    width: 100%;
-    background-image: none;
-  }
-
-  .two {
-    width: 100%;
-    height: 80vh;
-    margin-bottom: 20vh;
-  }
-
-  .three {
-    width: 100%;
-    height: 90vh;
-    margin-bottom: 20vh;
-  }
-
-  .four {
-    width: 100%;
-    height: 80vh;
-    margin-bottom: 20vh;
-  }
-
-  .five {
-    background-image: none;
-    width: 100%;
-    height: 120vh;
-    margin-bottom: 20vh;
-  }
-
-  .six {
-    width: 100%;
-    height: 80vh;
-    margin-bottom: 20vh;
-  }
-
-  .seven {
-    background-image: none;
-    width: 100%;
-    height: 160vh;
-    margin-bottom: 20vh;
-  }
-
-  .eight {
-    width: 100%;
-    height: 160vh;
-    margin-bottom: 20vh;
-  }
-}
 
 @media (min-width: 2100px) {
  .page-content{ width: 54vw;

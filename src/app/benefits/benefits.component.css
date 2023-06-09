@@ -293,7 +293,6 @@ input[type="radio"] {
 
 
 @media (max-width:768px) {
-
   #title p {
     line-height: 150%;
     font-size: 4vw;
