@@ -24,5 +24,11 @@ h2{
         font-weight: 700;
         align-items: center;
     }
+    #roadmaps{
+        background-image: url(/assets/images/roadmap-vertical.webp);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 100%, 100%;
+    }
     
 }

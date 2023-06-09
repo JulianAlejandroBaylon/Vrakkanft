@@ -167,6 +167,10 @@ p {
 }
 
 @media (max-width:768px) {
+    #types{
+        background-image: none;
+        background-position: none;
+    }
     .container {
         display: flex;
         flex-direction: column-reverse;
@@ -295,101 +299,5 @@ p {
         align-items: center;
         margin-left: 0;
         height: 100%;
-    }
-}
-
-@media (min-width: 768px)and(max-width: 992px) {
-    .container {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .imagest {
-        width: 100vw;
-        display: row;
-        flex-direction: column;
-    }
-
-    .nft {
-        width: 100%;
-        margin-left: -6vw;
-        position: relative;
-    }
-
-    .nft1 {
-        width: 100%;
-        float: none;
-        margin-left: -6vw;
-    }
-
-    .blurbox1 {
-        margin-left: 23vw;
-        width: 50%;
-    }
-
-    .blurbox2 {
-        width: 50%;
-        margin-right: 28vw;
-    }
-
-    #yellowbtn {
-        width: 80%;
-        height: 10%;
-        font-size: 3vw;
-    }
-
-    #bluebtn {
-        width: 80%;
-        height: 10%;
-        font-size: 3vw;
-    }
-
-    .text {
-        font-size: 3vw;
-    }
-
-    #titletypes p {
-        line-height: 150%;
-        font-size: 5vw;
-    }
-
-    #titletypes h2 {
-        font-size: 6vw;
-        font-weight: 700;
-        line-height: 71px;
-        margin-bottom: 5vh;
-    }
-
-    .imgs {
-        height: 30vh;
-        width: 36vw;
-    }
-
-    #first {
-        z-index: 2;
-        position: absolute;
-        transform: translateX(100%);
-
-    }
-
-    #second {
-        z-index: 1;
-        position: absolute;
-        transform: translateX(170%);
-        opacity: .8;
-        margin-top: 2vh;
-    }
-
-    #third {
-        z-index: 1;
-        transform: translateX(30%);
-        opacity: .8;
-        margin-top: 2vh;
-    }
-
-    #fourth {
-        z-index: 1;
-        transform: translateX(100%);
-        margin-top: 2vh;
     }
 }
