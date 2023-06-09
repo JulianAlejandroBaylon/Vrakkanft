@@ -1,13 +1,13 @@
-*{
+* {
   font-family: rubik;
 }
 
-#title{
+#title {
   text-align: center;
   color: #fff;
 }
 
-#title p{
+#title p {
   line-height: 150%;
   font-size: 1.5vw;
   font-weight: 700;
@@ -17,7 +17,7 @@
   margin-bottom: 0;
 }
 
-#title h2{
+#title h2 {
   font-size: 2vw;
   margin-top: 0;
   margin-bottom: 0;
@@ -30,7 +30,7 @@
   height: 11vh;
   cursor: pointer;
   transform: translateX(450%);
-    z-index: 100;
+  z-index: 100;
 }
 
 .rigth {
@@ -38,14 +38,16 @@
   height: 11vh;
   cursor: pointer;
   transform: translateX(-450%);
-    z-index: 100;
+  z-index: 100;
 }
 
-.rigth img, .left img{
+.rigth img,
+.left img {
   width: 100%;
   height: 100%;
 }
-.benefits{
+
+.benefits {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -53,7 +55,8 @@
   justify-content: center;
   align-items: center;
 }
-#Benefits {    
+
+#Benefits {
   width: 100%;
   height: 50%;
 }
@@ -94,309 +97,266 @@ input[type="radio"] {
   object-fit: cover;
 }
 
-#img-1:checked ~ .cards #select-1,
-#img-2:checked ~ .cards #select-2,
-#img-3:checked ~ .cards #select-3,
-#img-4:checked ~ .cards #select-4,
-#img-5:checked ~ .cards #select-5,
-#img-6:checked ~ .cards #select-6,
-#img-7:checked ~ .cards #select-7,
-#img-8:checked ~ .cards #select-8,
-#img-9:checked ~ .cards #select-9,
-#img-10:checked ~ .cards #select-10,
-#img-11:checked ~ .cards #select-11 {
+#img-1:checked~.cards #select-1,
+#img-2:checked~.cards #select-2,
+#img-3:checked~.cards #select-3,
+#img-4:checked~.cards #select-4,
+#img-5:checked~.cards #select-5,
+#img-6:checked~.cards #select-6,
+#img-7:checked~.cards #select-7,
+#img-8:checked~.cards #select-8,
+#img-9:checked~.cards #select-9,
+#img-10:checked~.cards #select-10,
+#img-11:checked~.cards #select-11 {
 
   z-index: 10;
   opacity: 0;
 }
 
-#img-2:checked ~ .cards #select-1,
-#img-3:checked ~ .cards #select-2,
-#img-4:checked ~ .cards #select-3,
-#img-5:checked ~ .cards #select-4,
-#img-6:checked ~ .cards #select-5,
-#img-7:checked ~ .cards #select-6,
-#img-8:checked ~ .cards #select-7,
-#img-9:checked ~ .cards #select-8,
-#img-10:checked ~ .cards #select-9,
-#img-11:checked ~ .cards #select-10,
-#img-1:checked ~ .cards #select-11{
+#img-2:checked~.cards #select-1,
+#img-3:checked~.cards #select-2,
+#img-4:checked~.cards #select-3,
+#img-5:checked~.cards #select-4,
+#img-6:checked~.cards #select-5,
+#img-7:checked~.cards #select-6,
+#img-8:checked~.cards #select-7,
+#img-9:checked~.cards #select-8,
+#img-10:checked~.cards #select-9,
+#img-11:checked~.cards #select-10,
+#img-1:checked~.cards #select-11 {
 
   z-index: 20;
   opacity: 0;
 }
 
-#img-3:checked ~ .cards #select-1,
-#img-4:checked ~ .cards #select-2,
-#img-5:checked ~ .cards #select-3,
-#img-6:checked ~ .cards #select-4,
-#img-7:checked ~ .cards #select-5,
-#img-8:checked ~ .cards #select-6,
-#img-9:checked ~ .cards #select-7,
-#img-10:checked ~ .cards #select-8,
-#img-11:checked ~ .cards #select-9,
-#img-1:checked ~ .cards #select-10,
-#img-2:checked ~ .cards #select-11 {
+#img-3:checked~.cards #select-1,
+#img-4:checked~.cards #select-2,
+#img-5:checked~.cards #select-3,
+#img-6:checked~.cards #select-4,
+#img-7:checked~.cards #select-5,
+#img-8:checked~.cards #select-6,
+#img-9:checked~.cards #select-7,
+#img-10:checked~.cards #select-8,
+#img-11:checked~.cards #select-9,
+#img-1:checked~.cards #select-10,
+#img-2:checked~.cards #select-11 {
 
   z-index: 30;
   opacity: 0;
 }
 
-#img-4:checked ~ .cards #select-1,
-#img-5:checked ~ .cards #select-2,
-#img-6:checked ~ .cards #select-3,
-#img-7:checked ~ .cards #select-4,
-#img-8:checked ~ .cards #select-5,
-#img-9:checked ~ .cards #select-6,
-#img-10:checked ~ .cards #select-7,
-#img-11:checked ~ .cards #select-8,
-#img-1:checked ~ .cards #select-9,
-#img-2:checked ~ .cards #select-10,
-#img-3:checked ~ .cards #select-11 {
+#img-4:checked~.cards #select-1,
+#img-5:checked~.cards #select-2,
+#img-6:checked~.cards #select-3,
+#img-7:checked~.cards #select-4,
+#img-8:checked~.cards #select-5,
+#img-9:checked~.cards #select-6,
+#img-10:checked~.cards #select-7,
+#img-11:checked~.cards #select-8,
+#img-1:checked~.cards #select-9,
+#img-2:checked~.cards #select-10,
+#img-3:checked~.cards #select-11 {
   transform: translateX(-90%) scale(0.6);
   z-index: 40;
   opacity: 0.6;
 }
 
-#img-5:checked ~ .cards #select-1,
-#img-6:checked ~ .cards #select-2,
-#img-7:checked ~ .cards #select-3,
-#img-8:checked ~ .cards #select-4,
-#img-9:checked ~ .cards #select-5,
-#img-10:checked ~ .cards #select-6,
-#img-11:checked ~ .cards #select-7,
-#img-1:checked ~ .cards #select-8,
-#img-2:checked ~ .cards #select-9,
-#img-3:checked ~ .cards #select-10,
-#img-4:checked ~ .cards #select-11 {
+#img-5:checked~.cards #select-1,
+#img-6:checked~.cards #select-2,
+#img-7:checked~.cards #select-3,
+#img-8:checked~.cards #select-4,
+#img-9:checked~.cards #select-5,
+#img-10:checked~.cards #select-6,
+#img-11:checked~.cards #select-7,
+#img-1:checked~.cards #select-8,
+#img-2:checked~.cards #select-9,
+#img-3:checked~.cards #select-10,
+#img-4:checked~.cards #select-11 {
   transform: translateX(-50%) scale(0.8);
   z-index: 50;
   opacity: 0.8;
 }
 
-#img-6:checked ~ .cards #select-1,
-#img-7:checked ~ .cards #select-2,
-#img-8:checked ~ .cards #select-3,
-#img-9:checked ~ .cards #select-4,
-#img-10:checked ~ .cards #select-5,
-#img-11:checked ~ .cards #select-6,
-#img-1:checked ~ .cards #select-7,
-#img-2:checked ~ .cards #select-8,
-#img-3:checked ~ .cards #select-9,
-#img-4:checked ~ .cards #select-10,
-#img-5:checked ~ .cards #select-11 {
+#img-6:checked~.cards #select-1,
+#img-7:checked~.cards #select-2,
+#img-8:checked~.cards #select-3,
+#img-9:checked~.cards #select-4,
+#img-10:checked~.cards #select-5,
+#img-11:checked~.cards #select-6,
+#img-1:checked~.cards #select-7,
+#img-2:checked~.cards #select-8,
+#img-3:checked~.cards #select-9,
+#img-4:checked~.cards #select-10,
+#img-5:checked~.cards #select-11 {
   transform: translateX(0%) scale(1);
   z-index: 60;
   opacity: 1;
 }
 
-#img-7:checked ~ .cards #select-1,
-#img-8:checked ~ .cards #select-2,
-#img-9:checked ~ .cards #select-3,
-#img-10:checked ~ .cards #select-4,
-#img-11:checked ~ .cards #select-5,
-#img-1:checked ~ .cards #select-6,
-#img-2:checked ~ .cards #select-7,
-#img-3:checked ~ .cards #select-8,
-#img-4:checked ~ .cards #select-9,
-#img-5:checked ~ .cards #select-10,
-#img-6:checked ~ .cards #select-11 {
+#img-7:checked~.cards #select-1,
+#img-8:checked~.cards #select-2,
+#img-9:checked~.cards #select-3,
+#img-10:checked~.cards #select-4,
+#img-11:checked~.cards #select-5,
+#img-1:checked~.cards #select-6,
+#img-2:checked~.cards #select-7,
+#img-3:checked~.cards #select-8,
+#img-4:checked~.cards #select-9,
+#img-5:checked~.cards #select-10,
+#img-6:checked~.cards #select-11 {
   transform: translateX(50%) scale(0.8);
   z-index: 50;
   opacity: 0.8;
 }
 
-#img-8:checked ~ .cards #select-1,
-#img-9:checked ~ .cards #select-2,
-#img-10:checked ~ .cards #select-3,
-#img-11:checked ~ .cards #select-4,
-#img-1:checked ~ .cards #select-5,
-#img-2:checked ~ .cards #select-6,
-#img-3:checked ~ .cards #select-7,
-#img-4:checked ~ .cards #select-8,
-#img-5:checked ~ .cards #select-9,
-#img-6:checked ~ .cards #select-10,
-#img-7:checked ~ .cards #select-11 {
+#img-8:checked~.cards #select-1,
+#img-9:checked~.cards #select-2,
+#img-10:checked~.cards #select-3,
+#img-11:checked~.cards #select-4,
+#img-1:checked~.cards #select-5,
+#img-2:checked~.cards #select-6,
+#img-3:checked~.cards #select-7,
+#img-4:checked~.cards #select-8,
+#img-5:checked~.cards #select-9,
+#img-6:checked~.cards #select-10,
+#img-7:checked~.cards #select-11 {
   transform: translateX(90%) scale(0.6);
   z-index: 40;
   opacity: 0.6;
 }
 
-#img-9:checked ~ .cards #select-1,
-#img-10:checked ~ .cards #select-2,
-#img-11:checked ~ .cards #select-3,
-#img-1:checked ~ .cards #select-4,
-#img-2:checked ~ .cards #select-5,
-#img-3:checked ~ .cards #select-6,
-#img-4:checked ~ .cards #select-7,
-#img-5:checked ~ .cards #select-8,
-#img-6:checked ~ .cards #select-9,
-#img-7:checked ~ .cards #select-10,
-#img-8:checked ~ .cards #select-11 {
+#img-9:checked~.cards #select-1,
+#img-10:checked~.cards #select-2,
+#img-11:checked~.cards #select-3,
+#img-1:checked~.cards #select-4,
+#img-2:checked~.cards #select-5,
+#img-3:checked~.cards #select-6,
+#img-4:checked~.cards #select-7,
+#img-5:checked~.cards #select-8,
+#img-6:checked~.cards #select-9,
+#img-7:checked~.cards #select-10,
+#img-8:checked~.cards #select-11 {
 
   z-index: 30;
   opacity: 0;
 }
-#img-10:checked ~ .cards #select-1,
-#img-11:checked ~ .cards #select-2,
-#img-1:checked ~ .cards #select-3,
-#img-2:checked ~ .cards #select-4,
-#img-3:checked ~ .cards #select-5,
-#img-4:checked ~ .cards #select-6,
-#img-5:checked ~ .cards #select-7,
-#img-6:checked ~ .cards #select-8,
-#img-7:checked ~ .cards #select-9,
-#img-8:checked ~ .cards #select-10,
-#img-9:checked ~ .cards #select-11 {
+
+#img-10:checked~.cards #select-1,
+#img-11:checked~.cards #select-2,
+#img-1:checked~.cards #select-3,
+#img-2:checked~.cards #select-4,
+#img-3:checked~.cards #select-5,
+#img-4:checked~.cards #select-6,
+#img-5:checked~.cards #select-7,
+#img-6:checked~.cards #select-8,
+#img-7:checked~.cards #select-9,
+#img-8:checked~.cards #select-10,
+#img-9:checked~.cards #select-11 {
 
   z-index: 20;
   opacity: 0;
 }
-#img-11:checked ~ .cards #select-1,
-#img-1:checked ~ .cards #select-2,
-#img-2:checked ~ .cards #select-3,
-#img-3:checked ~ .cards #select-4,
-#img-4:checked ~ .cards #select-5,
-#img-5:checked ~ .cards #select-6,
-#img-6:checked ~ .cards #select-7,
-#img-7:checked ~ .cards #select-8,
-#img-8:checked ~ .cards #select-9,
-#img-9:checked ~ .cards #select-10,
-#img-10:checked ~ .cards #select-11 {
+
+#img-11:checked~.cards #select-1,
+#img-1:checked~.cards #select-2,
+#img-2:checked~.cards #select-3,
+#img-3:checked~.cards #select-4,
+#img-4:checked~.cards #select-5,
+#img-5:checked~.cards #select-6,
+#img-6:checked~.cards #select-7,
+#img-7:checked~.cards #select-8,
+#img-8:checked~.cards #select-9,
+#img-9:checked~.cards #select-10,
+#img-10:checked~.cards #select-11 {
 
   z-index: 10;
   opacity: 0;
 }
-.text{
+
+.text {
   margin-left: 5vw;
   margin-right: 5vw;
   width: 40vw;
 }
-.text h3{
+
+.text h3 {
   color: #9075D5;
   font-size: 2vw;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.text p{
+.text p {
   color: #FFFFFF;
   font-size: 1.5vw;
 }
 
 
 @media (max-width:768px) {
-  .container {
-    width: 100vw;
-    height: 50vh;
-    display: table-row;
-    flex-direction: column;
-    margin: auto;
+
+  #title p {
+    line-height: 150%;
+    font-size: 4vw;
+    font-weight: 700;
+    background: linear-gradient(90.13deg, #FFFFFF 0%, #FE1DF8 78.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0;
   }
-  .cards{
-    width: 100vw;
-    height: 22vh;
+
+  #title h2 {
+    font-size: 6vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    line-height: 71px;
   }
-  .card {
-    margin-top: 5vh;
-    width: 30%;
-  }
-  .card img{
-    width: 115%;
-    height: 95%;
-    object-fit: cover;
-  }
+
   .text{
+    width: 100%;
     text-align: center;
-    width: 80vw;
-    margin: auto;
-    margin-top: 10vh;
   }
   .text h3{
     font-size: 4vw;
   }
   .text p{
-    font-size: 3vw;
-  }
-  .left {
-    width: 5vw;
-    height: 8vh;
-    margin-right: 45vw;
-    margin-top: 5vh;
-  }
-  .rigth {
-    width: 5vw;
-    height: 8vh;
-    margin-left: 45vw;
-    margin-top: 5vh;
-  }
-  .rigth img, .left img{
-    width: 10%;
-    height: 10%;
-  }
-  #title p{
-    line-height: 150%;
-    font-size: 5vw;
-  }
-
-  #title h2{
-    font-size: 6vw;
-    font-weight: 700;
-    line-height: 71px;
-    margin-bottom: 5vh;
-  }
-
-}
-@media (max-width: 992px)and(min-width: 768px){
-  .container {
-    width: 100vw;
-    height: 30vh;
-    display: table-row;
-    flex-direction: column-reverse;
-    margin: auto;
-  }
-  .card {
-    margin-top: 5vh;
-    width: 30%;
-  }
-  .card img{
-    width: 115%;
-    height: 95%;
-    object-fit: cover;
-  }
-  .text{
-    text-align: center;
-    width: 80vw;    
-    margin: auto;
-    margin-top: 10vh;
-  }
-  .text h3{
     font-size: 4vw;
   }
-  .text p{
-    font-size: 3vw;
-  }
-  .left {
-    width: 5vw;
-    height: 8vh;
-    margin-right: 45vw;
-    margin-top: 5vh;
-  }
-  .rigth {
-    width: 5vw;
-    height: 8vh;
-    margin-left: 45vw;    
-    margin-top: 5vh;
-  }
-  #title p{
-    line-height: 150%;
-    font-size: 5vw;
+
+  .container {
+    flex-wrap: wrap;
   }
 
-  #title h2{
-    font-size: 6vw;
-    font-weight: 700;
-    line-height: 71px;
-    margin-bottom: 5vh;
+  .cards {
+    width: 94%;
+    height: 40%;
+  }
+
+  .left {
+    transform: translateX(800%);
+  }
+
+  .rigth {
+    transform: translateX(-800%);
+  }
+
+  .rigth img {
+    width: 200%;
+    height: 60%;
+  }
+
+  .left img {
+    width: 200%;
+    height: 60%;
+  }
+
+  .rigth label {
+    width: 200%;
+    height: 60%;
+  }
+
+  .left label {
+    width: 200%;
+    height: 60%;
   }
 }
