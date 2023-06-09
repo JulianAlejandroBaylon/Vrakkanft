@@ -93,22 +93,39 @@ nav ul {
     align-items: center;
     justify-content: center;
   }
+
+  .NFT {
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-size: 1vw;
+    color: white;
+    border-radius: 25px;
+    width: 15vw;
+    height: 6vh;
+    font-family: Rubik;
+  }
+  .NFT:hover {
+    background-image: linear-gradient(91.06deg, #FF1CF7 39.26%, #00F0FF 100%);
+    cursor: pointer;
+  }
+
   @media (max-width:700px) {
     .logo {
       width: 15%;
       height: 5%;
     }
-  
+
     nav {
       display: none;
     }
-  
+
     .idioma {
       width: 8vw;
       height: 3.5vh;
       margin: auto auto;
     }
-  
+
     .buttons {
       margin: auto auto;
       width: 80vw;
@@ -116,7 +133,7 @@ nav ul {
       align-items: center;
       justify-content: center;
     }
-  
+
     .NFT {
       background-image: linear-gradient(91.06deg, #FF1CF7 39.26%, #00F0FF 100%);
       font-size: 3vw;
