@@ -8,13 +8,14 @@
   },
   "Buttons":{
     "connect": "Conectar Wallet",
-    "buy": "Comprar"
+    "buy": "Comprar",
+    "buyNFT": "Compra ahora"
   },
 
   "Home": {
     "title": "¿ESTÁS LISTO PARA SER UN HYPERHERO?",
     "h1": "En tus hábitos",
-    "future": "Es tu futuro",
+    "future": "Esta tu futuro",
     "desc": "¡Como comunidad, te brindamos las herramientas para alcanzar tus objetivos!",
     "nft1": "Hyperhero #203",
     "nft2": "Hyperhero #10567"
@@ -87,6 +88,10 @@
     "11": {
       "title": "Acceso a Vrakka Gaming",
       "text": "Disfruta de juegos IQ donde puedes apostar y ganar más."
+    },
+    "12": {
+      "title": "Mineria VRK Token",
+      "text": "Token de minería VRK para los hábitos de los usuarios en la aplicación"
     }
   },
   "Gallery": {
@@ -96,7 +101,15 @@
   "Types": {
     "title": "Tipos de Mejoradores",
     "text": "¿Quieres potenciar tus ganancias?",
-    "legend": "Legendario"
+    "legendary": "LEGENDARIO",
+    "pl1": "6,000 NFTS VRAKKA LEGENDARIOS ",
+    "pl2": "50% DE LA COLLECION",
+    "pl3": "AURA, ARO DE LUZ Y PLATAFORMA DE LUZ",
+    "pl4": "POTENCIADOR = X10",
+    "pn1": "6,000 NFTS VRAKKA NORMALES",
+    "pn2": "50% DE LA COLECCION",
+    "pn3": "NFT CON ACCESORIOS",
+    "pn4": "POTENCIADOR = X5"
   },
   "Roadmap": {
       "description": "Creación y\ndesarrollo",

@@ -25,5 +25,6 @@ export class NavbarComponent {
   }
   ngOnInit(){
     this.connectService.addMetaMaskEventListeners();
+    this.connectService.observer();
   }
 }
