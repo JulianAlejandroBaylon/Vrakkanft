@@ -8,7 +8,8 @@
   },
   "Buttons":{
     "connect": "Connect Wallet",
-    "buy": "Buy"
+    "buy": "Buy",
+    "buyNFT": "Buy now"
   },
 
   "Home": {
@@ -87,6 +88,10 @@
     "11": {
       "title": "Access to Vrakka Gaming",
       "text": "Enjoy IQ games where you can bet and win more."
+    },
+    "12": {
+      "title": "Mining VRK token",
+      "text": "Mining VRK token for user habits in app"
     }
   },
   "Gallery": {
@@ -96,7 +101,15 @@
   "Types": {
     "title": "Enhancer Types",
     "text": "Do you want to potenciate you earnings?",
-    "legend": "Legendary"
+    "legendary": "LEGENDARY",
+    "pl1": "6,000 VRAKKA LEGENDARIES NFTS",
+    "pl2": "50% OF THE COLLECTION",
+    "pl3": "AURA, LIGHT RING AND LIGHT PLATFORM",
+    "pl4": "ENHACER = X10",
+    "pn1": "6,000 VRAKKA NORMAL NFTS",
+    "pn2": "50% OF THE COLLECTION",
+    "pn3": "NFT WITH ACCESORIES",
+    "pn4": "ENHACER = X5"
   },
   "Roadmap": {
       "description": "Creation & \ndevelopment",
