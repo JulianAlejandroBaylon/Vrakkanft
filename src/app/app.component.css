@@ -3,10 +3,13 @@
   src: url(../assets/Rubik-Regular.ttf);
 }
 
+
+
 .pghorizontal{
   display: flex;
   width: 100vw;
   height: 100vh;
+
 }
 
 /* wrapper containing our slides*/
@@ -68,15 +71,15 @@
 
 @media (max-width: 768px) {
   .pghorizontal{
-    flex-direction: column;  
-    
-  }   
+    flex-direction: column;
+
+  }
   .one {
     margin-bottom: 20%;
     opacity: 0;
     transition: .7s ease-in-out all;
   }
-  
+
   .one.visible,
   .two.visible,
   .three.visible,
@@ -88,50 +91,50 @@
     opacity: 1;
     transform: scale(1);
   }
-  
+
   .two {
     margin-bottom: 20%;
     opacity: 0;
     transition: .7s ease-in-out all;
   }
-  
-  
+
+
   .three{
     margin-bottom: 20%;
     opacity: 0;
     transition: .7s ease-in-out all;
   }
-  
+
   .eight {
     margin-bottom: 20%;
     opacity: 0;
     transition: .7s ease-in-out all;
   }
-  
+
   .four {
     margin-bottom: 20%;
     opacity: 0;
     transition: .7s ease-in-out all;
   }
-  
+
   .five {
     margin-bottom: 20%;
     opacity: 0;
     transition: .7s ease-in-out all;
-  
+
   }
-  
+
   .six {
     margin-bottom: 20%;
     opacity: 0;
     transition: .7s ease-in-out all;
   }
-  
+
   .seven {
     margin-bottom: 20%;
     opacity: 0;
     transition: .7s ease-in-out all;
   }
-  
+
 }
 
