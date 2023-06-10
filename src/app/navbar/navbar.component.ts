@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { ConnectService } from '../services/connect.service';
 
@@ -8,6 +8,12 @@ import { ConnectService } from '../services/connect.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  @Output() seccionClic = new EventEmitter<string>();
+
+  onSeccionClick(seccion: string) {
+    this.seccionClic.emit(seccion);
+  }
+
   idioma=false;
   constructor(
     public connectService: ConnectService,
