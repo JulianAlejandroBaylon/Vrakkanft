@@ -88,6 +88,10 @@ ul {
   text-align: justify;
 }
 
+.middletext {
+  display: flex;
+}
+
 .blackbox {
   background: linear-gradient(0deg, #262840, #262840),
     linear-gradient(0deg, #060714, #060714),
@@ -103,6 +107,10 @@ ul {
   color: #7780a1;
 }
 
+.orderbox {
+  display: flex;
+}
+
 .divbox {
   margin-left: 2vw;
   font-size: 1vw;
@@ -111,7 +119,7 @@ ul {
 .buttonbox {
   display: flex;
   justify-content: center;
-  margin-top: 2vh;
+  margin-top: 4%;
 }
 
 #connect {
@@ -177,7 +185,7 @@ input[type=number] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: none;
+    height: auto;
     width: 70%;
   }
 

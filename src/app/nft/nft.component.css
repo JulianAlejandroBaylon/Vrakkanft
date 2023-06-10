@@ -57,6 +57,10 @@ p {
   text-align: center;
 }
 
+.middletext {
+  display: flex;
+}
+
 #firsttextbox {
   font-size: 0.8vw;
   text-align: justify;
@@ -82,15 +86,37 @@ p {
   color: #7780a1;
 }
 
+.orderbox {
+  display: flex;
+}
+
 .divbox {
   margin-left: 2vw;
   font-size: 1vw;
 }
 
+.vecosystem {
+  display: flex;
+}
+
+.divimglg {
+  margin-left: 8vw;
+  margin-top: 0.8vw;
+}
+
+.titlem {
+  margin-bottom: -6%;
+}
+
+.subtitlem {
+  color: #7780A1;
+  margin: auto;
+}
+
 .buttonbox {
   display: flex;
   justify-content: center;
-  margin-top: 2vh;
+  margin-top: 4%;
 }
 
 #conect2 {
@@ -156,7 +182,7 @@ input[type="number"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: none;
+    height: auto;
     width: 70%;
   }
 
