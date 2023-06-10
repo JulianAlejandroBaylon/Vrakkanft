@@ -10,8 +10,38 @@ import { loadFull } from 'tsparticles';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  currentSectionIndex: number = 0;
+  constructor(private connectService: ConnectService) {}
 
-  constructor (private connectService: ConnectService ){}
+  ngOnInit() {
+    let indice = 0; // Inicializa el índice en 0
+    let saltosMaximos = 1; // Establece la cantidad máxima de secciones que se pueden saltar en un solo desplazamiento
+
+    let timerId = null; // Variable para almacenar el ID del temporizador
+
+    document.addEventListener('wheel', (event) => {
+      const delta = Math.sign(event.deltaY);
+
+      clearTimeout(timerId); // Cancela el temporizador anterior, si existe
+
+      // Establece un nuevo temporizador para controlar la frecuencia del evento
+      timerId = setTimeout(() => {
+        // Controla la cantidad de secciones que se saltan en un solo desplazamiento
+        if (delta > 0 && indice < 7) {
+          indice = Math.min(indice + saltosMaximos, 7);
+        } else if (delta < 0 && indice > 0) {
+          indice = Math.max(indice - saltosMaximos, 0);
+        }
+
+        const secciones = document.getElementsByClassName('slide'); // Obtén todas las secciones con la clase 'slide'
+        const seccionActual = secciones[indice];
+
+        if (seccionActual) {
+          seccionActual.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 150); // Ajusta el valor del retraso (en milisegundos) según tus necesidades
+    });
+  }
 
   //Id for particles of background
   id = 'tsparticles';
