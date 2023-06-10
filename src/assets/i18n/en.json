@@ -119,6 +119,11 @@
       "hyper": "Hyperheroes...",
       "desc": "We are here to save the world!",
       "team": "Team"
+    },
+
+    "Roadmap": {
+      "horizontal": "/assets/images/roadmap-horizontal.webp",
+      "vertical": "/assets/images/roadmap-vertical.webp"
     }
   }
 

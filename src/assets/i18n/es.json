@@ -119,5 +119,10 @@
       "hyper": "Hiperhéroes...",
       "desc": "¡Estamos aquí para salvar el mundo!",
       "team": "Equipo"
+    },
+
+    "Roadmap": {
+      "horizontal": "/assets/images/roadmap-h-esp.webp",
+      "vertical": "/assets/images/roadmap-v-esp.webp"
     }
   }
