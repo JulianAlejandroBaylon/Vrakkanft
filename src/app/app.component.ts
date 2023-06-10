@@ -38,7 +38,7 @@ export class AppComponent {
         if (seccionActual) {
           seccionActual.scrollIntoView({ behavior: 'smooth' });
         }
-      },0); // Ajusta el valor del retraso (en milisegundos) según tus necesidades
+      },100); // Ajusta el valor del retraso (en milisegundos) según tus necesidades
     });
   }
 
