@@ -176,7 +176,7 @@ input[type=number] {
 }
 
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .divabout {
     display: flex;
@@ -235,22 +235,19 @@ input[type=number] {
 
 }
 
-@media (min-width: 768px)and(max-width: 992px) {
+@media (min-width: 769px) and (max-width: 1199px) {
+
   .divabout {
-    display: table-row;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: auto;
     width: 70%;
   }
 
   .imga {
     height: 10vh;
     margin-top: 3vh;
-  }
-
-  .textabout {
-    text-align: center;
   }
 
   #firsttextbox {
@@ -291,7 +288,8 @@ input[type=number] {
     font-size: 3vw;
   }
 
-  #conect {
+  #connect {
     font-size: 4vw;
   }
+
 }

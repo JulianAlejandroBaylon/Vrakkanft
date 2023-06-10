@@ -292,7 +292,7 @@ input[type="radio"] {
 }
 
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   #title p {
     line-height: 150%;
     font-size: 4vw;
@@ -327,6 +327,78 @@ input[type="radio"] {
     margin-left: 0vw;
   }
 
+  .cards {
+    width: 94%;
+    height: 40%;
+  }
+
+  .left {
+    transform: translateX(800%);
+  }
+
+  .rigth {
+    transform: translateX(-800%);
+  }
+
+  .rigth img {
+    width: 200%;
+    height: 60%;
+  }
+
+  .left img {
+    width: 200%;
+    height: 60%;
+  }
+
+  .rigth label {
+    width: 200%;
+    height: 60%;
+  }
+
+  .left label {
+    width: 200%;
+    height: 60%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px){
+  #title p {
+    line-height: 150%;
+    font-size: 4vw;
+    font-weight: 700;
+    background: linear-gradient(90.13deg, #FFFFFF 0%, #FE1DF8 78.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0;
+  }
+
+  #title h2 {
+    font-size: 6vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    line-height: 71px;
+  }
+
+  .text{
+    width: 100%;
+    text-align: center;
+  }
+  .text h3{
+    font-size: 4vw;
+  }
+  .text p{
+    font-size: 4vw;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    margin-left: 0vw;
+  }
+
+  .card{
+    width: 24%;
+  }
   .cards {
     width: 94%;
     height: 40%;
