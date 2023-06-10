@@ -2,6 +2,8 @@
 body{
   background: #140C1F;
   overflow-y: hidden;
+  overflow-x: hidden;
+  margin: 0;
 }
 *{
   scroll-behavior: smooth;

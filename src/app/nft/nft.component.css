@@ -171,11 +171,6 @@ input[type="number"] {
   cursor: pointer;
 }
 
-.about {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-}
 
 @media (max-width:768px) {
   .divabout {
