@@ -128,6 +128,7 @@ ul {
   height: 5vh;
   border-radius: 50px;
   cursor: pointer;
+  font-size: 1vw;
 }
 
 #connect.disable {
@@ -230,7 +231,7 @@ input[type=number] {
   }
 
   #connect {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
 }

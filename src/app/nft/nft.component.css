@@ -125,6 +125,7 @@ p {
   height: 5vh;
   border-radius: 50px;
   cursor: pointer;
+  font-size: 1vw;
 }
 
 #conect2.nel {
@@ -220,6 +221,10 @@ input[type="number"] {
   .vrakkalg {
     width: 70%;
   }
+
+  #conect2 {
+    font-size: 3vw;
+  }
 }
 @media (min-width: 769px) and (max-width: 1199px) {
   .divabout {
@@ -268,5 +273,8 @@ input[type="number"] {
 
   .vrakkalg {
     width: 70%;
+  }
+  #conect2 {
+    font-size: 4vw;
   }
 }
