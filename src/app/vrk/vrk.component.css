@@ -128,6 +128,7 @@ ul {
   height: 5vh;
   border-radius: 50px;
   cursor: pointer;
+  font-size: 1vw;
 }
 
 #connect.disable {
@@ -176,7 +177,66 @@ input[type=number] {
 }
 
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
+
+  .divabout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 70%;
+  }
+
+  .imga {
+    height: 10vh;
+    margin-top: 3vh;
+  }
+
+  #firsttextbox {
+    font-size: 2.8vw;
+  }
+
+  #secondtextbox {
+    font-size: 3vw;
+  }
+
+  #textgray {
+    font-size: 2.5vw;
+  }
+
+  #presale {
+    font-size: 4vw;
+  }
+
+  ul {
+    font-size: 2.5vw;
+  }
+
+  .blackbox {
+    width: 100%;
+    height: 55%;
+    margin-bottom: 10%;
+  }
+
+  .divbox {
+    margin: auto;
+  }
+
+  #price {
+    font-size: 5vw;
+  }
+
+  #textb {
+    font-size: 3vw;
+  }
+
+  #connect {
+    font-size: 3vw;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
 
   .divabout {
     display: flex;
@@ -233,65 +293,4 @@ input[type=number] {
     font-size: 4vw;
   }
 
-}
-
-@media (min-width: 768px)and(max-width: 992px) {
-  .divabout {
-    display: table-row;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: 70%;
-  }
-
-  .imga {
-    height: 10vh;
-    margin-top: 3vh;
-  }
-
-  .textabout {
-    text-align: center;
-  }
-
-  #firsttextbox {
-    font-size: 2.8vw;
-  }
-
-  #secondtextbox {
-    font-size: 3vw;
-  }
-
-  #textgray {
-    font-size: 2.5vw;
-  }
-
-  #presale {
-    font-size: 4vw;
-  }
-
-  ul {
-    font-size: 2.5vw;
-  }
-
-  .blackbox {
-    width: 100%;
-    height: 55%;
-    margin-bottom: 10%;
-  }
-
-  .divbox {
-    margin: auto;
-  }
-
-  #price {
-    font-size: 5vw;
-  }
-
-  #textb {
-    font-size: 3vw;
-  }
-
-  #conect {
-    font-size: 4vw;
-  }
 }

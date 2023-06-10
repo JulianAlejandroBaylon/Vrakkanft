@@ -125,6 +125,7 @@ p {
   height: 5vh;
   border-radius: 50px;
   cursor: pointer;
+  font-size: 1vw;
 }
 
 #conect2.nel {
@@ -172,7 +173,7 @@ input[type="number"] {
 }
 
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .divabout {
     display: flex;
     flex-direction: column;
@@ -220,14 +221,17 @@ input[type="number"] {
   .vrakkalg {
     width: 70%;
   }
-}
 
-@media (max-width: 992px)and(min-width: 768px) {
+  #conect2 {
+    font-size: 3vw;
+  }
+}
+@media (min-width: 769px) and (max-width: 1199px) {
   .divabout {
-    display: table-row;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: auto;
     width: 70%;
   }
 
@@ -235,10 +239,6 @@ input[type="number"] {
     margin-top: 3vh;
     width: 25vw;
     height: 20vh;
-  }
-
-  .textabout {
-    text-align: center;
   }
 
   #firsttextbox {
@@ -273,5 +273,8 @@ input[type="number"] {
 
   .vrakkalg {
     width: 70%;
+  }
+  #conect2 {
+    font-size: 4vw;
   }
 }

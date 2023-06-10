@@ -25,7 +25,23 @@ img{
 #vertical{
     display: none;
 }
-@media (max-width:768px) {
+@media (max-width: 768px) {
+    
+    .title h2 {
+        text-align: center;
+        font-size: 7vw;
+        margin-top: 0;
+        font-weight: 700;
+    }
+    #horizontal{
+        display: none;
+    }
+    #vertical{
+        display: flex;
+    }
+    
+}
+@media (min-width: 769px) and (max-width: 1199px) {
     
     .title h2 {
         text-align: center;
