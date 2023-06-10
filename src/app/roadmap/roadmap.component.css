@@ -1,34 +1,43 @@
 * {
     font-family: Rubik;
 }
+#roadmaps{
+    display: flex;
+    flex-direction: column;
+}
 .roadbg{
     width: 100vw;
-    height: 100vh;
+    height: 100vh; 
+    justify-content: center; 
 }
-.title{    
-    margin: 0;
+.title h2{  
+    margin-top: 7%;
     text-align: center;
     color: #fff;
     font-size: 4vw;
     font-weight: 700; 
 }
-
-h2{    
+img{
+    width: 90%;  
+    margin: auto auto;
+    display: flex;  
+}
+#vertical{
+    display: none;
 }
 @media (max-width:768px) {
     
-    #titleroadmap h2 {
+    .title h2 {
         text-align: center;
         font-size: 7vw;
         margin-top: 0;
         font-weight: 700;
-        align-items: center;
     }
-    #roadmaps{
-        background-image: url(/assets/images/roadmap-vertical.webp);
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: 100%, 100%;
+    #horizontal{
+        display: none;
+    }
+    #vertical{
+        display: flex;
     }
     
 }
