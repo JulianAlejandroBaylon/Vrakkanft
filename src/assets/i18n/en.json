@@ -111,18 +111,6 @@
     "pn3": "NFT WITH ACCESORIES",
     "pn4": "ENHACER = X5"
   },
-  "Roadmap": {
-      "description": "Creation & \ndevelopment",
-      "description2": "Community \norientation",
-      "description3": "Smart contract audit\nNon-disclosed sale\nAccess to Vrakka Academy\n& Vrakka Trading",
-      "description4": "Disclosure of minted \ncollection",
-      "description5": "Community introduction in App\nVRK enhancer\nBenefits in App",
-      "description6": "Monetization of VRK\nstaking functions",
-      "description7": "NFT'S marketplace launch\nAccess to Vrakka Events",
-      "description8": "Sale and rent in Vrakka Habits",
-      "description9": "Vrakka Gaming functions and access\nPresale participation in digital assets",
-      "description10": "Introduction\nVrakkaverse"
-    },
     "About": {
       "about": "About",
       "title": "What is Hyperhabits Multiverse?",
@@ -131,6 +119,11 @@
       "hyper": "Hyperheroes...",
       "desc": "We are here to save the world!",
       "team": "Team"
+    },
+
+    "Roadmap": {
+      "horizontal": "/assets/images/roadmap-horizontal.webp",
+      "vertical": "/assets/images/roadmap-vertical.webp"
     }
   }
 
