@@ -27,8 +27,8 @@ p {
 .divabout {
   display: flex;
   position: relative;
-  width: 65vw;
-  height: 70vh;
+  width: 65%;
+  height: 70%;
   margin: 0 auto;
   z-index: 0;
   /* Valor predeterminado */
@@ -177,7 +177,7 @@ input[type=number] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 70%;
+    height: none;
     width: 70%;
   }
 
@@ -224,7 +224,7 @@ input[type=number] {
     font-size: 3vw;
   }
 
-  #conect {
+  #connect {
     font-size: 4vw;
   }
 
