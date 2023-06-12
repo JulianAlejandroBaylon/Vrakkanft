@@ -85,3 +85,20 @@
   margin-left: 5px;
   text-align: center;
 }
+@media (max-width:768px) {
+  .contact{
+    width: 54%;
+  }
+  .contact p{
+    margin-top: -6%;
+  }
+  .social-icons{
+    width: 43vw;
+    display: flex;
+  flex-wrap: wrap;
+  }
+  .social-icons a {
+    flex-basis: 18%;
+    text-align: center;
+  }
+}
