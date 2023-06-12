@@ -13,34 +13,47 @@ export class AppComponent {
   currentSectionIndex: number = 0;
   constructor(private connectService: ConnectService) {}
 
+  indice = 0; // Inicializa el índice en 0
+  saltosMaximos = 1; // Establece la cantidad máxima de secciones que se pueden saltar en un solo desplazamiento
+  timerId: any; // Variable para almacenar el ID del temporizador
+
   ngOnInit() {
-    let indice = 0; // Inicializa el índice en 0
-    let saltosMaximos = 1; // Establece la cantidad máxima de secciones que se pueden saltar en un solo desplazamiento
-
-    let timerId = null; // Variable para almacenar el ID del temporizador
-
     document.addEventListener('wheel', (event) => {
       const delta = Math.sign(event.deltaY);
 
-      clearTimeout(timerId); // Cancela el temporizador anterior, si existe
+      clearTimeout(this.timerId); // Cancela el temporizador anterior, si existe
 
       // Establece un nuevo temporizador para controlar la frecuencia del evento
-      timerId = setTimeout(() => {
+      this.timerId = setTimeout(() => {
         // Controla la cantidad de secciones que se saltan en un solo desplazamiento
-        if (delta > 0 && indice < 7) {
-          indice = Math.min(indice + saltosMaximos, 7);
-        } else if (delta < 0 && indice > 0) {
-          indice = Math.max(indice - saltosMaximos, 0);
+        if (delta > 0 && this.indice < 7) {
+          this.indice = Math.min(this.indice + this.saltosMaximos, 7);
+        } else if (delta < 0 && this.indice > 0) {
+          this.indice = Math.max(this.indice - this.saltosMaximos, 0);
         }
 
         const secciones = document.getElementsByClassName('slide'); // Obtén todas las secciones con la clase 'slide'
-        const seccionActual = secciones[indice];
+        const seccionActual = secciones[this.indice];
 
         if (seccionActual) {
           seccionActual.scrollIntoView({ behavior: 'smooth' });
         }
-      }, 150); // Ajusta el valor del retraso (en milisegundos) según tus necesidades
+      },100); // Ajusta el valor del retraso (en milisegundos) según tus necesidades
     });
+  }
+
+  cambiarIndice(seccion: string) {
+    const secciones = ['home', 'vrk', 'NFT', 'benefits', 'types', 'gallery', 'roadmaps', 'about'];
+    const indice = secciones.indexOf(seccion);
+
+    if (indice !== -1) {
+      this.indice = indice;
+
+      const seccionActual = document.getElementsByClassName('slide')[this.indice];
+      if (seccionActual) {
+        seccionActual.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   }
 
   //Id for particles of background
