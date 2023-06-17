@@ -1,3 +1,11 @@
+import Web3 from "web3";
+import VrakkaJson from "../assets/json/VrakkaNFT.json";
+import { TransformarToWei, actulizarCuenta, TransformWei } from "./Blockchain";
+import { determinarChain } from "./Filtrochain";
+import { ObjectToken } from "./VRKToken";
+
+const web3 = new Web3(window.ethereum);
+
 export class ObjectVrakkaNFT {
   constructor() {
     this.contrato = {};
@@ -7,6 +15,7 @@ export class ObjectVrakkaNFT {
   async load() {
     try {
       const id = await web3.eth.net.getId();
+      //console.log("0x"+id.toString());
       const deployedNetwork = VrakkaJson.networks[id];
       this.account = await actulizarCuenta();
 
@@ -26,6 +35,7 @@ export class ObjectVrakkaNFT {
   }
 
   async get(_index) {
+    // el tipo de nft que pertenese
     try {
       var _hashi = await this.contrato.methods.get(_index).call();
       return _hashi;
@@ -36,6 +46,7 @@ export class ObjectVrakkaNFT {
   }
 
   async getClass(_index) {
+    // el tipo de nft a la que pertenese
     try {
       var _hashi = await this.contrato.methods.getClass(_index).call();
       return _hashi;
@@ -46,6 +57,8 @@ export class ObjectVrakkaNFT {
   }
 
   async buy(_index, price) {
+    // el num de nft a vender
+    this.load()
     try {
       var _res = await this.contrato.methods
         .buyToken(_index)
@@ -58,6 +71,7 @@ export class ObjectVrakkaNFT {
   }
 
   async mint(price, URI_Image) {
+    // minar el nft
     let weiPrice = TransformarToWei(price);
     try {
       var _res = await this.contrato.methods
@@ -71,6 +85,7 @@ export class ObjectVrakkaNFT {
   }
 
   async aprovar(_address, _index) {
+    // Dar permisos a otros usuarios para el uso del nft
     try {
       var _res = await this.contrato.methods
         .approve(_address, _index)
@@ -82,6 +97,7 @@ export class ObjectVrakkaNFT {
   }
 
   async balance(_account) {
+    // saldo de la cuenta del cliente
     try {
       var _bal = await this.contrato.methods.balanceOf(_account).call();
       return _bal;
@@ -105,9 +121,10 @@ export class ObjectVrakkaNFT {
   }
 
   async getPrice() {
+    //Sacar el precio
     try {
       var _res = await this.contrato.methods.getPrice().call();
-      return TransformWei(_res);
+      return _res //TransformWei(_res);
     } catch (error) {
       console.log("error en VrakkaNFT.jsx getPrice:", error);
       return 0;

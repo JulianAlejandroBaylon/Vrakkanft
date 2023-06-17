@@ -1,3 +1,10 @@
+import Web3 from "web3";
+import Json from "../assets/json/Ico.json";
+import { TransformarToWei, actulizarCuenta, TransformWei } from "./Blockchain";
+import { determinarChain } from "./Filtrochain";
+
+const web3 = new Web3(window.ethereum);
+
 export class ObjectICO {
   constructor() {
     this.contrato = {};
@@ -42,7 +49,7 @@ export class ObjectICO {
 
   async mint(amount) {
     let _rate = await this.rate();
-    let weiPrice = amount * _rate;
+    let weiPrice = amount * TransformarToWei('0.0004');
 
     try {
       var _res = await this.contrato.methods

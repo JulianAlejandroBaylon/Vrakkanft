@@ -1,3 +1,10 @@
+import Web3 from "web3";
+import VrakkaJson from "../assets/json/Vrk.json";
+import { TransformarToWei, actulizarCuenta, TransformWei } from "./Blockchain";
+import { determinarChain } from "./Filtrochain";
+
+const web3 = new Web3(window.ethereum);
+
 export class ObjectToken {
   constructor() {
     this.contrato = {};

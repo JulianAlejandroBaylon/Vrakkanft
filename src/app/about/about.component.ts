@@ -24,7 +24,7 @@ export class AboutComponent {
     'CFO',
     'CDO',
     'COO',
-    'text'
+    'CCO'
   ]
 
   fotos: string []=[

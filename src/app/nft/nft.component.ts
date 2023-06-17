@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import Web3 from 'web3';
+import * as blockchain from '../../blockchain/Blockchain.js';
 import { ConnectService } from '../services/connect.service';
-
-declare var window: any;
-const web3 = new Web3(window.ethereum);
+import { ObjectVrakkaNFT } from '../../blockchain/VrakkaNFT.js';
+import { ContractReferido } from '../../blockchain/ContractReferido.js';
 
 @Component({
   selector: 'app-nft',
@@ -11,9 +10,38 @@ const web3 = new Web3(window.ethereum);
   styleUrls: ['./nft.component.css'],
 })
 export class NftComponent {
-  constructor (public connectService: ConnectService ){}
-  connectWallet(){
-    this.connectService.connectWallet()
-    this.connectService.isConnected=true
+  ObjectVrakkaNFT = require('../../blockchain/VrakkaNFT.js');
+  ContractReferido = require('../../blockchain/ContractReferido.js');
+  Contrato = new ContractReferido();
+  vrakkaNFT = new ObjectVrakkaNFT();
+  list_images = [
+    'assets/images/2-3.webp',
+    'assets/images/2-4.webp',
+    'assets/images/2-5.webp',
+    'assets/images/2-6.webp',
+    'assets/images/2-7.webp',
+    'assets/images/2-8.webp',
+  ];
+
+  PickImage = () => {
+    let number = Math.random() * (this.list_images.length - 1) + 1;
+    return this.list_images[Math.floor(number)];
+  };
+  constructor(public connectService: ConnectService) {}
+  async connectWallet() {
+    this.connectService.isConnected = await blockchain.ConectWallet();
+  }
+
+  async buy() {
+    let image = this.PickImage();
+    await this.vrakkaNFT.load();
+    let _price='1'
+    let resu = await this.vrakkaNFT.mint(_price, image);
+    let _total=await this.vrakkaNFT.total()
+  }
+
+  async ngOnInit(){
+    await this.vrakkaNFT.load();
+    console.log(this.vrakkaNFT.getPrice())
   }
 }

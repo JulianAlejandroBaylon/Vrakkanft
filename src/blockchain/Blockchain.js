@@ -7,9 +7,28 @@ let currentAccount = null;
 export const ConectWallet = async () => {
   // const provider = await web3Modal.connect();
   // let web3 = new Web3(provider);
-  await window.ethereum.request({ method: "eth_requestAccounts" });
-  console.log("Conectado")
+  if(window.ethereum !=undefined){
+    try{
+      await window.ethereum.request({ method: "eth_requestAccounts" });
+      return true
+    }catch (error){
+      console.log(error)
+      return false
+    }
+  }else{
+    window.open("https://metamask.io/download/");
+  }
+
 };
+
+export const disconected = async () => {
+  try{
+  await window.ethereum.request({method: "disconnect"})
+  return false
+  }catch (error){
+    console.log(error)
+  }
+}
 
 export const actulizarCuenta = async () => {
   await window.ethereum
@@ -32,8 +51,14 @@ export const actulizarCuenta = async () => {
 
 export const turnOnAccountChange = () => {
   window.ethereum.on("accountsChanged", (acc) => {
+    if(acc != 0){
     console.log("cuenta cambiada: ", acc[0]);
-    window.location.reload(false);
+    return true
+    }else{
+      window.location.reload(false);
+      console.log('Cuenta desconectada')
+      return false
+    }
   });
 };
 
@@ -42,7 +67,7 @@ export const turnOnChainChange = () => {
   window.ethereum.on("chainChanged", (_chainId) => {
     console.log("Cambiando a: ", _chainId);
     chain = _chainId;
-    window.location.reload(false);
+   // window.location.reload(false);
   });
   return chain;
 };
@@ -67,8 +92,8 @@ export const CheckConexion = async () => {
         .then((accounts) => {
           if (accounts.length != 0) {
             // MetaMask is locked or the user has not connected any accounts
+            console.log("Conectado")
             isConnected = true;
-            console.log(accounts);
           }
         });
     } catch (error) {
@@ -120,6 +145,23 @@ export const TransformWei = (_num) => {
   }
 };
 
-export const TransformarToWei = (_num) => {
-  return web3.utils.toWei(_num);
-};
+/*export const TransformarToWei = (_num) => {
+  // Supongamos que el tipo de cambio actual entre BNB y ETH es de 1 BNB = 0.01 ETH
+const tipoCambioBNB_ETH = 1;
+
+// Valor en BNB que deseas convertir a wei
+const valorBNB = 1;
+
+// Calcula el equivalente en ETH
+const valorETH = valorBNB * tipoCambioBNB_ETH;
+
+// Convierte el valor en ETH a wei utilizando la función toWei de Web3.js
+const valorWei = web3.utils.toWei(valorETH.toString(), 'ether');
+
+console.log(valorWei); // Valor en wei equivalente al valor en BNB
+  return valorWei;
+};*/
+
+export const TransformarToWei=(_num)=>{
+  return web3.utils.toWei(_num)
+}

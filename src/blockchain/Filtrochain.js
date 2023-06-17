@@ -1,3 +1,5 @@
+import { dameCurrentChain } from "./Blockchain.js";
+
 export async function determinarChain(deployedNetwork, id) {
   //Old contract Hashima: "0x66cafdD687b83663512bCfC99e36724d86b11C7e"
 
@@ -6,6 +8,7 @@ export async function determinarChain(deployedNetwork, id) {
     "0x806ad623c43ecb48CC83B446a864a495A96510fb", //ICO
     "0xA382c1374dE60A0b0E72e9c90B45C0131b94ECc1", //VrakkaToken
   ];
+
 
   let array_binance_testnet = [
     "0x3F8af811260a41D37975e2CBe00d9281704d5DB2", //VrakkaNFT

@@ -1,6 +1,8 @@
-import { ConnectService } from './services/connect.service';
-import { Component } from '@angular/core';
 
+import { ConnectService } from './services/connect.service';
+import * as blockchain from '../blockchain/Blockchain.js'
+import { Component } from '@angular/core';
+import {ObjectVrakkaNFT} from '../blockchain/VrakkaNFT.js'
 import { MoveDirection, OutMode, Container, Engine } from 'tsparticles-engine';
 import { loadFull } from 'tsparticles';
 
@@ -10,6 +12,10 @@ import { loadFull } from 'tsparticles';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  ObjectVrakkaNFT = require('../blockchain/VrakkaNFT.js');
+
+  // Puedes crear una instancia de la clase ObjectVrakkaNFT
+ vrakkaNFT = new ObjectVrakkaNFT();
   currentSectionIndex: number = 0;
   constructor(private connectService: ConnectService) {}
 
@@ -17,7 +23,7 @@ export class AppComponent {
   saltosMaximos = 1; // Establece la cantidad máxima de secciones que se pueden saltar en un solo desplazamiento
   timerId: any; // Variable para almacenar el ID del temporizador
 
-  ngOnInit() {
+  async ngOnInit() {
     document.addEventListener('wheel', (event) => {
       const delta = Math.sign(event.deltaY);
 
@@ -40,6 +46,18 @@ export class AppComponent {
         }
       },100); // Ajusta el valor del retraso (en milisegundos) según tus necesidades
     });
+    //let chainid = await blockchain.dameCurrentChain()
+    let { connect, install } = await blockchain.CheckConexion()
+    console.log(connect)
+
+    if (connect == true) {
+      this.connectService.isConnected = true;
+    } else {
+      this.connectService.isConnected = false;
+    }
+    connect = await blockchain.turnOnAccountChange();
+    await blockchain.turnOnChainChange()
+
   }
 
   cambiarIndice(seccion: string) {

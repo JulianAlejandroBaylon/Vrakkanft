@@ -1,3 +1,11 @@
+import Web3 from "web3";
+import VrakkaJson from "../assets/json/Referido.json";
+import { TransformarToWei, actulizarCuenta, TransformWei } from "./Blockchain";
+import { determinarChain } from "./Filtrochain";
+import { ObjectToken } from "./VRKToken";
+
+const web3 = new Web3(window.ethereum);
+
 export class ContractReferido {
   constructor() {
     this.contrato = {};

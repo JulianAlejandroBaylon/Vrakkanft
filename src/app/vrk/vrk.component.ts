@@ -1,6 +1,8 @@
 import { Component, ChangeDetectorRef } from '@angular/core';
+import * as blockchain from '../../blockchain/Blockchain.js';
+import { ObjectVrakkaNFT } from '../../blockchain/VrakkaNFT.js';
 import { ConnectService } from '../services/connect.service';
-
+import { ObjectICO } from '../../blockchain/ICO.js';
 
 @Component({
   selector: 'app-vrk',
@@ -8,15 +10,24 @@ import { ConnectService } from '../services/connect.service';
   styleUrls: ['./vrk.component.css'],
 })
 export class VrkComponent {
-  total;
+  ICO = new ObjectICO();
+  token = new ObjectVrakkaNFT();
 
-  constructor (public connectService: ConnectService ){
-    this.connectService.Total = this.total
+  total: number;
+
+  constructor(public connectService: ConnectService) {}
+
+  async conectWallet() {
+    this.connectService.isConnected = await blockchain.ConectWallet();
   }
 
-
-  conectWallet() {
-    this.connectService.connectWallet()
-    this.connectService.isConnected=true
-}
+  async buy() {
+    let id = blockchain.dameCurrentChain();
+    console.log(id)
+    await this.ICO.load();
+    await this.ICO.mint(this.total);
+  }
+  ngOnInit() {
+    // vrkTkn.ObjectToken.load();
+  }
 }

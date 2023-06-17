@@ -45,7 +45,7 @@
                         {{'Buttons.connect' | translate}}
                     </button>
                     <input [ngClass]="{'disable': this.connectService.isConnected}" id="cantidad" type="number" [(ngModel)]="total">
-                    <button [ngClass]="{'disable': this.connectService.isConnected}" id="buy">{{'Buttons.buy' | translate}}</button>
+                    <button [ngClass]="{'disable': this.connectService.isConnected}" id="buy" (click)="buy()">{{'Buttons.buy' | translate}}</button>
                 </div>
 
             </div>

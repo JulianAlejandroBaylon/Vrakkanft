@@ -46,7 +46,7 @@
                   <button [ngClass]="{'nel': this.connectService.isConnected}" id="conect2" (click)="connectWallet()">
                      {{'Buttons.connect' | translate}}
                   </button>
-                  <button [ngClass]="{'nel': this.connectService.isConnected}" id="buy2">{{'Buttons.buy' | translate }}</button>
+                  <button [ngClass]="{'nel': this.connectService.isConnected}" id="buy2" (click)="buy()">{{'Buttons.buy' | translate }}</button>
               </div>
 
             </div>

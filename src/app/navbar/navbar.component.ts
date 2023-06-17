@@ -1,3 +1,4 @@
+import * as blockchain from '../../blockchain/Blockchain.js'
 import { Component, EventEmitter, Output } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { ConnectService } from '../services/connect.service';
@@ -17,7 +18,8 @@ export class NavbarComponent {
   idioma=false;
   constructor(
     public connectService: ConnectService,
-    private translateService: TranslateService) {
+    private translateService: TranslateService
+    ) {
       this.translateService.setDefaultLang('en');
   }
 
@@ -26,11 +28,11 @@ export class NavbarComponent {
       this.translateService.use(this.idioma ? 'es' : 'en')
   }
 
-  conectWallet(): void {
-    this.connectService.connectWallet();
+  async connectWallet() {
+    this.connectService.isConnected = await blockchain.ConectWallet();
   }
   ngOnInit(){
-    this.connectService.addMetaMaskEventListeners();
+    blockchain.CheckConexion()
     this.connectService.observer();
   }
 }
