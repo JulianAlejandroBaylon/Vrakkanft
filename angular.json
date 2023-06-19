@@ -23,6 +23,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              "src/assets/json",
               {
                 "glob": "**/*",
                 "input": "src/assets",
@@ -33,12 +34,6 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/blockchain/Blockchain.js",
-              "src/blockchain/ContractReferido.js",
-              "src/blockchain/Filtrochain.js",
-              "src/blockchain/ICO.js",
-              "src/blockchain/VrakkaNFT.js",
-              "src/blockchain/VRKToken.js"
             ]
           },
           "configurations": {
@@ -96,7 +91,8 @@
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/json"
             ],
             "styles": [
               "src/styles.css"

@@ -1,4 +1,4 @@
-import * as blockchain from '../../blockchain/Blockchain.js'
+
 import { Component, EventEmitter, Output } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { ConnectService } from '../services/connect.service';
@@ -29,10 +29,10 @@ export class NavbarComponent {
   }
 
   async connectWallet() {
-    this.connectService.isConnected = await blockchain.ConectWallet();
+   // this.connectService.isConnected = await blockchain.ConectWallet();
   }
   ngOnInit(){
-    blockchain.CheckConexion()
+   // blockchain.CheckConexion()
     this.connectService.observer();
   }
 }

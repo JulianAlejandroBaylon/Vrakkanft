@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import * as blockchain from '../../blockchain/Blockchain.js';
-import { ConnectService } from '../services/connect.service';
-import { ObjectVrakkaNFT } from '../../blockchain/VrakkaNFT.js';
-import { ContractReferido } from '../../blockchain/ContractReferido.js';
+import { ConnectService, Blockchain, ObjectVrakkaNFT } from '../services/connect.service';
+
 
 @Component({
   selector: 'app-nft',
@@ -10,10 +8,7 @@ import { ContractReferido } from '../../blockchain/ContractReferido.js';
   styleUrls: ['./nft.component.css'],
 })
 export class NftComponent {
-  ObjectVrakkaNFT = require('../../blockchain/VrakkaNFT.js');
-  ContractReferido = require('../../blockchain/ContractReferido.js');
-  Contrato = new ContractReferido();
-  vrakkaNFT = new ObjectVrakkaNFT();
+
   list_images = [
     'assets/images/2-3.webp',
     'assets/images/2-4.webp',
@@ -27,9 +22,9 @@ export class NftComponent {
     let number = Math.random() * (this.list_images.length - 1) + 1;
     return this.list_images[Math.floor(number)];
   };
-  constructor(public connectService: ConnectService) {}
+  constructor(public connectService: ConnectService, private Blockchain: Blockchain, private vrakkaNFT: ObjectVrakkaNFT) {}
   async connectWallet() {
-    this.connectService.isConnected = await blockchain.ConectWallet();
+    this.connectService.isConnected = await this.Blockchain.ConectWallet();
   }
 
   async buy() {

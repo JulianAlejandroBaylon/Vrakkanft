@@ -1,8 +1,6 @@
 
 import { ConnectService } from './services/connect.service';
-import * as blockchain from '../blockchain/Blockchain.js'
 import { Component } from '@angular/core';
-import {ObjectVrakkaNFT} from '../blockchain/VrakkaNFT.js'
 import { MoveDirection, OutMode, Container, Engine } from 'tsparticles-engine';
 import { loadFull } from 'tsparticles';
 
@@ -12,10 +10,9 @@ import { loadFull } from 'tsparticles';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  ObjectVrakkaNFT = require('../blockchain/VrakkaNFT.js');
 
   // Puedes crear una instancia de la clase ObjectVrakkaNFT
- vrakkaNFT = new ObjectVrakkaNFT();
+ //vrakkaNFT = new ObjectVrakkaNFT();
   currentSectionIndex: number = 0;
   constructor(private connectService: ConnectService) {}
 
@@ -47,7 +44,7 @@ export class AppComponent {
       },100); // Ajusta el valor del retraso (en milisegundos) según tus necesidades
     });
     //let chainid = await blockchain.dameCurrentChain()
-    let { connect, install } = await blockchain.CheckConexion()
+    /*let { connect, install } = await blockchain.CheckConexion()
     console.log(connect)
 
     if (connect == true) {
@@ -56,7 +53,7 @@ export class AppComponent {
       this.connectService.isConnected = false;
     }
     connect = await blockchain.turnOnAccountChange();
-    await blockchain.turnOnChainChange()
+    await blockchain.turnOnChainChange()*/
 
   }
 

@@ -17,6 +17,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { ConnectService, Blockchain, ObjectVrakkaNFT, ObjectICO } from './services/connect.service';
 
 // Función para cargar archivos JSON
 export function HttpLoaderFactory(http: HttpClient) {
@@ -51,7 +52,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     FormsModule
   ],
-  providers: [],
+  providers: [ConnectService, Blockchain, ObjectVrakkaNFT, ObjectICO],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
