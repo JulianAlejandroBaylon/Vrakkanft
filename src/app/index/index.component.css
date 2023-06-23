@@ -141,6 +141,7 @@
     justify-content: center;
   }
   .text #title{
+    margin-left: 20%;
     font-size: 3vw;
   }
   .text h1 {
@@ -186,18 +187,18 @@
     margin-left: 0vw;
     transform: translate(-30%,12%);
   }
-  
+
   .nfts .nft2 img {
     width: 36vw;
     height: 18vh;
     margin: 5% 0 0 6%;
   }
-  
+
   .nfts .nft2 p {
     margin: 5% 0 0 0;
     font-size: 2vw;
   }
-  
+
 }
 @media (min-width: 769px) and (max-width: 1199px) {
   .index {
@@ -260,16 +261,16 @@
     margin-left: 0vw;
     transform: translate(-5%,35%);
   }
-  
+
   .nfts .nft2 img {
     width: 30vw;
     height: 18vh;
     margin: 5% 0 0 6%;
   }
-  
+
   .nfts .nft2 p {
     margin: 5% 0 0 0;
     font-size: 2vw;
   }
-  
+
 }

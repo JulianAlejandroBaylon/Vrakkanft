@@ -1,7 +1,7 @@
 
 import { Component, EventEmitter, Output } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { ConnectService } from '../services/connect.service';
+import { ConnectService, Blockchain } from '../services/connect.service';
 
 @Component({
   selector: 'app-navbar',
@@ -18,7 +18,8 @@ export class NavbarComponent {
   idioma=false;
   constructor(
     public connectService: ConnectService,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private blockchain: Blockchain
     ) {
       this.translateService.setDefaultLang('en');
   }
@@ -29,7 +30,7 @@ export class NavbarComponent {
   }
 
   async connectWallet() {
-   // this.connectService.isConnected = await blockchain.ConectWallet();
+   this.connectService.isConnected = await this.blockchain.ConectWallet();
   }
   ngOnInit(){
    // blockchain.CheckConexion()

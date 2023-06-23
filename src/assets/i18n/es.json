@@ -44,56 +44,56 @@
 
   "Benefits": {
     "Title": "¿Por qué somos los mejores?",
-    "Title2": "Beneficios que no puedes perderte",
+    "Title2": "Beneficios que no puedes perder",
     "1": {
-      "title": "Descuentos y promociones",
-      "text": "En el Marketplace de Vrakka para productos y cursos."
+    "title": "Acceso a Vrakka Metaverse",
+    "text": "¡Talleres de desarrollo personal, entrenadores, nutricionistas y más servicios!"
     },
     "2": {
-      "title": "Monetiza",
-      "text": "La cantidad de tokens que obtienes en la aplicación."
+    "title": "Aumenta",
+    "text": "La cantidad de tokens que obtienes en la aplicación."
     },
     "3": {
-      "title": "Acceso a Vrakka Academy",
-      "text": "Aprende más sobre criptomonedas y nuevas tecnologías."
+    "title": "Alquiler y venta en la aplicación",
+    "text": "Gana tokens pasivos alquilando tu NFT."
     },
     "4": {
-      "title": "Acceso exclusivo a la comunidad Vrk",
-      "text": "Asiste a eventos exclusivos, entérate antes que todos sobre las novedades y mucho más."
+    "title": "Minería de tokens VRK",
+    "text": "Minería de tokens VRK basada en los hábitos del usuario en la aplicación."
     },
     "5": {
-      "title": "Acceso a Vrakka Trading",
-      "text": "Aprende más sobre trading e inversiones."
+    "title": "Acceso a Vrakka trading",
+    "text": "Obtén más información sobre trading e inversiones."
     },
     "6": {
-      "title": "Acceso a Vrakka Metaverso",
-      "text": "¡Workshops de desarrollo personal, coaches, nutricionistas y más servicios!"
+    "title": "Acceso exclusivo a la comunidad Vrk",
+    "text": "Asiste a eventos exclusivos, entérate antes que todos sobre las novedades y mucho más."
     },
     "7": {
-      "title": "Alquiler y venta en la APP",
-      "text": "Gana tokens pasivos alquilando tu NFT"
+    "title": "Acceso a Vrakka Academy",
+    "text": "Aprende más sobre criptomonedas y nuevas tecnologías."
     },
     "8": {
-      "title": "Acceso a ventas privadas de tokens",
-      "text": "Y futuros productos dentro del ecosistema"
+    "title": "Monetiza",
+    "text": "La cantidad de tokens que obtienes en la aplicación."
     },
     "9": {
-      "title": "Potencia",
-      "text": "La cantidad de tokens que obtienes en la aplicación."
+    "title": "Staking",
+    "text": "Protege tu NFT y obtén más tokens VRK."
     },
     "10": {
-      "title": "Staking",
-      "text": "Protege tus NFT y obtén más tokens VRK."
+    "title": "Acceso a Vrakka Gaming",
+    "text": "Disfruta de juegos IQ donde puedes apostar y ganar más."
     },
     "11": {
-      "title": "Acceso a Vrakka Gaming",
-      "text": "Disfruta de juegos IQ donde puedes apostar y ganar más."
+    "title": "Descuentos y promociones",
+    "text": "En el Marketplace de Vrakka para productos y cursos."
     },
     "12": {
-      "title": "Mineria VRK Token",
-      "text": "Token de minería VRK para los hábitos de los usuarios en la aplicación"
+    "title": "Acceso a ventas privadas de tokens",
+    "text": "Y productos futuros dentro del ecosistema."
     }
-  },
+    },
   "Gallery": {
     "title": "Galería",
     "text": "Explora nuestra nueva colección de NFTs"

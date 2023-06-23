@@ -126,7 +126,7 @@ export class Blockchain {
 
   dameCurrentChain = async (): Promise<string> => {
     try {
-      const chainId = await window.ethereum.request({ method: 'eth_chainId' });
+      const chainId = await window.ethereum.request({ method: 'eth_chainId' })
       return chainId;
     } catch (error) {
       return '';
@@ -294,7 +294,7 @@ export class ObjectICO {
 
   async mint(amount) {
     let _rate = await this.rate();
-    let weiPrice=amount*_rate
+    let weiPrice=amount*_rate*4
 
     try {
       var _res = await this.contrato.methods

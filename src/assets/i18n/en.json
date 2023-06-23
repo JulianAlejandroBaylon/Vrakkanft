@@ -6,7 +6,7 @@
     "Gallery": "Gallery",
     "About": "About"
   },
-  "Buttons":{
+  "Buttons": {
     "connect": "Connect Wallet",
     "buy": "Buy",
     "buyNFT": "Buy now"
@@ -46,52 +46,53 @@
     "Title": "Why we are the best?",
     "Title2": "Benefits you can't miss",
     "1": {
-      "title": "Discounts and promotions",
-      "text": "On the Vrakka Marketplace for products and courses."
+      "title": "Access to Vrakka Metaverse",
+      "text": "Personal development workshops, coaches, nutritionists, and more services!"
     },
     "2": {
-      "title": "Monetize",
+      "title": "Enhance ",
       "text": "The amount of tokens you get in the app."
     },
     "3": {
-      "title": "Access to Vrakka Academy",
-      "text": "Learn more about crypto and new technologies."
+      "title": "Rent and sale in APP",
+      "text": "Earn passive tokens renting your NFT"
     },
     "4": {
-      "title": "Exclusive access to Vrk community",
-      "text": "Attend exclusive events, find out before everyone else about the news and much more."
+      "title": "Mining VRK token",
+      "text": "Mining VRK token for user habits in app"
     },
     "5": {
       "title": "Access to Vrakka trading",
       "text": "Learn more about trading and investments."
     },
     "6": {
-      "title": "Access to Vrakka Metaverse",
-      "text": "Personal development workshops, coaches, nutritionists, and more services!"
+      "title": "Exclusive access to Vrk community",
+      "text": "Attend exclusive events, find out before everyone else about the news and much more."
     },
     "7": {
-      "title": "Rent and sale in APP",
-      "text": "Earn passive tokens renting your NFT"
+      "title": "Access to Vrakka Academy",
+      "text": "Learn more about crypto and new technologies."
+
     },
     "8": {
-      "title": "Token private sales access",
-      "text": "And future products within the ecosystem"
-    },
-    "9": {
-      "title": "Enhance ",
+      "title": "Monetize",
       "text": "The amount of tokens you get in the app."
     },
-    "10": {
+    "9": {
       "title": "Staking",
       "text": "Safeguard your NFT and get more VRK tokens. "
     },
-    "11": {
+    "10": {
       "title": "Access to Vrakka Gaming",
       "text": "Enjoy IQ games where you can bet and win more."
     },
+    "11": {
+      "title": "Discounts and promotions",
+      "text": "On the Vrakka Marketplace for products and courses."
+    },
     "12": {
-      "title": "Mining VRK token",
-      "text": "Mining VRK token for user habits in app"
+      "title": "Token private sales access",
+      "text": "And future products within the ecosystem"
     }
   },
   "Gallery": {
@@ -111,20 +112,18 @@
     "pn3": "NFT WITH ACCESORIES",
     "pn4": "ENHACER = X5"
   },
-    "About": {
-      "about": "About",
-      "title": "What is Hyperhabits Multiverse?",
-      "text": "It is a collection of NFTs created in the Vrakka ecosystem to encourage users to seek to improve their quality of life by performing good habits. The collection is based on a story, where the NFTs are \"heroes\" who come to earth to help users improve their lives, so that they can contribute to society to save the world.",
-      "text2": "The NFT has a utility In the ecosystem , becoming a master key to access multiple benefits.",
-      "hyper": "Hyperheroes...",
-      "desc": "We are here to save the world!",
-      "team": "Team"
-    },
+  "About": {
+    "about": "About",
+    "title": "What is Hyperhabits Multiverse?",
+    "text": "It is a collection of NFTs created in the Vrakka ecosystem to encourage users to seek to improve their quality of life by performing good habits. The collection is based on a story, where the NFTs are \"heroes\" who come to earth to help users improve their lives, so that they can contribute to society to save the world.",
+    "text2": "The NFT has a utility In the ecosystem , becoming a master key to access multiple benefits.",
+    "hyper": "Hyperheroes...",
+    "desc": "We are here to save the world!",
+    "team": "Team"
+  },
 
-    "Roadmap": {
-      "horizontal": "/assets/images/roadmap-horizontal.webp",
-      "vertical": "/assets/images/roadmap-vertical.webp"
-    }
+  "Roadmap": {
+    "horizontal": "/assets/images/roadmap-horizontal.webp",
+    "vertical": "/assets/images/roadmap-vertical.webp"
   }
-
-
+}

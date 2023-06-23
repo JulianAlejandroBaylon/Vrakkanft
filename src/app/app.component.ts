@@ -11,8 +11,6 @@ import { loadFull } from 'tsparticles';
 })
 export class AppComponent {
 
-  // Puedes crear una instancia de la clase ObjectVrakkaNFT
- //vrakkaNFT = new ObjectVrakkaNFT();
   currentSectionIndex: number = 0;
   constructor(private connectService: ConnectService) {}
 
@@ -35,25 +33,14 @@ export class AppComponent {
           this.indice = Math.max(this.indice - this.saltosMaximos, 0);
         }
 
-        const secciones = document.getElementsByClassName('slide'); // Obtén todas las secciones con la clase 'slide'
+        const secciones = document.getElementsByClassName('slide-H'); // Obtén todas las secciones con la clase 'slide'
         const seccionActual = secciones[this.indice];
 
         if (seccionActual) {
           seccionActual.scrollIntoView({ behavior: 'smooth' });
         }
-      },100); // Ajusta el valor del retraso (en milisegundos) según tus necesidades
+      },80); // Ajusta el valor del retraso (en milisegundos) según tus necesidades
     });
-    //let chainid = await blockchain.dameCurrentChain()
-    /*let { connect, install } = await blockchain.CheckConexion()
-    console.log(connect)
-
-    if (connect == true) {
-      this.connectService.isConnected = true;
-    } else {
-      this.connectService.isConnected = false;
-    }
-    connect = await blockchain.turnOnAccountChange();
-    await blockchain.turnOnChainChange()*/
 
   }
 
@@ -64,7 +51,7 @@ export class AppComponent {
     if (indice !== -1) {
       this.indice = indice;
 
-      const seccionActual = document.getElementsByClassName('slide')[this.indice];
+      const seccionActual = document.getElementsByClassName('slide-H')[this.indice];
       if (seccionActual) {
         seccionActual.scrollIntoView({ behavior: 'smooth' });
       }

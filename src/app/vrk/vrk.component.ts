@@ -8,24 +8,27 @@ import { ConnectService } from '../services/connect.service';
   styleUrls: ['./vrk.component.css'],
 })
 export class VrkComponent {
-  //ICO = new ObjectICO();
-  //token = new ObjectVrakkaNFT();
-
   total: number;
 
-  constructor(public connectService: ConnectService, private ICO: ObjectICO, private blockchain: Blockchain) {}
+  constructor(
+    public connectService: ConnectService,
+    private ICO: ObjectICO,
+    private blockchain: Blockchain
+  ) {}
 
   async conectWallet() {
     this.connectService.isConnected = await this.blockchain.ConectWallet();
   }
 
   async buy() {
-    let id = this.blockchain.dameCurrentChain();
-    console.log(id)
+    let id = await this.blockchain.dameCurrentChain();
+    console.log(id);
     await this.ICO.load();
     await this.ICO.mint(this.total);
   }
-  ngOnInit() {
+  async ngOnInit() {
     // vrkTkn.ObjectToken.load();
+    let id = await this.blockchain.dameCurrentChain();
+    console.log(id);
   }
 }
