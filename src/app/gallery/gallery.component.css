@@ -2,13 +2,13 @@
   font-family: "Rubik";
   font-style: normal;
 }
-.gallery{
+.gallery {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 #text {
   text-align: center;
@@ -172,7 +172,7 @@ img {
 }
 
 @media (max-width: 768px) {
-  #text{
+  #text {
     height: 20vh;
   }
   #text p {
@@ -186,7 +186,7 @@ img {
     width: 100%;
     height: 50%;
   }
-  .container{
+  .container {
     width: 80%;
   }
   .card {
@@ -194,7 +194,7 @@ img {
     height: 100%;
   }
   .cards {
-    margin-top:30%;
+    margin-top: 30%;
     width: 100%;
     height: 90%;
   }
@@ -212,93 +212,93 @@ img {
   }
 
   #item-1:checked ~ .cards #selector-1,
-#item-2:checked ~ .cards #selector-2,
-#item-3:checked ~ .cards #selector-3,
-#item-4:checked ~ .cards #selector-4,
-#item-5:checked ~ .cards #selector-5,
-#item-6:checked ~ .cards #selector-6,
-#item-7:checked ~ .cards #selector-7 {
-  transform: translateX(-90%) scale(0.4);
-  z-index: 10;
-  opacity: 0.4;
-  display: none
-}
+  #item-2:checked ~ .cards #selector-2,
+  #item-3:checked ~ .cards #selector-3,
+  #item-4:checked ~ .cards #selector-4,
+  #item-5:checked ~ .cards #selector-5,
+  #item-6:checked ~ .cards #selector-6,
+  #item-7:checked ~ .cards #selector-7 {
+    transform: translateX(-90%) scale(0.4);
+    z-index: 10;
+    opacity: 0.4;
+    display: none;
+  }
 
-#item-2:checked ~ .cards #selector-1,
-#item-3:checked ~ .cards #selector-2,
-#item-4:checked ~ .cards #selector-3,
-#item-5:checked ~ .cards #selector-4,
-#item-6:checked ~ .cards #selector-5,
-#item-7:checked ~ .cards #selector-6,
-#item-1:checked ~ .cards #selector-7 {
-  transform: translateX(-70%) scale(0.6);
-  z-index: 20;
-  opacity: 0.6;
-}
+  #item-2:checked ~ .cards #selector-1,
+  #item-3:checked ~ .cards #selector-2,
+  #item-4:checked ~ .cards #selector-3,
+  #item-5:checked ~ .cards #selector-4,
+  #item-6:checked ~ .cards #selector-5,
+  #item-7:checked ~ .cards #selector-6,
+  #item-1:checked ~ .cards #selector-7 {
+    transform: translateX(-70%) scale(0.6);
+    z-index: 20;
+    opacity: 0.6;
+  }
 
-#item-3:checked ~ .cards #selector-1,
-#item-4:checked ~ .cards #selector-2,
-#item-5:checked ~ .cards #selector-3,
-#item-6:checked ~ .cards #selector-4,
-#item-7:checked ~ .cards #selector-5,
-#item-1:checked ~ .cards #selector-6,
-#item-2:checked ~ .cards #selector-7 {
-  transform: translateX(-40%) scale(0.8);
-  z-index: 30;
-  opacity: 0.8;
-}
+  #item-3:checked ~ .cards #selector-1,
+  #item-4:checked ~ .cards #selector-2,
+  #item-5:checked ~ .cards #selector-3,
+  #item-6:checked ~ .cards #selector-4,
+  #item-7:checked ~ .cards #selector-5,
+  #item-1:checked ~ .cards #selector-6,
+  #item-2:checked ~ .cards #selector-7 {
+    transform: translateX(-40%) scale(0.8);
+    z-index: 30;
+    opacity: 0.8;
+  }
 
-#item-4:checked ~ .cards #selector-1,
-#item-5:checked ~ .cards #selector-2,
-#item-6:checked ~ .cards #selector-3,
-#item-7:checked ~ .cards #selector-4,
-#item-1:checked ~ .cards #selector-5,
-#item-2:checked ~ .cards #selector-6,
-#item-3:checked ~ .cards #selector-7 {
-  transform: translateX(0) scale(1);
-  z-index: 40;
-  opacity: 1;
-}
+  #item-4:checked ~ .cards #selector-1,
+  #item-5:checked ~ .cards #selector-2,
+  #item-6:checked ~ .cards #selector-3,
+  #item-7:checked ~ .cards #selector-4,
+  #item-1:checked ~ .cards #selector-5,
+  #item-2:checked ~ .cards #selector-6,
+  #item-3:checked ~ .cards #selector-7 {
+    transform: translateX(0) scale(1);
+    z-index: 40;
+    opacity: 1;
+  }
 
-#item-5:checked ~ .cards #selector-1,
-#item-6:checked ~ .cards #selector-2,
-#item-7:checked ~ .cards #selector-3,
-#item-1:checked ~ .cards #selector-4,
-#item-2:checked ~ .cards #selector-5,
-#item-3:checked ~ .cards #selector-6,
-#item-4:checked ~ .cards #selector-7 {
-  transform: translateX(40%) scale(0.8);
-  z-index: 30;
-  opacity: 0.8;
-}
+  #item-5:checked ~ .cards #selector-1,
+  #item-6:checked ~ .cards #selector-2,
+  #item-7:checked ~ .cards #selector-3,
+  #item-1:checked ~ .cards #selector-4,
+  #item-2:checked ~ .cards #selector-5,
+  #item-3:checked ~ .cards #selector-6,
+  #item-4:checked ~ .cards #selector-7 {
+    transform: translateX(40%) scale(0.8);
+    z-index: 30;
+    opacity: 0.8;
+  }
 
-#item-6:checked ~ .cards #selector-1,
-#item-7:checked ~ .cards #selector-2,
-#item-1:checked ~ .cards #selector-3,
-#item-2:checked ~ .cards #selector-4,
-#item-3:checked ~ .cards #selector-5,
-#item-4:checked ~ .cards #selector-6,
-#item-5:checked ~ .cards #selector-7 {
-  transform: translateX(70%) scale(0.6);
-  z-index: 20;
-  opacity: 0.6;
-}
+  #item-6:checked ~ .cards #selector-1,
+  #item-7:checked ~ .cards #selector-2,
+  #item-1:checked ~ .cards #selector-3,
+  #item-2:checked ~ .cards #selector-4,
+  #item-3:checked ~ .cards #selector-5,
+  #item-4:checked ~ .cards #selector-6,
+  #item-5:checked ~ .cards #selector-7 {
+    transform: translateX(70%) scale(0.6);
+    z-index: 20;
+    opacity: 0.6;
+  }
 
-#item-7:checked ~ .cards #selector-1,
-#item-1:checked ~ .cards #selector-2,
-#item-2:checked ~ .cards #selector-3,
-#item-3:checked ~ .cards #selector-4,
-#item-4:checked ~ .cards #selector-5,
-#item-5:checked ~ .cards #selector-6,
-#item-6:checked ~ .cards #selector-7 {
-  transform: translateX(90%) scale(0.4);
-  z-index: 10;
-  opacity: 0.4;
-  display: none
-}
+  #item-7:checked ~ .cards #selector-1,
+  #item-1:checked ~ .cards #selector-2,
+  #item-2:checked ~ .cards #selector-3,
+  #item-3:checked ~ .cards #selector-4,
+  #item-4:checked ~ .cards #selector-5,
+  #item-5:checked ~ .cards #selector-6,
+  #item-6:checked ~ .cards #selector-7 {
+    transform: translateX(90%) scale(0.4);
+    z-index: 10;
+    opacity: 0.4;
+    display: none;
+  }
 }
 @media (min-width: 769px) and (max-width: 1199px) {
-  #text{
+  #text {
     height: 20vh;
   }
   #text p {
@@ -312,7 +312,7 @@ img {
     width: 100%;
     height: 50%;
   }
-  .container{
+  .container {
     width: 80%;
   }
   .card {
@@ -320,7 +320,7 @@ img {
     height: 100%;
   }
   .cards {
-    margin-top:30%;
+    margin-top: 30%;
     width: 100%;
     height: 90%;
   }
