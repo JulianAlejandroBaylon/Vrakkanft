@@ -8,7 +8,8 @@ import { ConnectService, Blockchain, ObjectVrakkaNFT } from '../services/connect
   styleUrls: ['./nft.component.css'],
 })
 export class NftComponent {
-
+  valor;
+  valor2;
   list_images = [
     'assets/images/2-3.webp',
     'assets/images/2-4.webp',
@@ -30,13 +31,15 @@ export class NftComponent {
   async buy() {
     let image = this.PickImage();
     await this.vrakkaNFT.load();
-    let _price='1'
-    let resu = await this.vrakkaNFT.mint(_price, image);
+    let resu = await this.vrakkaNFT.mint();
+    console.log(resu)
     let _total=await this.vrakkaNFT.total()
   }
 
   async ngOnInit(){
     await this.vrakkaNFT.load();
-    console.log(this.vrakkaNFT.getPrice())
+    this.valor2=await this.vrakkaNFT.getPrice()
+    this.valor= this.Blockchain.TransformWei(this.valor2),
+    console.log(this.valor)
   }
 }

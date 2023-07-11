@@ -413,13 +413,24 @@ export class ObjectVrakkaNFT {
     }
   }
 
-  async mint(price, URI_Image) {
-    // minar el nft
-    let weiPrice = this.Blockchain.TransformarToWei(price);
+  async mint() {
+    const price = await this.getPrice();
     try {
       var _res = await this.contrato.methods
-        .PublicMinting(URI_Image)
-        .send({ from: this.account, value: weiPrice });
+        .publicMinting()
+        .send({ from: this.account, value: price});
+      return _res.status;
+    } catch (error) {
+      console.log("error VrakkaNFT.jsx mint: ", error);
+      return false;
+    }
+  }
+
+  async privateMinting(receiver, price, forSale) {
+    try {
+      var _res = await this.contrato.methods
+        .privateMinting(receiver, price, forSale)// Cambio
+        .send({ from: this.account});
       return _res.status;
     } catch (error) {
       console.log("error VrakkaNFT.jsx mint: ", error);
