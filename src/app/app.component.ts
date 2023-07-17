@@ -3,6 +3,7 @@ import { ConnectService } from './services/connect.service';
 import { Component } from '@angular/core';
 import { MoveDirection, OutMode, Container, Engine } from 'tsparticles-engine';
 import { loadFull } from 'tsparticles';
+import { pathToFileURL } from 'url';
 
 @Component({
   selector: 'app-root',
@@ -11,52 +12,17 @@ import { loadFull } from 'tsparticles';
 })
 export class AppComponent {
 
-  currentSectionIndex: number = 0;
   constructor(private connectService: ConnectService) {}
 
-  indice = 0; // Inicializa el índice en 0
-  saltosMaximos = 1; // Establece la cantidad máxima de secciones que se pueden saltar en un solo desplazamiento
-  timerId: any; // Variable para almacenar el ID del temporizador
+
 
   async ngOnInit() {
-    document.addEventListener('wheel', (event) => {
-      const delta = Math.sign(event.deltaY);
-
-      clearTimeout(this.timerId); // Cancela el temporizador anterior, si existe
-
-      // Establece un nuevo temporizador para controlar la frecuencia del evento
-      this.timerId = setTimeout(() => {
-        // Controla la cantidad de secciones que se saltan en un solo desplazamiento
-        if (delta > 0 && this.indice < 7) {
-          this.indice = Math.min(this.indice + this.saltosMaximos, 7);
-        } else if (delta < 0 && this.indice > 0) {
-          this.indice = Math.max(this.indice - this.saltosMaximos, 0);
-        }
-
-        const secciones = document.getElementsByClassName('slide-H'); // Obtén todas las secciones con la clase 'slide'
-        const seccionActual = secciones[this.indice];
-
-        if (seccionActual) {
-          seccionActual.scrollIntoView({ behavior: 'smooth' });
-        }
-      },200); // Ajusta el valor del retraso (en milisegundos) según tus necesidades
-    });
+    this.connectService.observer();
+    this.connectService.wheel();
 
   }
 
-  cambiarIndice(seccion: string) {
-    const secciones = ['home', 'vrk', 'NFT', 'benefits', 'types', 'gallery', 'roadmaps', 'about'];
-    const indice = secciones.indexOf(seccion);
 
-    if (indice !== -1) {
-      this.indice = indice;
-
-      const seccionActual = document.getElementsByClassName('slide-H')[this.indice];
-      if (seccionActual) {
-        seccionActual.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }
 
   //Id for particles of background
   id = 'tsparticles';

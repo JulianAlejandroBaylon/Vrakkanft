@@ -16,6 +16,10 @@ const web3 = new Web3(window.ethereum);
 export class ConnectService {
   isConnected: boolean = false;
   isInstalled: boolean = false;
+  seccion: String;
+  indice = 0; // Inicializa el índice en 0
+  saltosMaximos = 1; // Establece la cantidad máxima de secciones que se pueden saltar en un solo desplazamiento
+  timerId: any; // Variable para almacenar el ID del temporizador
 
   observer() {
     const p1 = document.querySelector('.one');
@@ -31,8 +35,10 @@ export class ConnectService {
       entradas.forEach((entrada) => {
         if (entrada.isIntersecting) {
           entrada.target.classList.add('visible');
+          entrada.target.classList.remove('noVisible');
         } else {
           entrada.target.classList.remove('visible');
+          entrada.target.classList.add('noVisible');
         }
       });
     };
@@ -54,7 +60,37 @@ export class ConnectService {
   }
 
   constructor() {}
+
+  wheel() {
+    document.addEventListener('wheel', (event) => {
+      const delta = Math.sign(event.deltaY);
+
+      clearTimeout(this.timerId);
+
+      this.timerId = setTimeout(() => {
+        const windowWidth = window.innerWidth;
+        const scrollPosition = window.scrollX;
+        const currentIndex = Math.floor(scrollPosition / windowWidth);
+
+        if (delta > 0 && currentIndex < 7) {
+          this.indice = Math.min(currentIndex + this.saltosMaximos, 7);
+        } else if (delta < 0 && currentIndex > 0) {
+          this.indice = Math.max(currentIndex - this.saltosMaximos, 0);
+        }
+
+        const secciones = document.getElementsByClassName('slide-H');
+        const seccionActual = secciones[this.indice];
+
+        if (seccionActual) {
+          seccionActual.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+          console.log("Seccion actual: ", seccionActual)
+        }
+      }, 200);
+    });
+  }
 }
+
+
 
 @Injectable()
 export class Blockchain {
@@ -207,14 +243,14 @@ async determinarChain(deployedNetwork, id) {
     //Old contract Hashima: "0x66cafdD687b83663512bCfC99e36724d86b11C7e"
 
     let array_binance_mainnet = [
-      "0xE4bFD6619823cAf5f9b2CBa0893dA1E3b569c318", //VrakkaNFT
+      "0xD18eaC62Ede52165125252c0e8444524c23cB074",
+      //"0xE4bFD6619823cAf5f9b2CBa0893dA1E3b569c318", //VrakkaNFT
       "0x806ad623c43ecb48CC83B446a864a495A96510fb", //ICO
       "0xA382c1374dE60A0b0E72e9c90B45C0131b94ECc1", //VrakkaToken
     ];
 
-
     let array_binance_testnet = [
-      "0x3F8af811260a41D37975e2CBe00d9281704d5DB2", //VrakkaNFT
+      "0x4eb7EB968f7212AB5A1E122d8734B48379025A58", //VrakkaNFT
       "0x78A6A7973E6a89fBECF8Ec4AcfD1B95E81fa8D80", //ICO
       "0x3ca292dF226A278A2711465b1a6A74bA8bBa5304", //VrakkaToken
     ];

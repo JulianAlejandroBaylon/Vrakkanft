@@ -11,8 +11,9 @@ import { ConnectService, Blockchain } from '../services/connect.service';
 export class NavbarComponent {
   @Output() seccionClic = new EventEmitter<string>();
 
-  onSeccionClick(seccion: string) {
-    this.seccionClic.emit(seccion);
+  onSeccionClick(seccion: number) {
+
+   this.connectService.indice=seccion
   }
 
   idioma=false;
@@ -33,7 +34,7 @@ export class NavbarComponent {
    this.connectService.isConnected = await this.blockchain.ConectWallet();
   }
   ngOnInit(){
-   // blockchain.CheckConexion()
-    this.connectService.observer();
+    this.onSeccionClick(this.connectService.indice)
+
   }
 }
