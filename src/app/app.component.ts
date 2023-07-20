@@ -3,7 +3,6 @@ import { ConnectService } from './services/connect.service';
 import { Component } from '@angular/core';
 import { MoveDirection, OutMode, Container, Engine } from 'tsparticles-engine';
 import { loadFull } from 'tsparticles';
-import { pathToFileURL } from 'url';
 
 @Component({
   selector: 'app-root',

@@ -6,11 +6,11 @@ import {
 } from '../services/connect.service';
 
 @Component({
-  selector: 'app-nft',
-  templateUrl: './nft.component.html',
-  styleUrls: ['./nft.component.css'],
+  selector: 'app-admin',
+  templateUrl: './admin.component.html',
+  styleUrls: ['./admin.component.css']
 })
-export class NftComponent {
+export class AdminComponent {
   valor: any;
   account: String;
   list_images = [

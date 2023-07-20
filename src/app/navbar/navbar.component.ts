@@ -31,10 +31,11 @@ export class NavbarComponent {
   }
 
   async connectWallet() {
-   this.connectService.isConnected = await this.blockchain.ConectWallet();
+   await this.blockchain.ConectWallet();
   }
-  ngOnInit(){
+  async ngOnInit(){
     this.onSeccionClick(this.connectService.indice)
-
+    this.blockchain.CheckConexion()
+    this.blockchain.turnOnAccountChange()
   }
 }

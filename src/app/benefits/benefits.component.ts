@@ -66,7 +66,6 @@ export class BenefitsComponent implements OnInit {
     if (this.x > 12) {
       this.x = 1;
     }
-    console.log(this.x)
   }
 
   res() {
@@ -74,6 +73,5 @@ export class BenefitsComponent implements OnInit {
     if (this.x < 1) {
       this.x = 12;
     }
-    console.log(this.x)
   }
 }

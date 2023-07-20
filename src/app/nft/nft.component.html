@@ -43,10 +43,10 @@
                     </div>
                 </div>
                 <div class="buttonbox">
-                  <button [ngClass]="{'nel': this.connectService.isConnected}" id="conect2" (click)="connectWallet()">
+                  <button [ngClass]="{'nel': this.Blockchain.isConnected}" id="conect2" (click)="connectWallet()">
                      {{'Buttons.connect' | translate}}
                   </button>
-                  <button [ngClass]="{'nel': this.connectService.isConnected}" id="buy2" (click)="buy()">{{'Buttons.buy' | translate }}</button>
+                  <button [ngClass]="{'nel': this.Blockchain.isConnected}" id="buy2" (click)="buy()">{{'Buttons.buy' | translate }}</button>
               </div>
 
             </div>

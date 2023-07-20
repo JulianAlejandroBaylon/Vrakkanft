@@ -14,8 +14,7 @@ const web3 = new Web3(window.ethereum);
 })
 @Injectable()
 export class ConnectService {
-  isConnected: boolean = false;
-  isInstalled: boolean = false;
+
   seccion: String;
   indice = 0; // Inicializa el índice en 0
   saltosMaximos = 1; // Establece la cantidad máxima de secciones que se pueden saltar en un solo desplazamiento
@@ -30,6 +29,7 @@ export class ConnectService {
     const p6 = document.querySelector('.six');
     const p7 = document.querySelector('.seven');
     const p8 = document.querySelector('.eight');
+    //const p9 = document.querySelector('.nine');
 
     const carga = (entradas) => {
       entradas.forEach((entrada) => {
@@ -57,6 +57,7 @@ export class ConnectService {
     observador.observe(p6);
     observador.observe(p7);
     observador.observe(p8);
+   // observador.observe(p9);
   }
 
   constructor() {}
@@ -72,8 +73,8 @@ export class ConnectService {
         const scrollPosition = window.scrollX;
         const currentIndex = Math.floor(scrollPosition / windowWidth);
 
-        if (delta > 0 && currentIndex < 7) {
-          this.indice = Math.min(currentIndex + this.saltosMaximos, 7);
+        if (delta > 0 && currentIndex < 8) {
+          this.indice = Math.min(currentIndex + this.saltosMaximos, 8);
         } else if (delta < 0 && currentIndex > 0) {
           this.indice = Math.max(currentIndex - this.saltosMaximos, 0);
         }
@@ -90,19 +91,21 @@ export class ConnectService {
   }
 }
 
-
-
 @Injectable()
 export class Blockchain {
   currentAccount: string | null = null;
+  isConnected: boolean = false;
+  isInstall: boolean = true;
 
   ConectWallet = async () => {
     if (window.ethereum !== undefined) {
       try {
         await window.ethereum.request({ method: 'eth_requestAccounts' });
+        this.isConnected=true
         return true;
       } catch (error) {
         console.log(error);
+        this.isConnected=false
         return false;
       }
     } else {
@@ -111,9 +114,10 @@ export class Blockchain {
     }
   };
 
-  disconected = async (): Promise<void> => {
+  async disconected(){
     try {
-      await window.ethereum.request({ method: 'disconnect' });
+      await window.ethereum.on({ method: 'disconnect' });
+      this.isConnected=false
     } catch (error) {
       console.log(error);
     }
@@ -138,16 +142,22 @@ export class Blockchain {
   };
 
   turnOnAccountChange = (): void => {
-    window.ethereum.on('accountsChanged', (acc) => {
-      if (acc !== 0) {
-        console.log('cuenta cambiada: ', acc[0]);
-        return true;
-      } else {
-        window.location.reload(false);
-        console.log('Cuenta desconectada');
-        return false;
-      }
-    });
+    if (window.ethereum.isConnected()) {
+      this.isConnected=true
+      window.ethereum.on('accountsChanged', (acc) => {
+        if (acc.length > 0) {
+          console.log('Cuenta cambiada: ', acc[0]);
+          // Realizar acciones cuando se produce un cambio de cuenta
+        } else {
+          // La cartera se desconectó, manejarlo aquí
+          console.log('Cuenta desconectada');
+          // Realizar acciones cuando se produce una desconexión
+          this.isConnected=false
+        }
+      });
+    } else {
+      console.log('No hay una cartera conectada');
+    }
   };
 
   turnOnChainChange = (): string => {
@@ -170,26 +180,26 @@ export class Blockchain {
   };
 
   CheckConexion = async (): Promise<{ connect: boolean; install: boolean }> => {
-    let isConnected = false;
-    let isInstall = true;
 
     if (window.ethereum !== undefined) {
       try {
         const accounts = await window.ethereum.request({
           method: 'eth_accounts',
         });
-        if (accounts.length !== 0) {
-          console.log('Conectado');
-          isConnected = true;
+        if (accounts && accounts.length !== 0) {
+          this.isConnected = true;
+        }else{
+          this.isConnected=false;
         }
       } catch (error) {
+
         console.log('error CheckConexion: ', error.message);
       }
     } else {
       // The user doesn't have a web3 wallet installed
-      isInstall = false;
+      this.isInstall = false;
     }
-    return { connect: isConnected, install: isInstall };
+    return { connect: this.isConnected, install: this.isInstall };
   };
 
   ChangeChain = async (): Promise<void> => {
@@ -243,7 +253,8 @@ async determinarChain(deployedNetwork, id) {
     //Old contract Hashima: "0x66cafdD687b83663512bCfC99e36724d86b11C7e"
 
     let array_binance_mainnet = [
-      "0xD18eaC62Ede52165125252c0e8444524c23cB074",
+      "0xAa924e98c7C99fabEff9f29F6a9B3a0c4aFd7CA7",
+      //"0xD18eaC62Ede52165125252c0e8444524c23cB074",
       //"0xE4bFD6619823cAf5f9b2CBa0893dA1E3b569c318", //VrakkaNFT
       "0x806ad623c43ecb48CC83B446a864a495A96510fb", //ICO
       "0xA382c1374dE60A0b0E72e9c90B45C0131b94ECc1", //VrakkaToken
@@ -521,7 +532,7 @@ export class ObjectVrakkaNFT {
     }
   }
 
-  async getURI(_tokenId) {
+  async getURI(_tokenId) { //Devuelve la URL de la imagen del nft
     try {
       var _resultado = await this.contrato.methods.tokenURI(_tokenId).call();
       return _resultado;

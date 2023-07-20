@@ -13,11 +13,11 @@ export class VrkComponent {
   constructor(
     public connectService: ConnectService,
     private ICO: ObjectICO,
-    private blockchain: Blockchain
+    public blockchain: Blockchain
   ) {}
 
   async conectWallet() {
-    this.connectService.isConnected = await this.blockchain.ConectWallet();
+     await this.blockchain.ConectWallet();
   }
 
   async buy() {

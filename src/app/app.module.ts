@@ -18,6 +18,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { ConnectService, Blockchain, ObjectVrakkaNFT, ObjectICO } from './services/connect.service';
+import { CollectionComponent } from './collection/collection.component';
+import { AdminComponent } from './admin/admin.component';
 
 // Función para cargar archivos JSON
 export function HttpLoaderFactory(http: HttpClient) {
@@ -36,7 +38,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     VrkComponent,
     AboutComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    CollectionComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
