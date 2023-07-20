@@ -10,21 +10,20 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
 import { AboutComponent } from './about/about.component';
 
-
 const routes: Routes = [
-  {path: 'index', component: IndexComponent},
-  {path: 'vrk', component: VrkComponent},
-  {path: 'nft', component: NftComponent},
-  {path: 'benefits', component: BenefitsComponent},
-  {path: 'types', component: TypesComponent},
-  {path: 'gallery', component: GalleryComponent},
-  {path: 'roadmap', component: RoadmapComponent},
-  {path: 'about', component: AboutComponent},
-  {path: 'admin', outlet: 'adminOutlet', component: AdminComponent}
+  { path: 'index', component: IndexComponent },
+  { path: 'vrk', component: VrkComponent },
+  { path: 'nft', component: NftComponent },
+  { path: 'benefits', component: BenefitsComponent },
+  { path: 'types', component: TypesComponent },
+  { path: 'gallery', component: GalleryComponent },
+  { path: 'roadmap', component: RoadmapComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'admin', component: AdminComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

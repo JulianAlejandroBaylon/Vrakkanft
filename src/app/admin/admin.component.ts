@@ -13,19 +13,7 @@ import {
 export class AdminComponent {
   valor: any;
   account: String;
-  list_images = [
-    'assets/images/2-3.webp',
-    'assets/images/2-4.webp',
-    'assets/images/2-5.webp',
-    'assets/images/2-6.webp',
-    'assets/images/2-7.webp',
-    'assets/images/2-8.webp',
-  ];
 
-  PickImage = () => {
-    let number = Math.random() * (this.list_images.length - 1) + 1;
-    return this.list_images[Math.floor(number)];
-  };
   constructor(
     public connectService: ConnectService,
     public Blockchain: Blockchain,
@@ -42,7 +30,7 @@ export class AdminComponent {
     //let resu = await this.vrakkaNFT.mint()
     let resu = await this.vrakkaNFT.privateMinting(
       this.account,
-      this.Blockchain.TransformarToWei(this.valor),
+      this.Blockchain.TransformarToWei(this.valor.toString()),
       false
     );
     console.log(resu);
