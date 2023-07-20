@@ -34,6 +34,7 @@ export class AdminComponent {
       false
     );
     console.log(resu);
+    await this.vrakkaNFT.fillData()
   }
 
   async ngOnInit() {
