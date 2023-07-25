@@ -34,11 +34,11 @@ export class AdminComponent {
       false
     );
     console.log(resu);
-    await this.vrakkaNFT.fillData()
   }
 
   async ngOnInit() {
     await this.vrakkaNFT.load();
+    await this.vrakkaNFT.fillData()
     this.valor = await this.vrakkaNFT.getPrice();
     this.valor = this.Blockchain.TransformWei(this.valor);
     console.log(this.valor);

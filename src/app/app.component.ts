@@ -16,7 +16,7 @@ export class AppComponent {
 
 
   async ngOnInit() {
-    this.connectService.observer();
+   //this.connectService.observer();
     this.connectService.wheel();
 
   }

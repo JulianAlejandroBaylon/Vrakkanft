@@ -253,8 +253,7 @@ async determinarChain(deployedNetwork, id) {
     //Old contract Hashima: "0x66cafdD687b83663512bCfC99e36724d86b11C7e"
 
     let array_binance_mainnet = [
-      "0xAa924e98c7C99fabEff9f29F6a9B3a0c4aFd7CA7",
-      //"0xD18eaC62Ede52165125252c0e8444524c23cB074",
+      "0xD18eaC62Ede52165125252c0e8444524c23cB074", //VrakkaNFT contrato
       //"0xE4bFD6619823cAf5f9b2CBa0893dA1E3b569c318", //VrakkaNFT
       "0x806ad623c43ecb48CC83B446a864a495A96510fb", //ICO
       "0xA382c1374dE60A0b0E72e9c90B45C0131b94ECc1", //VrakkaToken
@@ -617,36 +616,36 @@ export class ObjectVrakkaNFT {
     return _mycollection;
   }
 
-  /*async fillDataStaking() {
-    const _account = await this.Blockchain.actulizarCuenta();
+  // async fillDataStaking() {
+  //   const _account = await this.Blockchain.actulizarCuenta();
 
-    var _total = await this.total();
+  //   var _total = await this.total();
 
-    let token = new ObjectToken();
-    let contrato_token = await token.load();
+  //   let token = new ObjectToken();
+  //   let contrato_token = await token.load();
 
-    var _mycollection = [];
+  //   var _mycollection = [];
 
-    for (let index = 0; index < _total + 1; index++) {
-      try {
-        var obtein_data = await this.get(index);
-        if (
-          obtein_data["currentOwner"] !=
-          "0x0000000000000000000000000000000000000000"
-        ) {
-          //Filtro para Vrakka´s que estan en 'Staking'
-          if (obtein_data["currentOwner"] == contrato_token._address) {
-            if (obtein_data["previousOwner"] == _account) {
-              _mycollection.push(obtein_data);
-            }
-          }
-        }
-      } catch (error) {
-        break;
-      }
-    }
-    return _mycollection;
-  }*/
+  //   for (let index = 0; index < _total + 1; index++) {
+  //     try {
+  //       var obtein_data = await this.get(index);
+  //       if (
+  //         obtein_data["currentOwner"] !=
+  //         "0x0000000000000000000000000000000000000000"
+  //       ) {
+  //         //Filtro para Vrakka´s que estan en 'Staking'
+  //         if (obtein_data["currentOwner"] == contrato_token._address) {
+  //           if (obtein_data["previousOwner"] == _account) {
+  //             _mycollection.push(obtein_data);
+  //           }
+  //         }
+  //       }
+  //     } catch (error) {
+  //       break;
+  //     }
+  //   }
+  //   return _mycollection;
+  // }
 
   async fillMarket() {
     const _account = await this.Blockchain.actulizarCuenta();
