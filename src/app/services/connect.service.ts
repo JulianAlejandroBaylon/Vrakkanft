@@ -616,6 +616,12 @@ export class ObjectVrakkaNFT {
     return _mycollection;
   }
 
+  async _setTokenURI(){
+    var _res = await this.contrato.methods
+        ._setTokenURI('https://metadata-provider-38d41455a7bf.herokuapp.com/')
+        .send({ from: this.account });
+  }
+
   // async fillDataStaking() {
   //   const _account = await this.Blockchain.actulizarCuenta();
 
