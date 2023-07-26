@@ -1,55 +1,19 @@
-<div class="about" id="NFT">
-  <div class="divabout">
-      <div class="imgabout">
-          <img class="imga" src="../assets/images/nonreveal.webp" alt="">
-      </div>
-      <div class="textabout">
-          <h3>{{'NFT.title' | translate}}</h3>
-          <p id="firsttextbox">{{'NFT.firsttextbox' | translate}}</p>
-          <p id="secondtextbox">{{'NFT.secondtextbox' | translate}}</p>
-
-          <div class="middletext">
-              <div>
-                  <p id="textgray">{{'NFT.textgray' | translate}}</p>
-              </div>
-              <div class="vecosystem" >
-                  <div class="divimglg">
-                      <img class='vrakkalg' src="/assets/images/logovrakkaparalideres1.webp" alt="">
-                  </div>
-                  <div>
-                      <p id='textb' class="titlem" >Vrakka</p>
-                      <p id='textb' class="subtitlem">{{'NFT.ecosystem' | translate}}</p>
-                  </div>
-
-              </div>
-          </div>
-          <div class="blackbox">
-              <div class="orderbox">
-                  <div class="divbox">
-                      <div>
-                          <p id="textgray">{{'NFT.price' | translate}}</p>
-                      </div>
-                      <div>
-                          <strong id="price">{{valor}}</strong>BNB
-                      </div>
-                  </div>
-                  <div class="divbox">
-                      <div>
-                          <p id="textgray">{{'NFT.disclaimer' | translate}}</p>
-                      </div>
-                      <div id='textb'>
-                          {{'VRK.nonRevelationSale' | translate}}
-                      </div>
-                  </div>
-              </div>
-              <div class="buttonbox">
-                <button [ngClass]="{'nel': this.Blockchain.isConnected}" id="conect2" (click)="connectWallet()">
-                   {{'Buttons.connect' | translate}}
-                </button>
-                <button [ngClass]="{'nel': this.Blockchain.isConnected}" id="buy2" (click)="buy()">{{'Buttons.buy' | translate }}</button>
-            </div>
-
-          </div>
-      </div>
+<div class="admin">
+  <div class="secciones">
+    <Button (click)="Cambio('NFT')">NFT</Button>
+    <button (click)="Cambio('Coleccion')">Coleccion</button>
   </div>
+  <div class="NFT" *ngIf="content == 'NFT'">
+    <h1>Minteo privado</h1>
+    <input type="text" placeholder="Address" [(ngModel)]="account">
+    <button (click)="buy()">Minteo</button>
+
+    <h1>Cambiar URI</h1>
+    <input type="text" placeholder="URL de la api" [(ngModel)]="link">
+    <button (click)="setTokenUri(link)">Cambiar</button>
+  </div>
+  <div class="coleccion" *ngIf="content == 'Coleccion'">
+    <app-collection></app-collection>
+  </div>
+
 </div>

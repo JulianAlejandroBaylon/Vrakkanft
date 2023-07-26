@@ -1,280 +1,36 @@
-* {
-  font-family: Rubik;
-  color: aliceblue;
-}
-
-p {
-  font-size: 1vw;
-}
-
-.about {
+.admin{
+  border: 50px;
+  border-color: aqua;
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
+  flex-direction: column;
   width: 100vw;
+  height: 100vh;
 }
 
-.divabout {
+.secciones{
+  width: 70%;
   display: flex;
-  position: relative;
-  width: 65%;
-  height: 70%;
-  margin: 0 auto;
-  z-index: 0;
-  /* Valor predeterminado */
+  color: white;
 }
 
-.divabout::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 20px;
-  padding: 1px;
-  z-index: -1;
-  /* Valor inferior al del div principal */
-  background: linear-gradient(45deg, #ff1cf7 2.26%, #00f0ff 100%);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
+h1{
+  color: white;
 }
 
-.imga {
-  width: 25vw;
-  height: 65vh;
-}
-
-.imgabout {
-  text-align: center;
-  margin: 1vw 1vw 1vw 1vw;
-}
-
-.textabout {
-  margin: 0vw 6vw 0vw 5vw;
+.NFT{
+  background: transparent;
+  width: 50%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  align-items: center;
 }
 
-.middletext {
-  display: flex;
-}
-
-#firsttextbox {
-  font-size: 0.8vw;
-  text-align: justify;
-}
-
-#secondtextbox {
-  font-size: 1vw;
-  text-align: justify;
-}
-
-.blackbox {
-  background: linear-gradient(0deg, #262840, #262840),
-    linear-gradient(0deg, #060714, #060714),
-    linear-gradient(187.96deg,
-      rgba(255, 255, 255, 0.07) 0%,
-      rgba(255, 255, 255, 0) 93.86%);
-  height: 30%;
-  width: 100%;
-  border-radius: 30px;
-}
-
-#textgray {
-  color: #7780a1;
-}
-
-.orderbox {
-  display: flex;
-}
-
-.divbox {
-  margin-left: 2vw;
-  font-size: 1vw;
-}
-
-.vecosystem {
-  display: flex;
-}
-
-.divimglg {
-  margin-left: 8vw;
-  margin-top: 0.8vw;
-}
-
-.titlem {
-  margin-bottom: -6%;
-}
-
-.subtitlem {
-  color: #7780A1;
-  margin: auto;
-}
-
-.buttonbox {
-  display: flex;
-  justify-content: center;
-  margin-top: 4%;
-}
-
-#conect2 {
-  background: linear-gradient(91.06deg, #ff1cf7 2.26%, #00f0ff 100%);
-  width: 25vw;
-  height: 5vh;
-  border-radius: 50px;
-  cursor: pointer;
-  font-size: 1vw;
-}
-
-#conect2.nel {
-  display: none;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-#cantidad2 {
-  border-radius: 20px;
-  margin-right: 7vw;
-  text-align: center;
+input{
   color: black;
-  width: 5vw;
-  height: auto;
-  font-size: 1.5vw;
-  background-color: blueviolet;
-  display: none;
+  width: 50%;
 }
 
-#cantidad2.nel,
-#buy2.nel {
-  display: block;
-}
-
-#price {
-  font-size: 2vw;
-}
-
-#buy2 {
-  background: linear-gradient(91.06deg, #ff1cf7 2.26%, #00f0ff 100%);
-  width: 10vw;
-  height: 5vh;
-  border-radius: 50px;
-  display: none;
-  cursor: pointer;
-}
-
-
-@media (max-width: 768px) {
-  .divabout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    width: 70%;
-  }
-
-  .imga {
-    margin-top: 3vh;
-    width: 25vw;
-    height: 20vh;
-  }
-
-  #firsttextbox {
-    font-size: 2.8vw;
-  }
-
-  #secondtextbox {
-    font-size: 3vw;
-  }
-
-  #textgray {
-    font-size: 2.5vw;
-  }
-
-  #price {
-    font-size: 5vw;
-  }
-
-  #textb {
-    font-size: 2vw;
-  }
-
-  .blackbox {
-    width: 100%;
-    height: 55%;
-    margin-bottom: 10%;
-  }
-
-  .divbox {
-    margin: auto;
-  }
-
-  .vrakkalg {
-    width: 70%;
-  }
-
-  #conect2 {
-    font-size: 3vw;
-  }
-}
-@media (min-width: 769px) and (max-width: 1199px) {
-  .divabout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    width: 70%;
-  }
-
-  .imga {
-    margin-top: 3vh;
-    width: 25vw;
-    height: 20vh;
-  }
-
-  #firsttextbox {
-    font-size: 2.8vw;
-  }
-
-  #secondtextbox {
-    font-size: 3vw;
-  }
-
-  #textgray {
-    font-size: 2.5vw;
-  }
-
-  #price {
-    font-size: 5vw;
-  }
-
-  #textb {
-    font-size: 2vw;
-  }
-
-  .blackbox {
-    width: 100%;
-    height: 55%;
-    margin-bottom: 10%;
-  }
-
-  .divbox {
-    margin: auto;
-  }
-
-  .vrakkalg {
-    width: 70%;
-  }
-  #conect2 {
-    font-size: 4vw;
-  }
-}

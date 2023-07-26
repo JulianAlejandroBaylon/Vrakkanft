@@ -13,6 +13,8 @@ import {
 export class AdminComponent {
   valor: any;
   account: String;
+  content: String = "NFT"
+  link: string
 
   constructor(
     public connectService: ConnectService,
@@ -25,7 +27,6 @@ export class AdminComponent {
 
   async buy() {
     await this.vrakkaNFT.load();
-    this.account = this.vrakkaNFT.account;
     console.log(this.account);
     //let resu = await this.vrakkaNFT.mint()
     let resu = await this.vrakkaNFT.privateMinting(
@@ -36,10 +37,16 @@ export class AdminComponent {
     console.log(resu);
   }
 
+  Cambio(cambio: String){
+    this.content=cambio
+  }
+
+  async setTokenUri(){
+    await this.vrakkaNFT._setTokenURI(this.link);
+  }
+
   async ngOnInit() {
     await this.vrakkaNFT.load();
-    await this.vrakkaNFT.fillData()
-    await this.vrakkaNFT._setTokenURI();
     this.valor = await this.vrakkaNFT.getPrice();
     this.valor = this.Blockchain.TransformWei(this.valor);
     console.log(this.valor);
