@@ -25,16 +25,23 @@ export class AdminComponent {
     await this.Blockchain.ConectWallet();
   }
 
-  async buy() {
+  async privateMinting() {
     await this.vrakkaNFT.load();
     console.log(this.account);
+    let res = await this.Blockchain.EsValido(this.account)
+
+    if (res){
+      let resu = await this.vrakkaNFT.privateMinting(
+        this.account,
+        this.valor.toString(),
+        false
+      );
+      console.log(resu);
+    }else{
+      console.log("No es valido")
+    }
     //let resu = await this.vrakkaNFT.mint()
-    let resu = await this.vrakkaNFT.privateMinting(
-      this.account,
-      this.Blockchain.TransformarToWei(this.valor.toString()),
-      false
-    );
-    console.log(resu);
+
   }
 
   Cambio(cambio: String){
@@ -48,7 +55,6 @@ export class AdminComponent {
   async ngOnInit() {
     await this.vrakkaNFT.load();
     this.valor = await this.vrakkaNFT.getPrice();
-    this.valor = this.Blockchain.TransformWei(this.valor);
     console.log(this.valor);
   }
 }

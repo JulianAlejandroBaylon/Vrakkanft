@@ -244,6 +244,13 @@ export class Blockchain {
   TransformarToWei = (_num: string): string => {
     return web3.utils.toWei(_num);
   };
+
+  async EsValido(_address){
+    var res=await Web3.utils.isAddress(_address)
+    // if(account==_address) return
+    return res
+  }
+
 }
 
 @Injectable()
