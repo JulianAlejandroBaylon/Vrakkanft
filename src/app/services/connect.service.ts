@@ -141,6 +141,25 @@ export class Blockchain {
     return web3.utils.toChecksumAddress(this.currentAccount);
   };
 
+  async getAddress(): Promise<string | null> {
+    try {
+      const accounts = await window.ethereum.request({
+        method: 'eth_accounts'
+      });
+
+      if (accounts.length > 0) {
+        return accounts[0];
+      } else {
+        await this.ConectWallet();
+        return null;
+      }
+    } catch (error) {
+      console.error('Error al obtener la dirección conectada:', error);
+      return null;
+    }
+  }
+
+
   turnOnAccountChange = (): void => {
     if (window.ethereum.isConnected()) {
       this.isConnected=true

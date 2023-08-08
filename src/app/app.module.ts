@@ -20,6 +20,7 @@ import { FormsModule } from '@angular/forms';
 import { ConnectService, Blockchain, ObjectVrakkaNFT, ObjectICO } from './services/connect.service';
 import { CollectionComponent } from './collection/collection.component';
 import { AdminComponent } from './admin/admin.component';
+import { InicioComponent } from './inicio/inicio.component';
 
 // Función para cargar archivos JSON
 export function HttpLoaderFactory(http: HttpClient) {
@@ -40,7 +41,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavbarComponent,
     FooterComponent,
     CollectionComponent,
-    AdminComponent
+    AdminComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,

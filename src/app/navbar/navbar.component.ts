@@ -37,5 +37,7 @@ export class NavbarComponent {
     this.onSeccionClick(this.connectService.indice)
     this.blockchain.CheckConexion()
     this.blockchain.turnOnAccountChange()
+    const cuenta = await this.blockchain.getAddress();
+    console.log(cuenta)
   }
 }
